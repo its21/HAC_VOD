@@ -1,0 +1,502 @@
+\documentclass[useAMS,usenatbib]{mn2e}
+%\pdfoutput=1
+%\usepackage[pdftex]{graphicx}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage[utf8]{inputenc}
+%\usepackage{pdfpages}
+\usepackage{aas_macros}
+\usepackage[toc,page]{appendix}
+\usepackage{graphicx}
+%\usepackage{epstopdf}
+%\linespread{1.8}
+
+\voffset-.4in
+\newcommand{\ignore}[1]{}
+\usepackage{color}
+\long\def\symbolfootnote[#1]#2{\begingroup%
+\def\thefootnote{\fnsymbol{footnote}}\footnote[#1]{#2}\endgroup}
+
+\graphicspath{{Figs/}{Figs/}}
+
+%red
+\newcommand\Iulia[1]{\textcolor{blue}{#1}}
+
+%green
+\newcommand\Allyson[1]{\textcolor[rgb]{0,0.7,0}{#1}}
+
+%magenta
+\newcommand\Vasily[1]{\textcolor{magenta}{#1}}
+
+%orange
+\newcommand\Sergey[1]{\textcolor[rgb]{1,0.5,0}{#1}}
+
+
+\title[MDM]
+  {HAC and VOD origin}
+\author[I.T. Simion et al.]
+  {Iulia T.~Simion$^1$\thanks{email: isimion@ast.cam.ac.uk}, Vasily~Belokurov$^1$, Sergey E.~Koposov$^{1}$,   Allyson Sheffield$^2$,
+  \newauthor
+  Kathryn V.~Johnston$^2$
+\\ $^{1}$Institute of Astronomy, Madingley Road, Cambridge, CB3 0HA
+\\ $^{2}$Department of Astronomy, Columbia University, 550 West 120th Street, New York 10027
+}
+\date{in original form 2017 February 15}
+
+\pagerange{\pageref{firstpage}--\pageref{lastpage}} \pubyear{2017}
+
+\def\LaTeX{L\kern-.36em\raise.3ex\hbox{a}\kern-.15em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}
+
+\newtheorem{theorem}{Theorem}[section]
+
+\begin{document}
+
+\label{firstpage}
+
+\maketitle
+
+\begin{abstract}
+Abstract
+\end{abstract}
+ \begin{keywords}
+Galaxy: structure -- Galaxy : formation -- galaxies: individual: Milky
+Way.
+\end{keywords}
+%
+%
+\section{Introduction}
+Intro
+\section{Data}
+
+\begin{figure}
+\hspace{-0.5cm}
+\includegraphics[scale=0.29]{bhbs_K_lb.eps}
+\caption{Spectroscopic HAC candidates in Galactic coordinates. Observed RR Lyrae (final catalogue targets: light blue circles; excluded targets, including three duplicate observations: cyan triangles) selected from the CSS survey with V $< $ 17.5 mag and 15 $ <  D/$kpc $ <$ 20. The deep blue circle is a CSS HAC candidate from SDSS. Blue Horizontal Branch (BHBs, yellow circles) stars have heliocentric within 12 $ < D/$kpc $ <$ 20, K-giants (green circles) within 12 $ < D/$kpc $ <$ 20 and Blue Stragglers (BS, magenta circles) within 10 $ <  D/$kpc $ <$ 20, are all selected from SDSS/SEGUE.}
+\label{lb}
+\end{figure}
+
+
+%
+\subsubsection{Data reduction}
+The data reduction was performed using a collection of \textit{IRAF} tasks and \textit{Python} routines. 
+% AAS: cite PyRAF here, maybe as a footnote
+Preprocessing of the spectra was carried out using the \textit{IRAF} \textit{ccdproc} task. Variations in the bias level along the CCD chip were removed using the overscan strip on a frame by frame basis. Biases were taken at the beginning and end of each night to verify that there are no significant drifts in the pedestal level. To correct for pixel-to-pixel sensitivity variations in the detector we divided each data frame by the normalised flat, which was created by fitting a low order polynomial to the median combined flats using the \textit{response} task. To increase the signal to noise of some exposures, three spectra were typically observed and coadded.
+% ITS: too many 'to' in this paragraph?
+% AAS: I think it is unavoidable when describing data processing
+The IRAF \textit{apall} and \textit{identify} tasks were used for one dimensional spectral extraction and wavelength calibration. We applied the dispersion solution using the \textit{dispcor} task and to correct for the Earth's motion with respect to the barycentre of the solar system we used the \textit{rvcorrect} task. The [OI] night sky emission lines 
+%5577\AA~and 6300\AA~
+% AAS: removed, as repetitive (already mentioned wavelengths above!
+were used to check for any systematic offsets in radial velocities for each night. We calculated the overall level of stability of our radial velocities ($\sim$10\,km/s on average) individually for each night (see Table \ref{errors}) and include it as systematic error in the total error budget of radial velocities given in Table~\ref{resultsMDM}.
+%
+\setcounter{table}{0}
+\begin{table}
+ \centering
+ %\hspace*{-1.cm}
+ \begin{minipage}{80mm}
+  \caption{Average variations in the overall level of stability of the velocities for each night, calculated using the [OI] night sky emission lines 5577\AA~and 6300\AA~. These systematic errors are part of the total errors budget of radial velocities given in Table~\ref{resultsMDM}. }
+   \label{errors}
+\begin{tabular}{l | c c c c c c }
+ \hline
+\setcounter{table}{0}
+  observing night  &  n1 & n2 & n3 & n4 & n5 & n6 \\
+   \hline
+$\sigma_{obs}$ (km/s)  & 12.7 & 8.4 & 9.8 & 14.2 & 9.1 & 3.9 \\
+\end{tabular}
+\end{minipage}
+\end{table}
+%
+\subsubsection{Velocity determination and spectral fitting}
+To determine the heliocentric radial velocity of each star we use a direct pixel-fitting method (e.g. \citealt{Ca04}; \citealt{Ko09}; \citealt{Ko11}) in which the spectrum is modelled with a template multiplying a normalising polynomial of degree $N$ (equation 2 in \citealt{Ko11}) and we found that $N = 15$ works well for all targets.
+% AAS: agrree, remove this: but we dot report the coefficients of the normalising polynomials as they are not relevant for our study}. 
+A sample of 90 templates are chosen from a library of synthetic spectra \citep{Mu05} with stellar xsatmospheric parameters  that match the typical properties of RR Lyrae: $-2.5  <$ [Fe/H] $<$ -0.5; [$\alpha$/Fe] = 0.4;  5,500 $< T_{\mathrm{eff}}/$K $<$ 7,500; 2.0 $< \log(\textit{g}) < $ 4.0 (e.g. Smith 1994). 
+
+% ITS: it's a book, maybe we can leave out this citation e.g. Smith 1994)
+% AAS: it is one of the classic texts in RRL studies, so I'd vote to leave all this in, with the citation to Smith94
+%add citation for Smith 1994
+
+We modelled two regions of the spectrum, one centred on $H_{\beta}$ (4811 - 4911 \AA)  and one on  $H_{\alpha}$ (6512 - 6612 \AA ), shown in blue in Figure \ref{1dspec}. The  $H_{\delta}$ and  $H_{\gamma}$ lines are discernable in Figure \ref{1dspec} but for most stars they are too weak to be included in the fitting procedure.
+
+We follow the method described in detail by \citet{Ko11}. The $\chi^{2}$ value is computed from a grid of templates and radial velocities $v$ between -600 and +400 km/s with a step of 1 km/s. The best fit template and radial velocity are the ones that minimise $\chi^{2}$.  In column 7 of Table~\ref{resultsMDM} we report the velocities $v$ we obtained for each star. The uncertainty in the best fit $v$ is determined from the second derivative of the chi square function with respect to radial velocity near the minimum: $\sigma_{\mathrm{fit}}= 1/\sqrt{0.5 ~ d^{2} \chi^{2}/d v^{2}} $. 
+\begin{figure}
+	\hspace{-0.4cm}
+	 \includegraphics[scale = 0.28]{./Figs/HAC11_template.eps} 
+	\caption[Spectra of HAC11 and best fit templates]{Spectrum of target HAC11 (in green) and best fit template (in red). Four of the Balmer lines are identifiable in the spectrum but the velocity was determined from the fit of the $H_{\alpha}$ and $H_{\beta}$ lines only (shown in blue); the  $H_{\gamma}$ and  $H_{\delta}$ lines were not included in the fitting procedure as for several targets these lines cannot be used due to low signal-to-noise ratio in the data. In pink we show the residuals (data-model)/model.}
+	\label{1dspec}
+\end{figure}
+
+% ITS: note: maybe take this out?---Although our main purpose is to measure the radial velocities, it is reassuring that the best fit  $T_{\mathrm{eff}}$, $\log(g)$, and $[Fe/H]$ we obtained are consistent with the typical RR Lyrae properties, with $T_{\mathrm{eff}} \approx 6250 $K. Nonetheless, the best fit radial velocities, that produce a spectrum shift, have little dependence on the template parameters, which control the shape of the lines; in this paper we are not going to use the stellar parameters so we do not report them.
+% AAS: Agree --  leave it out 
+
+
+\setcounter{table}{1}
+\begin{table*}
+ \centering
+ \hspace*{-1.cm}
+ \begin{minipage}{150mm}
+   \caption[Properties of the Program stars]{Properties of the program stars observed at the MDM observatory. 225 HAC candidates were selected from CSS, using the following selection criterium: 28$^{\circ}$$<l<$ 55$^{\circ}$ , -45$^{\circ}$$< b <$-20$^{\circ}$ , V $< $17.5 mag, 15$ <  D$/kpc$ <$ 20. In total we made 57 observations and 3 targets were observed twice; 45 of the observations had phases $0.1 < \phi_{obs} < 0.85$ while 9 (maked with a * in the table and with cyan triangles in Figure \ref{lb}) fell outside this range and were discarded because their pulsation velocity corrections are uncertain. One of the 225 HAC candidates was observed by SDSS (deep blue circle in Figure \ref{lb}) and we include it in our sample. }
+   \label{resultsMDM}
+  \begin{tabular}{@{}llllllclccllll@{}}
+ \hline
+  night &  name &   RA &   Dec & D & $ \phi_{obs}$ & $v$ & $\chi_{red}^{2}$ & $v_{sys}$ & $v_{GSR}$ &$\sigma$ &  \\
+    &   & $ (^{\circ}, J2000) $ & $ (^{\circ}, J2000) $ & (kpc) &  &  (km/s) &  & (km/s) & (km/s) & (km/s) &  \\
+ \hline
+n1 & HAC211 & 314.3614 & -7.0397 & 15.6 & 0.608 & -286.0 & 1.06 & -325.8 & -195.4 & 16.39 \\
+n1 & HAC197 & 328.2793 & -5.4308 & 15.14 & 0.1048 & -173.0 & 1.33 & -155.5 & -25.0 & 15.11 \\
+n1 & *HAC59 & 313.4314 & -12.531 & 16.07 & 0.0995 & -362.0 & 1.41 & -341.9 & -229.7 & 15.03 \\
+n1 & HAC37 & 311.8052 & -11.0359 & 15.31 & 0.5106 & -336.0 & 1.55 & -375.7 & -258.5 & 14.85 \\
+n1 & HAC152 & 322.1852 & 1.423 & 16.31 & 0.5095 & -181.0 & 1.51 & -213.7 & -59.4 & 15.36 \\
+n1 & HAC22 & 310.0809 & -6.161 & 15.69 & 0.5052 & 99.0 & 1.25 & 62.3 & 195.2 & 15.43 \\
+n1 & HAC27 & 310.6845 & -15.8723 & 15.99 & 0.1084 & -34.0 & 1.47 & -16.4 & 84.0 & 15.84 \\
+n1 & HAC186 & 326.3078 & -8.3674 & 16.29 & 0.4982 & -26.0 & 1.24 & -61.8 & 60.5 & 15.31 \\
+n1 & HAC91 & 315.9205 & -13.0186 & 15.84 & 0.5047 & -241.0 & 1.63 & -272.8 & -162.4 & 14.78 \\
+n2 & HAC26 & 310.5762 & -9.6702 & 15.37 & 0.3661 & -364.0 & 1.25 & -377.4 & -255.8 & 11.61 \\
+n2 & HAC131 & 319.4763 & -0.2823 & 17.11 & 0.3085 & -177.0 & 1.45 & -179.2 & -28.9 & 14.88 \\
+n2 & *HAC210 & 313.5939 & -14.3483 & 15.53 & 0.0304 & 119.0 & 1.26 & 150.4 & 256.3 & 16.58 \\
+n2 & HAC11 & 307.868 & -9.8056 & 15.66 & 0.1164 & -315.0 & 2.06 & -295.3 & -174.7 & 12.26 \\
+n2 & HAC177 & 324.4688 & -2.2511 & 15.56 & 0.1032 & 45.0 & 1.81 & 63.2 & 205.7 & 12.51 \\
+n2 & HAC9 & 307.7044 & -5.5085 & 15.34 & 0.5026 & 27.0 & 1.88 & -4.3 & 130.2 & 12.26 \\
+n2 & HAC195 & 327.9145 & -11.2382 & 15.34 & 0.5046 & -329.0 & 2.97 & -356.1 & -244.3 & 12.63 \\
+n2 & HAC96 & 316.7525 & -0.6645 & 15.23 & 0.1155 & -148.0 & 2.11 & -129.3 & 20.4 & 10.94 \\
+n2 & HAC105 & 317.272 & -4.579 & 15.31 & 0.1139 & -273.0 & 2.05 & -256.4 & -118.5 & 11.23 \\
+n2 & HAC102 & 317.1288 & -13.4841 & 15.31 & 0.4887 & 125.0 & 2.2 & 96.1 & 204.7 & 13.88 \\
+n2 & HAC145 & 321.3978 & -8.286 & 15.55 & 0.5108 & 16.0 & 1.84 & -16.6 & 108.3 & 11.5 \\
+n3 & HAC51 & 313.1055 & 6.2501 & 16.88 & 0.6 & -324.0 & 1.82 & -372.0 & -202.8 & 15.35 \\
+n3 & HAC45 & 312.3731 & 2.3048 & 16.17 & 0.7213 & -163.0 & 1.77 & -222.8 & -64.3 & 20.83 \\
+n3 & HAC52 & 313.176 & -1.1647 & 17.1 & 0.532 & -363.0 & 1.71 & -400.9 & -252.4 & 15.56 \\
+n3 & HAC42 & 312.1074 & -3.8391 & 16.24 & 0.1131 & 13.0 & 1.47 & 30.4 & 170.8 & 13.55 \\
+n3 & HAC156 & 322.5188 & -9.5651 & 16.21 & 0.5376 & 33.0 & 1.92 & -4.8 & 115.4 & 14.56 \\
+n4 & *HAC204 & 308.0852 & -13.8239 & 17.74 & 0.9028 & 64.0 & 1.47 & 5.4 & 112.5 & 23.48 \\
+n4 & HAC94 & 316.7138 & -0.8093 & 15.71 & 0.6281 & -263.0 & 1.69 & -315.3 & -166.0 & 16.5 \\
+n4 & HAC191 & 327.2894 & -5.0996 & 18.04 & 0.5205 & -116.0 & 1.56 & -154.1 & -21.9 & 19.27 \\
+n4 & HAC194 & 327.836 & -3.8522 & 17.64 & 0.5425 & -372.0 & 1.54 & -406.5 & -270.9 & 18.33 \\
+n4 & *HAC218 & 318.6157 & -16.3178 & 15.2 & 0.0778 & 82.0 & 1.23 & 101.8 & 200.2 & 16.12 \\
+n4 & HAC21 & 310.0706 & -6.3517 & 15.29 & 0.5129 & -84.0 & 1.48 & -111.6 & 20.7 & 15.23 \\
+n4 & HAC208 & 311.8013 & -9.3492 & 18.12 & 0.6435 & 65.0 & 1.46 & 10.5 & 133.3 & 17.43 \\
+n4 & HAC166 & 323.0617 & -12.1824 & 16.58 & 0.5222 & -23.0 & 1.57 & -51.0 & 60.2 & 17.26 \\
+n4 & HAC154 & 322.215 & -16.2156 & 16.33 & 0.5205 & -372.0 & 1.77 & -402.5 & -304.8 & 15.86 \\
+n4 & HAC120 & 318.7191 & -16.0923 & 15.87 & 0.5166 & 30.0 & 1.76 & 2.3 & 101.5 & 16.52 \\
+n4 & HAC121 & 318.7578 & -1.944 & 16.49 & 0.1209 & -216.0 & 1.9 & -198.5 & -53.0 & 15.71 \\
+n4 & HAC187 & 326.8427 & -2.699 & 16.34 & 0.8679 & 82.0 & 1.51 & 19.5 & 159.3 & 19.03 \\
+n4 & *HAC189 & 327.1678 & -3.4616 & 15.36 & 0.0652 & -481.0 & 1.68 & -459.7 & -322.4 & 15.33 \\
+n4 & HAC169 & 323.5458 & -2.1666 & 17.64 & 0.4298 & -123.0 & 1.46 & -145.0 & -1.8 & 17.54 \\
+n5 & HAC31 & 311.5271 & -0.1341 & 18.22 & 0.5134 & -375.0 & 1.31 & -412.5 & -261.0 & 13.71 \\
+n5 & HAC48 & 312.8408 & 7.1898 & 17.84 & 0.4959 & 61.0 & 1.38 & 29.0 & 200.6 & 13.66 \\
+n5 & HAC115 & 318.2882 & 3.5305 & 17.02 & 0.5272 & -169.0 & 1.75 & -203.5 & -42.1 & 13.83 \\
+n5 & HAC60 & 313.4504 & -4.6574 & 16.21 & 0.8426 & -160.0 & 1.35 & -234.3 & -96.4 & 16.46 \\
+n5 & HAC158 & 322.5319 & -5.9797 & 17.27 & 0.6726 & -285.0 & 1.59 & -332.5 & -200.6 & 13.3 \\
+n5 & HAC113 & 317.9846 & -8.5446 & 17.6 & 0.673 & -127.0 & 3.13 & -185.9 & -60.8 & 18.85 \\
+n5 & HAC71 & 314.591 & -2.8935 & 17.4 & 0.4947 & -393.0 & 1.57 & -424.3 & -281.0 & 12.05 \\
+n5 & *HAC76 & 314.8484 & -12.5544 & 17.54 & 0.9257 & 77.0 & 2.11 & 10.9 & 123.0 & 16.6 \\
+n5 & *HAC87 & 315.3761 & -11.1874 & 16.91 & 0.0678 & -102.0 & 1.28 & -77.9 & 38.8 & 14.69 \\
+n5 & HAC47 & 312.5178 & -8.409 & 17.5 & 0.6665 & -97.0 & 2.1 & -150.9 & -25.0 & 12.25 \\
+n5 & *HAC163 & 322.8444 & -10.1355 & 17.47 & 0.0782 & -193.0 & 2.2 & -167.8 & -49.5 & 10.62 \\
+n5 & HAC126 & 319.1649 & -5.063 & 16.99 & 0.5857 & -197.0 & 1.57 & -240.2 & -104.3 & 14.9 \\
+n5 & *HAC80 & 315.0363 & 0.4506 & 17.32 & 0.0093 & -265.0 & 1.88 & -285.6 & -132.4 & 11.24 \\
+n5 & HAC169 & 323.5458 & -2.1666 & 17.64 & 0.5426 & -71.0 & 1.28 & -113.0 & 30.2 & 19.46 \\
+n5 & HAC82 & 315.1755 & 3.0767 & 17.02 & 0.4777 & -62.0 & 1.47 & -88.8 & 71.9 & 14.44 \\
+n6 & HAC143 & 321.2616 & -0.1949 & 17.19 & 0.5346 & -65.0 & 1.75 & -94.8 & 55.2 & 14.55 \\
+SDSS & HAC184 & 326.1226 & -7.4878 & 16.19 & - & -& - & - & 5.3 & 14.3 \\
+\hline
+    \end{tabular}
+ \end{minipage}
+\end{table*}
+
+% AAS; the duplicate table is interesting but would need an RV template fit to back it up and not sure if we gain much from that...
+
+\subsubsection{Systemic velocities}
+RR Lyrae are pulsating variable stars and to find their systemic velocity $v_{\mathrm{sys}}$ (the center-of-mass radial velocity), we need to subtract the velocity due to envelope pulsations 
+\begin{equation}
+v_{\mathrm{puls} }= \frac{A_{rv}^{\alpha}T_{\alpha}(\phi_{obs}) + A_{rv}^{\beta}T_{\beta}(\phi_{\mathrm{obs}})}{2} 
+\end{equation} 
+from the measured velocity $v$. We calculate $v_{\mathrm{puls} }$ using the templates built by \citet{Se12} that describe the changes in radial velocity as a function of pulsation phase. This method  was successfully employed in recent years by e.g. \citet{Drake2013a}, \citet{Vivas2016} and \citet{Ablimit2017} on SDSS, SOAR, WIYN and LAMOST spectra.
+% AAS: same comment as above: cite these surveys? Also what particular spectroscopic observations are you referring to using WIYN? Maybe a citation?
+
+The phase of each star at the time of the observation is 
+
+\begin{equation}
+\phi_{\mathrm{obs}} = \frac{\mod((\mathrm{MJD}_{\mathrm{obs}} - \eta),P)}{P}
+\end{equation}
+
+%(5$^{th}$ column in Table \ref{resultsMDM}), 
+where $\eta$ is the ephemeris (the MJD of maximum brightness), $P$ is the period of the light curve and MJD$_{\mathrm{obs}}$ is the Modified Julian Date at the time of the observation \citep{Drake2013a}. Knowing the phase at which we observed the RRL with ModSpec, we then calculate the values of the template radial velocity curves $T_{\alpha}(\phi_{\mathrm{obs}})$ and $T_{\beta}(\phi_{\mathrm{obs}})$, assuming that at phase of 0.27 the radial velocity is equal to the systemic velocity (see Sheffield et al., submitted). The radial velocities vary rapidly at low and high $\phi$, so we remove targets with phases $\phi_{\mathrm{obs}}<0.1$ or $\phi_{\mathrm{obs}}>0.85$ (marked by * in Tables~\ref{resultsMDM} and shown with cyan triangles in Figure \ref{lb}) from further analysis. 
+
+We calculate the velocity amplitudes $A^{\alpha}_{rv}$ and  $A^{\beta}_{rv}$ using equations 3 and 4 in \citet{Se12}. The velocity corrections calculated individually from the $H_{\alpha}$ or the $H_{\beta}$ lines are different (up to 5 km/s) due to the fact that Balmer line velocity curves have different shapes and amplitudes; therefore, fitting simultaneously the two lines increases the level of uncertainty. We roughly approximate the uncertainty in the velocity determination introduced by using more than one line from figure 3 in \citet{Se12}, with: $\sigma_{\mathrm{puls}} = 2$ km/s for $\phi_{\mathrm{obs}}<0.4$ ,  $\sigma_{\mathrm{puls}} = 0$ km/s for $\phi_{\mathrm{obs}}\approx 0.5$ and a linear increase up to $\sigma_{puls}=$14 km/s for $\phi_{obs}>0.5$. 
+% AAS: Where do these \sigma_{puls} values come from?
+The final error reported in last column of Table \ref{resultsMDM} is $\sigma = \sqrt{\sigma_{\mathrm{obs}}^{2} + \sigma_{\mathrm{fit}}^{2}+\sigma_{\mathrm{puls}}^{2}}$. 
+
+\begin{figure}
+\hspace{-0.5cm}
+\includegraphics[scale=0.3]{l_b_vgsr_all.eps}
+\includegraphics[scale=0.3]{l_vgsr_all.eps}
+\caption{\textit{We can keep just one of these two plots.} Top panel: Same as in Figure \ref{lb}, with the stars colour coded by Galactocentric radial velocity. Bottom panel \textit{note: I don't mention it in the text}: Galactocentric radial velocity versus longitude, colour coded by heliocentric distance. }
+\label{lbvgsr}
+\end{figure}
+\subsection{SDSS/SEGUE tracers selection} 
+\subsubsection{SDSS RR Lyrae}
+\citet{Drake2013a} published a catalogue of CSS RR Lyrae with SDSS spectra. One of these stars is within our selection criteria for HAC candidates: we mark it with deep blue in Figure \ref{lb} and list it on the last line of Table \ref{resultsMDM}. 
+
+\subsubsection{Blue Horizontal Branch Stars}
+As the RR Lyrae, theBlue Horizontal Branch Stars (BHBs) are located on the Horizontal Branch in the Hertzsprung-Russell diagram; similarly, they are bright  ($M_{g} \sim$ +0.7 mag), old and metal-poor stars. \citealt{Xu11} provide a large catalogue of over 4000 BHBs from SDSS with distance estimates accurate to 5\% and radial velocities accurate to 5 - 20 km/s. Velocity measurements of BHBs have been used to study the rotation of the MW stellar halo \citep{Fermani2013}
+and its position--velocity substructure \citep{Xu11}.
+%AAS some restructuring above
+
+We select a subsample of BHBs (yellow circles in Figure \ref{lb}) from the catalogue provided by \citet{Xu11}, with $12 < D$/kpc $<20$, $z/$kpc $< -5$, $25^{\circ}<l<60^{\circ}$ and $-50^{\circ}<b<-20^{\circ}$, and obtain N = 70 targets. We relax the distance range used for RR Lyrae because the full extent of the HAC debris is not well constrained and several studies have shown that different stellar populations do not always trace the same structures \textit{note: Ill add some citations here}. In addition, the SDSS coverage of the HAC is much smaller than in the RRL follow up survey (Figure \ref{lb}).
+%
+\subsubsection{Blue Stragglers}
+Blue Stragglers (BS) are also located on the Horizontal Branch but are intrinsically fainter and span a much wider range in absolute magnitude than the BHBs or RRL, rendering their distance estimates much less accurate; even so, they have also been successfully used in Galactic halo studies \citep[e.g.][]{De11}. 
+
+We select BS from SDSS/SEGUE (DR9) by their temperature, 7500 $<T_{\mathrm{eff}}$/K $< 9300$, and surface gravity, $4.0 < \log(g) < 4.6$  (see Figure 2 in \citealt{Be13}). \citet{Ki94} derived an absolute magnitude-colour-metallicity relation which we used to 
+%\begin{flalign*}
+%B-V = 0.98(g-r)+0.22 \\
+%M_{V} = 1.32+4.05(B-V)-0.45[Fe/H] \\
+%M_{g}=M_{V}+0.59(g-r)+0.01
+%\end{flalign*}
+estimate $M_{g}$ by adopting the SEGUE metallicity values and applying the $[Fe/H] < -0.8$ cut where the transformations are valid. We obtained $M_{g} \approx 2.7$ mag, 1.5 mag fainter than the BHBs, signifying that the BSs are poor tracers of halo substructure at large distances; moreover, the magnitude-metallicity dependence introduces high uncertainties in the distance determination as shown by the error bars in the bottom left panel of Figure~\ref{vels}. The upper/lower limit of the error bars in the figure indicate the distance of the BS at a metallicity of -1/-2.5 dex . 
+
+In the Heliocentric distance range $15<D$/kpc$<20$, where we found the RR Lyrae excess, there are only 5 spectroscopically observed BSs. However, due to significant errors in BS distances we have decided to slightly relax 
+% AAS: used "relax" earlier for BHB description; minor!
+the selection criteria to $10<D$/kpc $ <20$, $z<-5$ kpc, $25^{\circ}<l<60^{\circ}$, $-50^{\circ}<b<-20^{\circ}$ and [Fe/H] $< -0.8$ and increase the sample to N = 23. 
+
+\subsubsection{K giants}
+Unlike other standard candles (i.e., BHBs and RR Lyrae stars), the intrinsic luminosities of K giants vary by two orders of magnitude, with colour and luminosity depending on stellar age and metallicity, leading to significant distance uncertainty. However, they have been used to quantify the level of substructure in the halo and the measurements are consistent with the BHBs results over the same ranges of distances \citep{Xu14}, leading us to believe that the phase space of BHBs and K giants in the HAC region should be comparable. \citealt{Xu14} presented an online catalog of stellar atmospheric parameters and distance determinations for 6036 K giants from SDSS data release 9, most of which are members of the Milky Way's stellar halo.
+
+\begin{figure*}
+\hspace{-0.5cm}
+\includegraphics[scale=0.25]{all_pop.eps}
+\caption{Radial phase-space diagram with error bars for RR Lyrae (top left panel), BHBs (top right), BS (bottom left)  and K-giants  (bottom right). The large error bars on the galactocentric distance limits the spatial information we can extract from the samples. \textit{RR Lyrae}: Distance uncertainties are of the order of $\sim$ 7\%. The yellow circles mark the 6 RR Lyrae of Oo II type.  \textit{Blue Horizontal Branch strars}: the distance uncertainties are only 5\% \citep{Xu11}. The dotted line at $r = 11$ kpc marks the galactocentric distance below which we do not have RR Lyrae in the spectroscopic sample. \textit{Blue Stragglers}: Only sources with $[Fe/H] < -0.8$ were selected. The error bars of the BS indicate the distance of the BS find if the metallicity was -1 (upper limit) or -2.5 dex (lower limit).  \textit{K-giants}: Distance uncertainties from \citet{Xu14}.}
+\label{vels}
+\end{figure*}
+%
+%
+\begin{figure}
+\includegraphics[scale=0.7]{all_AIC.eps} 
+\caption[Best fit model for the Galactocentric radial velocities distribution of K giants]{ Model selection criteria AIC and BIC as a function of the number of components. They are minimised for 3 components (RR Lyrae), 1 component (BHBs), 2 components (K-giants) and 3 components (BS).}
+\label{all_AIC}
+\end{figure}
+%
+\begin{figure*}
+\hspace{-1.1cm}
+%\includegraphics[scale=0.3]{4pops_GM110.eps}
+\includegraphics[scale=0.23]{4pops_GM110_2.eps} %this fig. has the GMM marked with thicker lines
+\hspace{-0.2cm}
+\includegraphics[scale=0.32]{vgsr_all.eps}
+\caption{Left 4 panels: Galactocentric radial velocities distribution of the RR Lyrae (top left panel), BHBs (top right), BS (bottom left) and K-giants (bottom right) shown in Figures \ref{lb} and \ref{vels}, and the best fit GMM (dotted lines); the central $<v_{GSR}>$, the fraction $f$ and the width $\sigma$ of each subcomponent of the GMM (continuous lines, with the number of subcomponents marked in the legend) are listed in Table \ref{EMtable}. The gray lines (dashed and continous) refer to the all four tracer populations simultaneous fit (fifth row in Table \ref{EMtable}) while the black lines to the individual population fit (first four rows in Table \ref{EMtable}). Right panel: Radial velocity distribution of all 4 populations combined, fitted with a 3 Gaussians mixture.
+}
+\label{GM}
+\end{figure*}
+We chose the K-giants HAC candidates to lie in the same region of the sky covered by the RR Lyrae peak (green circles in Figure~\ref{lb}), at distances $12<D/$kpc$<20$ and $z<-5$ kpc. To minimise contamination from thick disc dwarfs in our sample we only chose stars with a probability (provided by \citealt{Xu14}) higher than 80\% of clearly being red-giant branch stars. 
+% AAS: fist mention of RGB...maybe open this sub-sub-section with a sentence generally describing the properties of K giants as a stellar pop?
+
+%
+\section{Results: velocity distribution of the HAC}
+
+In this section we explore the HAC kinematic signature revealed by the tracers selected in Section 2. The RR Lyrae and BS galactocentric velocities ($v_{\mathrm{GSR}}$) were converted from heliocentric velocities using equation 5 in \citet{Xu08} for consistency with the \citet{Xu11, Xu14} catalogues which use the same formula. Figure \ref{lb} is reproduced in Figure \ref{lbvgsr} with the colour marking the $v_{\mathrm{GSR}}$. 
+% AAS: it is unexpected that the stars in the "blob" at b~30 deg show a totally random trend in Vgsr-l. The lower panel can probably be cut, although there is ever so slight evidence for a "turnaround" in the direction of the RV but not convincing A mild gradient would be expected if the stars are accreted or "kicked-out disk"; only an ELS-type in situ formation scenarion would show random velocities like this. But, that said, the models are compelling. 
+The HAC does not immediately stand out from the halo field stars as an easily identifiable feature in velocity space, so we perform a Gaussian Mixture Model (GMM) decomposition of the velocity distribution of the halo tracers used.
+
+ The likelihood of a velocity $v_{\mathrm{GSR}}^{i}$ for a GMM is given by 
+ \begin{equation}
+ p(v_{\mathrm{GSR}}^{i}|\theta) = \sum_{j=1}^{M} \alpha_{j} N({v_{GSR}|\mu_{j}, \sigma_{j}})
+ \end{equation}
+where $\theta$ is the vector of parameters that needs to be estimated for the whole data set and includes the normalisation factors for each Gaussian $\alpha_{j}$ and its Gaussian means and standard deviations $\mu_{j}$ and $\sigma_{j}$. This  likelihood is maximised using the expectation maximisation algorithm (EM) by Dempster, Laird and Rubin (1977). %add citation to  Dempster, Laird and Rubin (1977)
+
+The model with the maximum likelihood ln$L_{\mathrm{max}}$, provides the best description of the data. However the number of parameters increases as we add Gaussians to the mixture, and in order to choose the best model overall, we need a model comparison technique that ‘penalises’ models with too many parameters. To find the optimal number of Gaussians that best describe the observed velocity distribution, we evaluate the Akaike information criterion (AIC) and the Bayesian information criterion (BIC) for different values of M and we choose the model where the AIC or BIC is smallest (see top left panel in Figure \ref{all_AIC}, which shows the AIC and BIC as a function of M). The AIC and BIC are two analogues methods for comparing models, and they depend on the number of model parameters $k$, data points $N$ and the maximum value of the data likelihood: AIC$ = -$2ln$L_{max}$ + 2$k$, BIC = -2ln$L_{\mathrm{max}}$ + $k$ln($N$).
+
+
+Studies with BHBs, BS and RR Lyrae \citep[e.g.][]{Xu08, Br10, Drake2013a} find that the field stellar halo population has a Gaussian velocity distribution roughly centred on 0 km/s with a velocity dispersion in the range 100 and 120 km/s, at Galactocentric radii $r < 20 $ kpc. According to equation 6 in \citet{Br10}, the value is close to $\sigma_{v}=103$km/s at r $=$ 16 kpc. We therefore include in our GMM a Gaussian with fixed mean at 0 km/s and a fixed velocity dispersion.
+ 
+%The cross-validation technique and bias-variance trade-off are also two commonly used method in model comparisons but we choose the AIC because it is easy to use and it is effective for simple models as ours (Gelman et al., 2013, and references therein).
+
+%The maximum likelihood parameters of the best fit model for each population are listed in Table~\ref{EMtable}.
+%
+\subsection{RR Lyrae}
+
+In the top left panel of Figure \ref{vels} we show the radial velocities as a function of $r$, with uncertainties. In this phase-space configuration, debris from accreted satellites is usually distributed in a typical 'bell-shape' (e.g. figure 2 in \citealt{Pop2017}), but we expect it to overlap with the in situ halo population. In the figure, the yellow circles identify the 6 Oosterhoff type II RR Lyrae observed, amounting to only 11\% of the observed RRab; therefore, 89\% of the targets sample is of Oosterhoff type I, in agreement with the conclusions drawn by \citet{Si14} who found that the bulk of RRL in the Cloud are type I, the dominant type in the Galactic halo ($\sim$75\%) . 
+% ITS: note: the Oo I discussion should be moved to a different section? we need to expand with the description of this figure?
+% AAS; could you just refer to Simion+14 here? Seems okay where it is...
+
+The GM model that best describes the $v_{\mathrm{GSR}}$ distribution (blue histogram in Figure \ref{GM}) has $M=3$ Gaussian components (black solid curve overlaid on the histogram) with two cold structures centred at $\mu = -241$ km/s and $\mu = 202$ km/s. The central Gaussian is the field halo, $N(0, 100)$, where $\sigma$ is selected from a range of values between 100 and 120 km/s, with a step of 5 km/s, such that the AIC is minimal. The optimal number of Gaussians $M$ was found computing the AIC as a function of M, and as seen from Figure \ref{all_AIC}, the minimum was obtained for $M=3$. The properties of the three components are reported on the top row of Table~\ref{EMtable}. We note that only 4 targets have high probability of belonging to the third population.  
+
+\begin{table*}
+ \centering
+ \hspace*{-1.cm}
+ \begin{minipage}{160mm}
+   \caption[Expectation Maximisation parameters]{The maximum likelihood parameters for the Gaussian mixtures model for single population fits and 3 and 4 populations simultaneous fits. M is the number of Gaussians and N is the number of stars for each tracer. All tracers were selected to be at a distance of at least 5 kpc below the Galactic plane, $z < -5$ kpc, and their coordinates are shown in Figure \ref{lb}. In the simultaneous fits the centres and the widths of the Gaussians are the same for all populations while the normalisations are fitted independently and are reported for all populations ($ f_{RR}$, $f_{BHBs}$, $f_{K}$, $f_{BS}$) for each of the three Gaussian components.}
+    \label{EMtable}
+         \begin{tabular}{@{}lllccccc@{}}
+ \hline
+  tracer & spectroscopic & selection & N & M & $f$ &  $<v_{GSR}>$ & $\sigma$   \\
+ & survey & HAC candidates &  &  &  &   (km/s) &  (km/s)  \\
+ \hline
+RR Lyrae & MDM, SEGUE & $15<D$/kpc$<20$ & 46 & 3 & 0.25 & -241 & 40  \\
+ & & & &  & 0.08 & 202 & 4  \\
+ & & & &  & 0.67 & 0 & 100  \\
+  \hline
+ K giants & SEGUE (DR9) &  $12<D$/kpc$<20$ & 39 & 2 & 0.33 & 188 & 60  \\
+ & &P $> $0.80 &  & & 0.67 & 0 & 120  \\
+ \hline
+BHBs & SEGUE (DR8) &  $12<D$/kpc$<20$ & 70 & 1 & 1.00 & 0 & 120  \\
+ \hline
+BS &  SEGUE (DR9) &$10<D$/kpc$<20$ & 23 & 3 & 0.32 & -219 & 49  \\
+ & &  $[Fe/H] < -0.8$ dex &  &  & 0.54 & 126 & 59   \\
+  & &  &  &  & 0.14 & 0 & 100   \\
+   \hline
+ 4 populations & &  & & 3 &$ f_{RR}$, $f_{BHBs}$, $f_{K}$ , $f_{BS}$ & & \\
+ & & & &  & 0.25, 0.11, 0.07, 0.28 & -226 & 42  \\
+ & & & &  &  0.66, 0.79, 0.54,0.35 & 0 & 110  \\
+ & & & &  & 0.09, 0.10, 0.39,0.37 & 170 & 54  \\
+ \hline
+ 3 populations: & & $15<D$/kpc$<20$ &  & 3 &$ f_{RR}$, $f_{BHBs}$, $f_{K}$ & & \\
+- RR Lyrae & & & 46 &  & 0.23, 0.08, 0.00 & -236 & 39  \\
+- BHBs & & & 38 &   & 0.69, 0.86, 0.93 & 0 & 115 \\
+- K-giants & & & 18 &  & 0.08, 0.05, 0.07 & 200 & 6  \\
+  \hline
+    \end{tabular}
+ \end{minipage}
+\end{table*}
+%
+\subsection{Blue Horizontal Branch stars}
+In the upper right panel of Figure \ref{vels} we also show the sample of BHBs in a radial phase-space diagram, with distance uncertainties of 5\%. On the figure we mark the galactocentric distance $r = 11$ kpc (dotted line) below which we do not have RR Lyrae spectra. \textit{note: maybe this requires more description but not too sure what to say about these plots in figure 4.}Their galactocentric velocity distribution (yellow histogram in Figure \ref{GM}) is consistent with a single Gaussian with $\sigma = 120$ km/s, centred on $\mu = 0$ km/s (see the model selection criteria in the top right panel of Figure \ref{all_AIC}). \citealt{Xu11} found that BHBs do not reveal much substructure for galactocentric distances $r_{\mathrm{gc}} < 20$ kpc so our result showing that the BHBs distribution can be described with a single Gaussian with $\sigma$ typical of the smooth halo population, is not surprising.
+
+\subsection{Blue stragglers}
+In the radial phase-space diagram of BS (bottom left panel of Figure \ref{vels}), there are two groups of stars at positive and negative velocities but their distances, $D < 14$ kpc, are closer than the HAC distance. The large distance uncertainties show we do not expect a systematic offset due to the absolute magnitude - metallicity dependence. Nonetheless, the best GM model requires 3 Gaussians (AIC/BIC values are shown in the bottom right panel of Figure \ref{all_AIC}) with one component at negative velocities, $\mu = -219$ km/s and one at positive velocities, $\mu=126$ km/s. The positive velocities peak could be possibly contain a few thick disc stars ($v_{disc}\approx100$km/s) and we interpret these components to be part of the velocity signature of the Cloud.
+
+\subsection{K-giants}
+The galactocentric velocity distribution of the 39 selected HAC K-giants candidates as a function of distance $r$ is shown in the bottom right panel of Figure~\ref{vels}.
+\begin{figure}
+\centering
+\includegraphics[scale=1.3]{Kgiants.eps}
+\caption{K-giants velocity distribution for the selected sample. For reference, we show the velocity distribution of thick disc stars simulated with $Galaxia$, within the same distances and Galactic coordinates as our sample (gray histogram) but also for stars closer to the Galactic plane, with $Z>-5$ kpc (magenta). The distribution close to the Galactic plane has a mean velocity of 167 km/s, while the one further from the plane, of 103 km/s.}
+\label{Kdisc}
+\end{figure}
+
+The best GM model requires 2 Gaussians (bottom right panel of Figure \ref{all_AIC}) to fit the velocity distribution, where one represents the halo population and the  other  one is centred at positive velocities (see Figure \ref{GM} and best fit results in Table \ref{EMtable}). To minimise contamination from thick disc dwarfs in our sample we only chose stars with a probability higher than 80\% of being  K giants from the catalogue provided by \citet{Xu14}. 
+
+We take into account the possibility that the latter population is the thick disc; the disc at $l = 40^{\circ}$, $b = -30^{\circ}$ would have a velocity of $\sim$100 km/s ($v_{\mathrm{disc}} =180\sin(l)\cos(b)$); a test with $Galaxia$ \citep{Sh11} which can easily generate thick disc particles in the same region, indicates their velocity distribution peaks at 103 km/s for $Z < -5$ kpc (gray histogram in Figure \ref{Kdisc}) and 167 km/s for $Z > -5$ kpc (magenta histogram). It is therefore possible that the high velocity peak is partly due to thick disc stars contamination from the $Z > -5$ kpc region.
+%
+\subsection{Simultaneous fit of multiple populations}
+We make the assumption that a Gaussian mixture with three components can describe the velocity distribution of all tracers and perform a simultaneous fit for all 4 populations considered (see black curves in Figure \ref{GM}), fitting the normalisations of the three Gaussians independently for each population while the centres and the dispersions are the same for each Gaussian component in the mixture. The results are reported in Table \ref{EMtable}: in addition to the halo population best described with a Gaussian with width $\sigma_{\mathrm{halo}} = 110$ km/s, all tracers allow for two extra components at negative ($\mu = -226$km/s) and positive ($\mu=170$km/s) velocities respectively. The AIC of the simultaneous fit  (AIC = 2250) is comparable to the sum of the AIC of the 4 individual fits (AIC = 2270) an indication that our assumption is correct (note that we have a smaller number of free parameters in the simultaneous fit which decreases the value of the AIC). For completeness we show the velocity distribution of all populations combined in one single plot (right panel of Figure \ref{GM}) with the result of a 3 Gaussians mixture fit.  
+
+\textit{note: I took the figure out for the 3 populations fit but I left the results in Table 3. Not sure this paragraph is even necessary, probably interesting.}We also perform a simultaneous fit with 3 Gaussians for the RRL, K-giant and BHB populations only and report the values in Table~\ref{EMtable}. We applied the same heliocentric distance cut on all populations, $15<D$/kpc$<20$ (in this region the BS population is too scarce to be included in the fit), to ensure that all the HAC candidates are within the same region, even though their sky coverage is different (RRL follow the CSS footprint while the rest of the tracers the SEGUE footprint). We fit simultaneously the centres and widths of the Gaussians while the normalisations are fitted independently and we report the values on the last row of Table \ref{EMtable}. The best fit model required a (fixed) $\sigma_{halo} = 115 $ km/s (but the AIC values were almost identical for smaller $\sigma$) and no cold component for the K-giant population. 
+%
+\section{Discussion}
+\begin{figure*}
+\hspace{-1.0cm}
+\includegraphics[scale=0.9]{08_xy_100.eps}
+\includegraphics[scale=0.9]{08_xz_100.eps}
+\includegraphics[scale=0.9]{08_yz_100.eps}
+\includegraphics[scale=0.8]{08_lb_100_rl25b30.eps}
+\includegraphics[scale=1.0]{08_rvr_100.eps}
+%\includegraphics[scale=1.2]{08pvgsr_halo100.eps}\\
+\caption{Example of an N-body simulation of the disruption of a satellite (satellite number 100 in the halo 8 model from \citealt{Jo08}) orbiting in the inner regions of the halo a Milky Way type galaxy. Top row: X-Y, X-Z and Y-Z projections of the particles' positions. The colours indicate three different selections in X-Y-Z space along the debris: stars at distances with respect to the Galactic center similar to HAC are shown in \textit{pink} ($-8< $X / kpc $< 0, -12<$Z/kpc $< -6, -15<$Y / kpc$ < -6$); stars at pericenter in \textit{green}  ($-14<$X/kpc$< 4, -15<$Y/kpc$ < 0 , -10<$Z/kpc $< 0, 5<$r/kpc$< 10$)  and stars at the apocenter in \textit{blue} ($ -20<$X/kpc$< -8$, Y $< -6$ kpc  ,$-25<$Z/kpc $< -18$). Spectroscopic observations are usually limited to a small patch of the sky and to a range of magnitudes therefore they can not map the full extent of the debris. These three selections along the debris are chosen to show the expected typical velocity distribution in a limited area survey. Bottom left panel: The debris in Galactocentric coordinates. Bottom right panel: Radial velocity distribution versus the distance with respect to the center of the parent galaxy of the satellite debris. We overplot with light blue circles the results from the MDM spectroscopic program. }
+\label{Bullock}
+\end{figure*}
+
+In this section we assess the possibility that the HAC structure is a shell-like debris from a disrupted MW satellite.
+
+We visually inspect a suite of 11 stellar halo models built entirely from accretion events within the context of a $\Lambda$CDM universe \citep{Jo08}, to find shell and cloud-like debris in the inner halo ($r < 30$ kpc) that look similar to the HAC. We investigate the $(l,b)$, X-Y, X-Z and Y-Z spatial distributions of more than 1000 accretion events, seen from an internal perspective i.e., an Aitoff projection of the material as viewed from the parent galaxy center. As an example, we select a spatially well mixed satellite (object number 100 from the simulation 'halo8', see Figure \ref{Bullock}) with a luminosity of $L \sim 10^{4} L_{\odot}$, accreted 11 Gyrs ago. It is less luminous and probably older than the accretion event that has generated the HAC, which have an estimated luminosity of  $10^{5}-10^{7} L_{\odot}$.
+
+The $(l,b)$, X-Y, X-Z and Y-Z projections of this satellite in Figure~\ref{Bullock} show the debris of the satellite has a cloudy morphology with two distinct density maxima 180 degrees across and only loosely connected to each other by streams of intervening material. In phase-space it exhibits strong velocity gradients. The radial phase-space diagrams reveal that the debris is spread along eccentric orbits with pericenters close to the parent galaxy center. 
+
+We compare the radial velocity distribution of particles in this satellite with the velocities of the RR Lyrae program stars to see if we can find similarities and provide a possible interpretation for the observed velocities in the Cloud. We select simulation stars in 3 distinct areas of the Galaxy
+\begin {itemize}
+\item with $-6<X< 0$ kpc, $-12<Z<-6$ kpc and $Y<-6$ and $r < 20 $ kpc (pink points in Figure~\ref{Bullock}), which broadly reproduce the distance of HAC from the Galactic center. The velocity distribution of these stars will exhibit two strong peaks, one at positive velocities $<v_{GSR}> \sim 270$ km/s and one at negative velocities $<v_{GSR}> \sim -200$ km/s;
+\item  close to the apocenter with $-20<X<-8$ kpc, $-20<Z<-18$ kpc and $Y< -6$ kpc (blue in Figure~\ref{Bullock}). Here we have the highest density of stars because the debris is most likely to be found at the orbital apocenter of the parent satellite, where the stars spend most of their time.  The line-of-sight velocities are broadly distributed around 0 km/s and the kinematic signal of the satellite could be confused to the background halo population ($\mu_{halo} = 0$ km/s).
+ \item close to the pericenter  with $-14<$X/kpc$< 4, -15<$Y/kpc$ < 0 , -10<$Z/kpc $< 0, 5<$r/kpc$< 10$ (in green). These stars will exhibit a uniform velocity distribution. 
+ \end{itemize}
+
+It is expected that clouds should exhibit strong velocity gradients \citep[e.g.][]{Jo2012} but the low number of stars in our sample and the difficulty of disentangling halo stars from the HAC stars does not allow us to trace the velocity gradient along the large distance/longitude range we expect the cloud to cover. We should also take into account that the full extent of the HAC is still unknown. \textit{note: here we can expand but I don't see a gradient in figure 3?}
+%
+\section{Results and Conclusions}
+We designed a follow-up program to find the spectroscopic signature of the HAC, crucial for testing the dynamical predictions of stellar clouds. We measured the radial velocities of 45 RR Lyrae in the  southern portion of the HAC using ModSpec on the 2.4m Hiltner telescope at MDM. The observations took place during 6 nights between the 29th of August 2014 and the 3rd of September 2014. 
+
+The basic data reduction steps (bias subtraction, flat fielding, wavelength calibration, extraction) were performed using IRAF routines. We have produced a spectral fitting code which we used to successfully model all the co-added RR Lyrae spectra and find the heliocentric radial velocities of the stars. These velocities were then corrected for variations due to stellar pulsations, producing the first large sample of velocities in the HAC. 
+
+We have performed a multi-Gaussian decomposition of the velocity distribution in the HAC region and found it is best described by three Gaussians. The kinematic information from other tracers is not in disagreement with our findings with RR Lyrae: in addition to a halo population modelled with a Gaussian centred at 0 km/s and $\sigma = 105$ km/s, two other Gaussian components are required at moderately large negative and positive radial velocities ($\approx -200$ km/s and $\approx +200$ km/s).
+
+To provide a possible interpretation for our results, we have used a suite of N-body simulations from \citet{Jo08}. The behaviour uncovered in the RR Lyrae sample (and supported, at least in part, by other tracers) is typical of an old accretion event with small apo-galactic radius. In these events, at redshift $z=0$, the debris is fully wrapped up in phase-space with familiar "chevron" features overlapping. \textit{If we are observing the HAC along the debris (for example where the stars marked in pink in Figure \ref{Bullock} are situated), then the velocity distribution is bound to show an excess at moderate negative and positive velocities, as in the data. However, if we select particles at the apocenters, the velocity distribution would only show a broad component centred on $V = 0$ km/s, while close to the pericenter the distribution would be almost flat. note: maybe this should go in the previous section. I took the vgsr plot in figure 8 out, it was too messy and we have too many of them.}
+
+\citet{Bu05} simulations suggest that debris with Cloudy morphologies show at least two distinct density maxima separated by tens of degrees on the sky and only loosely connected to each other by debris. The existence of the HAC  could then justify the existence of other stellar substructures in the inner halo like, for example, the Virgo overdensity and  Eridanus-Phoenix overdensity as already suggested by \citet{Li2016}.
+
+%citations used: 
+%\bibliographystyle{mn2e}
+%\bibliography{bibl_Allyson}  %the same name as the tex file
+
+
+%citations used: 
+\bibliographystyle{mn2e}
+\bibliography{bibl}  %the same name as the tex file
+%===============================================================
+\appendix
+\begin{figure*}
+\hspace{-1.5cm}
+\includegraphics[scale=0.9]{4498_3103313_lb.eps}
+\includegraphics[scale=0.9]{4498_3103313_rvr.eps} \\
+\vspace{-0.5cm}
+\hspace{-1.0cm}
+\includegraphics[scale=0.8]{4498_3103313_xy.eps}
+\includegraphics[scale=0.8]{4498_3103313_xz.eps}
+\includegraphics[scale=0.8]{4498_3103313_yz.eps}
+\caption{Example 1 from Denis Erkal's simulations WITHOUT DISC. Cyan points are the MDM RRL, red points are the Virgo Overdensity RRL, provided by Vivas et al. 2016 (group 2).}
+\end{figure*}
+\begin{figure*}
+\hspace{-1.5cm}
+\includegraphics[scale=0.9]{4778_1481729_lb.eps}
+\includegraphics[scale=0.9]{4778_1481729_rvr.eps} \\
+\vspace{-0.5cm}
+\hspace{-1.0cm}
+\includegraphics[scale=0.8]{4778_1481729_xy.eps}
+\includegraphics[scale=0.8]{4778_1481729_xz.eps}
+\includegraphics[scale=0.8]{4778_1481729_yz.eps}
+\caption{Example 2 from Denis Erkal's simulations WITHOUT DISC.}
+\end{figure*}
+\begin{figure*}
+\hspace{-1.5cm}
+\includegraphics[scale=0.9]{69684_1515571_lb.eps}
+\includegraphics[scale=0.9]{69684_1515571_rvr.eps} \\
+\vspace{-0.5cm}
+\hspace{-1.0cm}
+\includegraphics[scale=0.8]{69684_1515571_xy.eps}
+\includegraphics[scale=0.8]{69684_1515571_xz.eps}
+\includegraphics[scale=0.8]{69684_1515571_yz.eps}
+\caption{Example 1 from Denis Erkal's simulations WITH DISC. }
+\end{figure*}
+\begin{figure*}
+\hspace{-1.5cm}
+\includegraphics[scale=0.9]{69684_1351496_lb.eps}
+\includegraphics[scale=0.9]{69684_1351496_rvr.eps} \\
+\vspace{-0.5cm}
+\hspace{-1.0cm}
+\includegraphics[scale=0.8]{69684_1351496_xy.eps}
+\includegraphics[scale=0.8]{69684_1351496_xz.eps}
+\includegraphics[scale=0.8]{69684_1351496_yz.eps}
+\caption{Example 2 from Denis Erkal's simulations WITH DISC.}
+\end{figure*}
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\makeatletter
+% define \thebiblio (same as thebibliography, but
+% without the section heading)
+\def\thebiblio#1{%
+ \list{}{\usecounter{dummy}%
+         \labelwidth\z@
+         \leftmargin 1.5em
+         \itemsep \z@
+         \itemindent-\leftmargin}
+ \reset@font\small
+ \parindent\z@
+ \parskip\z@ plus .1pt\relax
+ \def\newblock{\hskip .11em plus .33em minus .07em}
+ \sloppy\clubpenalty4000\widowpenalty4000
+ \sfcode`\.=1000\relax
+}
+\let\endthebiblio=\endlist
+\makeatother
+\label{lastpage}
+
+\end{document}
+
+
