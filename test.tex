@@ -58,7 +58,7 @@
 
 % Title of the paper, and the short title which is used in the headers.
 % Keep the title short and informative.
-\title[Short title, max. 45 characters]{MNRAS \LaTeXe\ template -- title goes here}
+\title[Short title, max. 45 characters]{The Hercules-Aquila Cloud and Virgo Overdensity with Gaia DR2}
 
 % The list of authors, and the short list which is used in the headers.
 % If you need two or more lines of authors, add an extra line using \newauthor
@@ -88,9 +88,7 @@ $^{3}$Another Department, Different Institution, Street Address, City Postal Cod
 
 % Abstract of the paper
 \begin{abstract}
-This is a simple template for authors to write new MNRAS papers.
-The abstract should briefly describe the aims, methods, and main results of the paper.
-It should be a single paragraph not more than 250 words (200 words for Letters).
+200 words for Letters.
 No references should appear in the abstract.
 \end{abstract}
 
@@ -105,16 +103,9 @@ keyword1 -- keyword2 -- keyword3
 %%%%%%%%%%%%%%%%% BODY OF PAPER %%%%%%%%%%%%%%%%%%
 
 \section{Introduction}
+Introduction.
 
-This is a simple template for authors to write new MNRAS papers.
-See \texttt{mnras\_sample.tex} for a more complex example, and \texttt{mnras\_guide.tex}
-for a full user guide.
-
-All papers should start with an Introduction section, which sets the work
-in context, cites relevant earlier studies in the field by \citet{Others2013},
-and describes the problem the authors aim to solve \citep[e.g.][]{Author2012}.
-
-\section{Methods, Observations, Simulations etc.}
+\section{Observations}
 
 Normally the next section describes the techniques the authors used.
 It is frequently split into subsections, such as Section~\ref{sec:maths} below.
@@ -138,8 +129,7 @@ Refer back to them as e.g. equation~(\ref{eq:quadratic}).
 Figures and tables should be placed at logical positions in the text. Don't
 worry about the exact layout, which will be handled by the publishers.
 
-Figures are referred to as e.g. Fig.~\ref{fig:example_figure}, and tables as
-e.g. Table~\ref{tab:example_table}.
+Figures are referred to as e.g. Fig.~\ref{fig:example_figure}.
 
 % Example figure
 \begin{figure*}
@@ -147,11 +137,11 @@ e.g. Table~\ref{tab:example_table}.
 	% Allowable file formats are eps or ps if compiling using latex
 	% or pdf, png, jpg if compiling using pdflatex
 	\includegraphics[scale=0.58]{lb.pdf}
-	\includegraphics[scale=0.58]{xz.pdf}
 	\includegraphics[scale=0.58]{xy.pdf}
+	\includegraphics[scale=0.58]{xz.pdf}
 
-    \caption{Should I keep all panels? Sun (yellow star) located at (x$_{\odot}$, y$_{\odot}$, z$_{\odot})= $ (-8,0,0) kpc . We have 44 HAC targets (46 in the previous paper but 2 of them don't have pm) and 245 VOD stars, after removing `group 1' classified as Sgr by Vivas. In all plots I only show these stars (so NO Sgr in theory). Vivas+ 2016 published ~420 RRL but I only cross matched with the Gaia RR Lyrae catalogue, for purity, and 306 RRL remain. We lose other 61 stars when I mask out group 1. The plots are colour coded by z, the distance from the Galactic plane. }
-    \label{fig:example_figure}
+    \caption{Spatial distribution of the RR Lyrae used in this work with full 6-D phase space measurements, in Galactic coordinates (left panel) and in the $x-y$ (middle) and $y-z$ (right) planes.  The HAC field contains 44 RR Lyrae which likely belong to the Cloud with measured line-of-sight  velocities (Simion et al. 2018) and  Gaia DR2 proper motions. The VOD field contains 411 RRL which belong to several halo associations, including the Sagittarius stream and the VOD, with line-of-sight velocities provided by Vivas et al. 2016 and proper motions from Gaia DR2. In particular we mark three `high significance' groups, excluding the Sagittarius stream,  identified by Vivas et al. 2016: `group 2' contains 18 stars (green circles), `group 3', 7 stars (orange squares) and `group 4', 5 stars (blue triangles). Two other `high significance' groups are not marked in this figure as they are situated at distances larger than 30 kpc and contain only 3 stars each. We exclude from all the plots in this letter `group 1' which contains Sagittarius members (112 stars). The Sun (yellow star) is located at (x$_{\odot}$, y$_{\odot}$, z$_{\odot})= $ (0,-8,0) kpc .  }
+    \label{fig:lb}
 \end{figure*}
 
 % Example figure
@@ -162,11 +152,22 @@ e.g. Table~\ref{tab:example_table}.
 	\includegraphics[scale=0.545]{HAC_velocities_vphi.pdf}
     \includegraphics[scale=0.545]{HAC_velocities_vtheta.pdf} \\
   \includegraphics[scale=0.545]{VOD_velocities_vphi.pdf}
-    \includegraphics[scale=0.545]{VOD_velocities_vtheta.pdf} \\
+    \includegraphics[scale=0.545]{VOD_velocities_vtheta.pdf}   \\
       \includegraphics[scale=0.545]{VOD_velocities_vphi_gm.pdf}
     \includegraphics[scale=0.545]{VOD_velocities_vtheta_gm.pdf} \\
-    \caption{($\mathrm{\sigma_{r}}, \sigma_{\mathrm{\theta}}, \sigma_{\mathrm{\phi}}$ ) and $\beta$ in the legend. I keep the same notation as in your sausage paper. Bottom row the same as middle row but color coded by probability to belong to each of the two components in the GMM (no constraints on any parameter). Should I make a small table with the result of the GMM or just mention them in the text? }
-    \label{fig:example_figure}
+
+    \caption{RRL velocity distribution in spherical polar coordinates ($v_{r}$, $v_{\theta}$, $v_{\phi}$  are the radial, azimuthal and polar components respectively) in the HAC field (top row) and the VOD field (middle and bottom rows). The error on the velocity components of each star $i $, [$\sigma^{i}_{v_{r}}$, $\sigma^{i}_{v_{\theta}}$, $\sigma^{i}_{v_{\phi}}$], has been propagated by randomly drawing 1000 stars from a multivariate Gaussian distribution with mean the measurement (ra$^{i}$, dec$^{i}$, d$^{i}$, pmra$^{i}$, pmdec$^{i}$, $v^{i}_{h}$) and full covariance matrix (takes into account the covariances between ra,dec and proper motions). The orbital anisotropy, is highly radial in the HAC field ($\beta = 0.88$) where the stars are most likely members of the Cloud and mildly radial in the VOD field ($\beta = 0.48$) in which stars span a much wider range of distances (see Fig. \ref{fig:lb}). We fit the VOD velocity ellipsoid with a two component Gaussian mixture model and the result is shown in the bottom row. Stars are colour coded by their probability to belong to each component. (NOTE: this is NOT extreme deconvolution -simply used sklearn.mixture.GaussianMixture with no contraints on any parameter-, no errors taken into account. Please have a look at the last figure for extreme deconvolution). }
+    \label{fig:vel}
+\end{figure}
+
+
+\begin{figure}
+	% To include a figure from a file named example.*
+	% Allowable file formats are eps or ps if compiling using latex
+	% or pdf, png, jpg if compiling using pdflatex
+	        \includegraphics[scale=0.555]{VOD_velocities_vphi_zcuts.pdf}
+   \caption{Radial versus azimuthal velocity in the VOD field, in three slices of Z, colour coded as in the bottom row of Fig. \ref{fig:vel}. We calculate the fraction of RR Lyrae of Oosterhoff type I and II (reported in each panel for Oo I) and find that in the 10$<$z/kpc$<$20 range, where the orbital anisotropy is the highest, the Oo I type dominates  (77\%), as in the HAC field (note: add number here). In the same slice, 73\% of the stars belong to the `sausage' component. The same behaviour but less accentuated can be noticed in the 0$<$z/kpc$<$10 slice where $\beta$ is  less radial but the fraction of Oo I stars decreases drammatically (note: comment if this is expected?). Further from the plane, at  z$>$20 kpc, the velocity ellipsoid is almost isotropic with $\beta = -0.3$. We have excluded the most likely members of the Sagittarius stream but several others may remain, decreasing $\beta$.  (note: I should add constant z lines in the right panel of figure 1 if we keep this). This figure should replace the bottom row of Figure 2? - }
+    \label{fig:VOD_vel}
 \end{figure}
 
 \begin{figure}
@@ -178,9 +179,9 @@ e.g. Table~\ref{tab:example_table}.
   \includegraphics[scale=0.472]{HAC_orbits_ecc_r.pdf} \\
 	\includegraphics[scale=0.472]{VOD_orbits_ecc_z.pdf}
     \includegraphics[scale=0.472]{VOD_orbits_apo_ecc.pdf} 
-  \includegraphics[scale=0.472]{VOD_orbits_ecc_r.pdf}
-    \caption{other plots (see figure 4) could replace the last two columns. I didnt add the errors on the VOD plots because they become very messy (see last plot). In green we mark the stars which are more likely to belong to the anisotropic component (classified as in Figure 2). Should I also mark in red `group 2' which Vivas + 2016 suggest is the VOD? Their distribution is very similar to the HAC.}
-    \label{fig:example_figure}
+  \includegraphics[scale=0.472]{VOD_orbits_ecc_r.pdf} 
+    \caption{ Orbital properties of the stars in the HAC and VOD fields. `group 2' has similar orbital properties to the HAC, however it does not display a sausage velocity distribution (see middle row figure 2) - they are concentrated at $vr =  135 $km/s as calculated by Vivas et al. 2016. }
+    \label{fig:orbits}
 \end{figure}
 
 
@@ -188,33 +189,28 @@ e.g. Table~\ref{tab:example_table}.
 	% To include a figure from a file named example.*
 	% Allowable file formats are eps or ps if compiling using latex
 	% or pdf, png, jpg if compiling using pdflatex
-	\includegraphics[scale=0.472]{HAC_orbits_rgc_apo.pdf}
-    \includegraphics[scale=0.472]{HAC_orbits_apo_peri.pdf}  \\
-	\includegraphics[scale=0.472]{VOD_orbits_rgc_apo.pdf}
-    \includegraphics[scale=0.472]{VOD_orbits_apo_peri.pdf} 
-
-    \caption{Maybe some of these plots could replace some of Figure 3? The plots on the left show that many of the targets are actually at apocentre, right?  Apocentre of VOD seems a little further than HAC apocentre but we didnt sample a large range of distances so maybe not true.}
+    \includegraphics[scale=0.472]{VOD_velocities_vphi_z0_10_bytype.pdf}  
+	\includegraphics[scale=0.472]{VOD_velocities_vphi_z10_20_bytype.pdf}
+    \includegraphics[scale=0.472]{VOD_velocities_vphi_z20_60_bytype.pdf} \\
+\includegraphics[scale=0.472]{VOD_velocities_vphi_zcol.pdf}
+   \caption{EXTRA: top row: only these stars pass the RR ab cuts (equation 1 in your RR Lyrae paper). In pink I mark the Oo II type. The fractions I reported in Figure 3, are based on these figures. bottom row: this is Figure 3, just colour coded by z instead of showing 3 different cuts. I liked the cuts because it's very easy to see the anisotropy is the highest in the 10$<z<$20 range, like the HAC. }
     \label{fig:example_figure}
 \end{figure}
 
-% Example table
-\begin{table}
-	\centering
-	\caption{This is an example table. Captions appear above each table.
-	Remember to define the quantities, symbols and units used.}
-	\label{tab:example_table}
-	\begin{tabular}{lccr} % four columns, alignment for each
-		\hline
-		A & B & C & D\\
-		\hline
-		1 & 2 & 3 & 4\\
-		2 & 4 & 6 & 8\\
-		3 & 5 & 7 & 9\\
-		\hline
-	\end{tabular}
-\end{table}
 
 
+\begin{figure}
+	% To include a figure from a file named example.*
+	% Allowable file formats are eps or ps if compiling using latex
+	% or pdf, png, jpg if compiling using pdflatex
+	       \includegraphics[scale=0.545]{VOD_velocities_vphi_gm2.pdf}
+    \includegraphics[scale=0.545]{VOD_velocities_vtheta_gm2.pdf} \\
+   \includegraphics[scale=0.545]{VOD_velocities_vphi_gm3.pdf}
+    \includegraphics[scale=0.545]{VOD_velocities_vtheta_gm3.pdf} \\
+
+   \caption{EXTRA: Extreme deconvolution with 2 (top) and 3 (bottom) components. Should I add some constraints on the parameters? I also tried to fit by z slices and I find the same behaviour. }
+    \label{fig:xd}
+\end{figure}
 \section{Conclusions}
 
 The last numbered section should briefly summarise what has been done, and describe
