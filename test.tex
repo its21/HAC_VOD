@@ -164,13 +164,14 @@ Fig. \ref{fig:VOD_vel} shows the behaviour of the VOD azimuthal $v_{\theta}$ and
   \includegraphics[scale=0.472]{HAC_orbits_ecc_r.pdf} \\
 	\includegraphics[scale=0.472]{VOD_orbits_ecc_z.pdf}
     \includegraphics[scale=0.472]{VOD_orbits_apo_ecc.pdf} 
-  \includegraphics[scale=0.472]{VOD_orbits_ecc_r.pdf} 
-    \caption{ Orbital properties of the stars in the HAC and VOD fields. `group 2' has similar orbital properties to the HAC, however it does not display a sausage velocity distribution (see middle row figure 2) - they are concentrated at $vr =  135 $km/s as calculated by Vivas et al. 2016. \textit{NOTE: to add eccentricities pdf for both HAC and VOD in the same plot}.}
+  \includegraphics[scale=0.472]{VOD_orbits_ecc_r.pdf} \\
+    \includegraphics[scale=0.472]{eccentricities.pdf} 
+    \caption{ Orbital properties of the stars in the HAC and VOD fields. `group 2' has similar orbital properties to the HAC, however it does not display a sausage velocity distribution (see middle row figure 2) - they are concentrated at $vr =  135 $km/s as calculated by Vivas et al. 2016. }
     \label{fig:orbits}
     
     \end{figure}
    %
-We integrate orbits using the $\mathrm{galpy}$ package \citet{Bovy2015} in the recommended  $\mathrm{MWPotential2014}$ model for the Galactic potential which is composed of a Miyamoto-Nagai potential for the disc, a bulge with a power-law density profile that is exponentially cut-off, and a dark matter halo described by a NFW potential. The parameters of this potential are given in table 1 \citet{Bovy2015}. The resulting orbital parametrs are shown in Fig \ref{fig:orbits}. To compute the errors (not shown for VOD to simply the figure) we integrated 500 orbits for each star where the orbits were initialised on parameters resampled from data, as in the previous section.
+We integrate orbits using the $\mathrm{galpy}$ package \citet{Bovy2015} in the recommended  $\mathrm{MWPotential2014}$ model for the Galactic potential which is composed of a Miyamoto-Nagai disc, a bulge with a power-law density profile that is exponentially cut-off, and a dark matter halo described by a NFW potential. The parameters are given in table 1 \citet{Bovy2015}. The resulting orbital properties are given in Fig \ref{fig:orbits}. To compute the errors (not shown for VOD to simply the figure) we integrated 500 orbits for each star where the orbits were initialised on parameters resampled from data, as in the previous section. The pdf of the eccentricities is also shown.
 
 \section{Discussion}
 \subsection{ED of the VOD field}
