@@ -178,7 +178,7 @@ We integrate orbits using the $\mathrm{galpy}$ package \citet{Bovy2015} in the r
 We model the VOD velocity ellipsoid with two multivariate Gaussians using extreme deconvolution. The result is shown in Fig. \ref{fig:xd}.
 
 \subsection{Are the VOD and HAC related?}
-Backward orbit integration. It will be Figure 6.
+Backward orbit integration. Talk about Figure \ref{fig:orbitslb}.
 
 \begin{figure}
     \includegraphics[scale=0.545]{VOD_velocities_vphi_gm2.pdf}
@@ -187,16 +187,15 @@ Backward orbit integration. It will be Figure 6.
     \label{fig:xd}
 \end{figure}
 
-
- and  $\beta_{2}$ $=$$ 0.96^{+0.02}_{-0.44}$.
 \begin{figure}
 	% To include a figure from a file named example.*
 	% Allowable file formats are eps or ps if compiling using latex
 	% or pdf, png, jpg if compiling using pdflatex
-	       \includegraphics[scale=0.3]{HAC12Gyrs.png}
-	       	       \includegraphics[scale=0.3]{HAC12Gyrs_doublemass.png}
-   \caption{The backward orbit integration for HAC only. Plot needs updates. Tried this doubling the virial mass in the NFW potential and the HAC becomes slightly puffier.}
-    \label{fig:rewind}
+	       \includegraphics[scale=0.52]{VOD_orbits_500Myrs.pdf}
+	       	       \includegraphics[scale=0.52]{VOD_orbits_12Gyrs.pdf}
+	       	       	       	       \includegraphics[scale=0.52]{VOD_orbits_12Gyrs_doublemass.pdf}
+   \caption{The backward orbit integration for HAC (left panels) and VOD (right panels) for 500 Myrs look back time on the top row and 12 Gyrs on the middle and bottom rows. In the middle row, $M_{vir} = 0.8 \times 10^{12} M_{\odot}$ while in the bottom row $M_{vir} = 1.6 \times 10^{12} M_{\odot}$ .}
+    \label{fig:orbitslb}
 \end{figure}
 
 \section{Conclusions}
