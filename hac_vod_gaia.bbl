@@ -1,4 +1,4 @@
-\begin{thebibliography}{37}
+\begin{thebibliography}{39}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Amorisco}(2015)}]{Amorisco2015}
@@ -243,6 +243,16 @@
   Yamaguchi, \& Zylberman}]{Morgan2016}
 Morgan J.~V., Gulick S. P.~S., Bralower T., Chenot E. {et~al.}, 2016, Science,
   354, 878
+
+\bibitem[{{Myeong} {et~al}\mbox{.}(2018{\natexlab{a}}){Myeong}, {Evans},
+  {Belokurov}, {Sanders}, \& {Koposov}}]{actionhalo}
+{Myeong} G.~C., {Evans} N.~W., {Belokurov} V., {Sanders} J.~L., {Koposov}
+  S.~E., 2018{\natexlab{a}}, \apjl, 856, L26
+
+\bibitem[{{Myeong} {et~al}\mbox{.}(2018{\natexlab{b}}){Myeong}, {Evans},
+  {Belokurov}, {Sanders}, \& {Koposov}}]{sausagegc}
+{Myeong} G.~C., {Evans} N.~W., {Belokurov} V., {Sanders} J.~L., {Koposov}
+  S.~E., 2018{\natexlab{b}}, ArXiv e-prints
 
 \bibitem[{{Newberg} {et~al}\mbox{.}(2002){Newberg}, {Yanny}, {Rockosi},
   {Grebel}, {Rix}, {Brinkmann}, {Csabai}, {Hennessy}, {Hindsley}, {Ibata},
