@@ -1,4 +1,4 @@
-\begin{thebibliography}{36}
+\begin{thebibliography}{37}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Amorisco}(2015)}]{Amorisco2015}
@@ -60,9 +60,15 @@
 {Deason} A.~J., {Belokurov} V., {Hamren} K.~M., {Koposov} S.~E. {et~al.}, 2014,
   \mnras, 444, 3975
 
-\bibitem[{{Deason} {et~al}\mbox{.}(2018){Deason}, {Belokurov}, \&
+\bibitem[{{Deason} {et~al}\mbox{.}(2018{\natexlab{a}}){Deason}, {Belokurov}, \&
   {Koposov}}]{Deason2018}
-{Deason} A.~J., {Belokurov} V., {Koposov} S.~E., 2018, \mnras, 473, 2428
+{Deason} A.~J., {Belokurov} V., {Koposov} S.~E., 2018{\natexlab{a}}, \mnras,
+  473, 2428
+
+\bibitem[{{Deason} {et~al}\mbox{.}(2018{\natexlab{b}}){Deason}, {Belokurov},
+  {Koposov}, \& {Lancaster}}]{Deason2018pileup}
+{Deason} A.~J., {Belokurov} V., {Koposov} S.~E., {Lancaster} L.,
+  2018{\natexlab{b}}, ArXiv e-prints
 
 \bibitem[{{Duffau} {et~al}\mbox{.}(2006){Duffau}, {Zinn}, {Vivas}, {Carraro},
   {M{\'e}ndez}, {Winnick}, \& {Gallart}}]{Duffau2006}
