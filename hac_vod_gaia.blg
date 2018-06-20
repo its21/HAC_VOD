@@ -1,46 +1,46 @@
-This is BibTeX, Version 0.99d (TeX Live 2017)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: hac_vod_gaia.aux
 The style file: mn2e.bst
 Database file #1: bibl.bib
-You've used 39 entries,
+You've used 41 entries,
             2938 wiz_defined-function locations,
-            858 strings with 28412 characters,
-and the built_in function-call counts, 60940 in all, are:
-= -- 3297
-> -- 10462
+            870 strings with 28710 characters,
+and the built_in function-call counts, 61888 in all, are:
+= -- 3376
+> -- 10533
 < -- 3
-+ -- 3193
-- -- 3155
-* -- 5288
-:= -- 11607
++ -- 3217
+- -- 3178
+* -- 5370
+:= -- 11785
 add.period$ -- 1
-call.type$ -- 39
-change.case$ -- 1204
-chr.to.int$ -- 36
-cite$ -- 39
-duplicate$ -- 678
-empty$ -- 1039
-format.name$ -- 3228
-if$ -- 11723
+call.type$ -- 41
+change.case$ -- 1219
+chr.to.int$ -- 38
+cite$ -- 41
+duplicate$ -- 712
+empty$ -- 1092
+format.name$ -- 3255
+if$ -- 11908
 int.to.chr$ -- 4
 int.to.str$ -- 1
-missing$ -- 37
-newline$ -- 121
-num.names$ -- 158
-pop$ -- 1169
+missing$ -- 39
+newline$ -- 127
+num.names$ -- 166
+pop$ -- 1182
 preamble$ -- 1
-purify$ -- 1204
+purify$ -- 1219
 quote$ -- 0
-skip$ -- 1482
+skip$ -- 1515
 stack$ -- 0
-substring$ -- 807
-swap$ -- 63
+substring$ -- 852
+swap$ -- 65
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 348
+type$ -- 366
 warning$ -- 0
-while$ -- 160
+while$ -- 169
 width$ -- 0
-write$ -- 390
+write$ -- 410

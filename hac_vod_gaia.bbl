@@ -1,4 +1,4 @@
-\begin{thebibliography}{39}
+\begin{thebibliography}{41}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Amorisco}(2015)}]{Amorisco2015}
@@ -69,6 +69,11 @@
   {Koposov}, \& {Lancaster}}]{Deason2018pileup}
 {Deason} A.~J., {Belokurov} V., {Koposov} S.~E., {Lancaster} L.,
   2018{\natexlab{b}}, ArXiv e-prints
+
+\bibitem[{{Duffau} {et~al}\mbox{.}(2014){Duffau}, {Vivas}, {Zinn},
+  {M{\'e}ndez}, \& {Ruiz}}]{Duffau2014}
+{Duffau} S., {Vivas} A.~K., {Zinn} R., {M{\'e}ndez} R.~A., {Ruiz} M.~T., 2014,
+  \aap, 566, A118
 
 \bibitem[{{Duffau} {et~al}\mbox{.}(2006){Duffau}, {Zinn}, {Vivas}, {Carraro},
   {M{\'e}ndez}, {Winnick}, \& {Gallart}}]{Duffau2006}
@@ -303,6 +308,9 @@ Morgan J.~V., Gulick S. P.~S., Bralower T., Chenot E. {et~al.}, 2016, Science,
   {Ivezi{\'c}}, \& {Gray}}]{astroML}
 {Vanderplas} J., {Connolly} A., {Ivezi{\'c}} {\v Z}., {Gray} A., 2012, in
   Conference on Intelligent Data Understanding (CIDU), pp. 47 --54
+
+\bibitem[{{Vivas} \& {Zinn}(2006)}]{Vivas2006}
+{Vivas} A.~K., {Zinn} R., 2006, \aj, 132, 714
 
 \bibitem[{{Vivas} {et~al}\mbox{.}(2001){Vivas}, {Zinn}, {Andrews}, {Bailyn},
   {Baltay}, {Coppi}, {Ellman}, {Girard}, {Rabinowitz}, {Schaefer}, {Shin},
