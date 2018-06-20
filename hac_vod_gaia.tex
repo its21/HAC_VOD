@@ -184,7 +184,7 @@ The Hercules-Aquila  and Virgo Clouds are revealed unambiguously as overdensitie
 \end{itemize}
 %
 \subsection{6-D data: velocity distributions}
-From the two tables of RR Lyrae with 4D measurements, 44 stars in the HAC field and 411 in the VOD field have matches in GDR2 within 2'' and proper motion measurements. The only star in the VOD region without proper motion belongs to a `high-significance' kinematical group (group 1), likely the Sagittarius stream, identified by \cite{Vivas2016}. This group contains 113 stars (112 with proper motions)  which we remove from the VOD sample as a major contaminant of the field. The spatial distribution of the remaining stars (44 from \citealt{Simion2018} and 299 from \citealt{Vivas2016}) with full 6-D phase space measurements is illustrated in Figure \ref{fig:lb}, in Galactic coordinates (left panel) and in (x-y) Galactic plane and the (x-z) plane, perpendicular to (x-y). We adopted a left-handed Galactic Cartesian coordinates with the Sun located at (x$_{\odot}$,y$_{\odot}$, z$_{\odot}$) = (-8,0,0) kpc, the x-axis positive in the direction of the Galactic center, y-axis oriented along the Galactic rotation and the z-axis directed towards the north Galactic pole.\\
+From the two tables of RR Lyrae with 4D measurements, 44 stars in the HAC field and 411 in the VOD field have matches in GDR2 within 2'' and proper motion measurements. The only star in the VOD region without proper motion belongs to a `high-significance' kinematical group (group 1), likely the Sagittarius stream, identified by \cite{Vivas2016}. This group contains 113 stars (112 with proper motions)  which we remove from the VOD sample as a major contaminant of the field. The spatial distribution of the remaining stars (44 from \citealt{Simion2018} and 299 from \citealt{Vivas2016}) with full 6-D phase space measurements is illustrated in Figure \ref{fig:lb}, in Galactic coordinates (left panel) and in the (x-y) Galactic plane and the (x-z) plane, perpendicular to (x-y). We adopted a left-handed Galactic Cartesian coordinates with the Sun located at (x$_{\odot}$,y$_{\odot}$, z$_{\odot}$) = (-8,0,0) kpc, the x-axis positive in the direction of the Galactic center, y-axis oriented along the Galactic rotation and the z-axis directed towards the north Galactic pole.\\
 While \citealt{Vivas2016} identify 6 significant kinematical groups in the VOD field (their table 5) only groups 1 (Sagittarius stream) and 2 (likely members of the VOD, with $\mathrm{<v_{GSR}>}= 135$ km/s) contain more than 10 stars. We mark group 2 with green circles in Figure \ref{fig:lb}. We also mark with red circles the location of a group of stars with galactocentric distances similar to the HAC sample, $11\mathrm{<r_{GC}}/$kpc$<16$ as we intend to follow their velocity distribution and orbital properties.\\
 %
 %
@@ -216,8 +216,8 @@ We calculate the velocity anisotropy in the two fields, keeping in mind the two 
 We compute the median and standard deviation over 500 non parametric bootstrap resampling trials, where each trial was modelled with a velocity ellipsoid using the Extreme Deconvolution module implemented in  $\mathrm{astroML}$ \citep{astroML}. We find the HAC stars have radially biased orbits ($\beta = 0.91 \pm 0.03$) while the VOD stars have slightly less radial orbits ($\beta = 0.74 \pm 0.04$).\\
 We fit a model with two multivariate Gaussians to the VOD velocity ellipsoid using Extreme Deconvolution and obtain  $\beta_{1}= 0.96^{+0.02}_{-0.44}$ (marked in magenta in Fig. \ref{fig:vel}) and $\beta_{2}=0.44^{+0.45}_{-0.20}$ (blue).
 
-Fig. \ref{fig:VOD_vel} shows the behaviour of the VOD azimuthal $v_{\theta}$ and radial $v_{r}$ distributions in 3 distance slices above the Galactic plane. In each slice we have calculated the fraction of Oosterhoff type I (Oo I) RR Lyrae, using equations 1 and 2 in \citet{Be2018} to classify the RRL into two types. According to this classification, Oosterhoff type II (Oo II) RR Lyrae will incude both Oo II and Intermediate objects. \\
- In the 10$<$z/kpc$<$20 range, where the orbital anisotropy is the highest ($\beta = 0.84 \pm 0.03$), the Oo I type dominates  (77\%), as in the HAC field (note: add number here). In the same slice, 73\% of the stars belong to the `sausage' component. The same behaviour but less accentuated can be noticed in the 0$<$z/kpc$<$10 slice where $\beta = 0.7 \pm 0.1$ is  less radial but the fraction of Oo I stars decreases drammatically (note: comment if this is expected?). Further from the plane, at  z$>$20 kpc, the velocity ellipsoid is almost isotropic with $\beta = -0.1 \pm 0.2$. We have excluded the most likely members of the Sagittarius stream but several others may remain, decreasing $\beta$. 
+Fig. \ref{fig:VOD_vel} shows the behaviour of the VOD azimuthal $v_{\theta}$ and radial $v_{r}$ velocity distributions in 3 distanges ranges above the Galactic plane. In each slice we have calculated the fraction of Oosterhoff type I (Oo I) RR Lyrae, using equations 1 and 2 in \citet{Be2018} to classify the RRL into two types. According to this classification, Oosterhoff type II (Oo II) RR Lyrae will incude both Oo II and Intermediate objects. In the 10$<$z/kpc$<$20 range, where the velocity anisotropy is the highest ($\beta = 0.84 \pm 0.03$) approaching the value in the HAC field, the Oo I type dominates  (77\%). In the same slice, 73\% of the stars belong to the more squashed (or `sausage' looking) velocity ellipsoid. The same behaviour but less accentuated can be noticed in the 0$<$z/kpc$<$10 slice where the anisotropy $\beta = 0.7 \pm 0.1$ is lower but the fraction of Oo I stars decreases drammatically to 57\%. Further from the plane, at  z$>$20 kpc, the velocity ellipsoid is almost isotropic with $\beta = -0.1 \pm 0.2$. Here, the $\beta$ value may still be affected by the presence of the Sagittarius stream in the field. Group 2 and red points are all located at $z<20$ kpc, with the red points following an anisotropic velocity distribution.
+ % 
 \subsection{Orbital properties of the HAC and VOD}
 %
 \begin{figure}
@@ -238,24 +238,16 @@ Fig. \ref{fig:VOD_vel} shows the behaviour of the VOD azimuthal $v_{\theta}$ and
     
     \end{figure}
    %
-We integrate orbits using the $\mathrm{galpy}$ package \citet{Bovy2015} in the recommended  $\mathrm{MWPotential2014}$ model for the Galactic potential which is composed of a Miyamoto-Nagai disc, a bulge with a power-law density profile that is exponentially cut-off, and a dark matter halo described by a NFW potential. The parameters are given in table 1 \citet{Bovy2015}. The resulting orbital properties of the HAC and VOD are given in Fig \ref{fig:orbits}. To compute the errors (not shown for VOD to simply the figure) we integrated 500 orbits for each star where the orbits were initialised on parameters resampled from data, as in the previous section. The pdf of the eccentricities is also shown.
-
+For orbit integration we use the $\mathrm{galpy}$ package \citet{Bovy2015} in the recommended  $\mathrm{MWPotential2014}$ model for the Galactic potential which is composed of a Miyamoto-Nagai disc, a bulge with a power-law density profile that is exponentially cut-off, and a dark matter halo described by a NFW potential. The parameters are given in \citet{Bovy2015}, table 1. The resulting orbital parameters of the HAC and VOD are given in Fig \ref{fig:orbits}. To compute the errors (not shown for VOD to simply the figure) we integrated 500 orbits for each star where the orbits were initialised on parameters resampled from data, as in the previous section. The pdfs of the eccentricities, apocentres and pericentres are also shown.
+If the HAC orbits are clearly highly eccentric, we find that the majority of stars in VOD are also on quite eccentric orbits: in particular, the stars with $11<\mathrm{r_{GC}}$/kpc$<16$ (in red), follow closely the HAC orbital properties.
+%
 \section{Are the VOD and the HAC related?}
+In this section we discuss the possible connection between the two clouds. 
+We use the 6-D phase space measurements as initial conditions for backward orbit integration. We integrate the orbits for 8 Gyrs %here need to discuss why.
+and show them in Fig. \ref{fig:backorbits}.
 
-Backward orbit integration and angular momentum plots. 
-
-%\begin{figure}
-%    \includegraphics[scale=0.545]{VOD_velocities_vphi_gm2.pdf}
-%    \includegraphics[scale=0.545]{VOD_velocities_vtheta_gm2.pdf} 
-%   \caption{Result of the extreme deconvolution,  $\beta_{1}= 0.96^{+0.02}_{-0.44}$ and $\beta_{2}=0.44^{+0.45}_{-0.20}$. }
-%    \label{fig:xd}
-%\end{figure}
 
 \begin{figure*}
-	% To include a figure from a file named example.*
-	% Allowable file formats are eps or ps if compiling using latex
-	% or pdf, png, jpg if compiling using pdflatex
-
 	     \includegraphics[scale=0.52]{HAC_orbits_8Gyrs_lb_defaultmass.pdf}
 	     	     \includegraphics[scale=0.52]{HAC_orbits_8Gyrs_xy_defaultmass.pdf}
 	     	     	     \includegraphics[scale=0.52]{HAC_orbits_8Gyrs_yz_defaultmass.pdf}
@@ -266,10 +258,8 @@ Backward orbit integration and angular momentum plots.
 	     	     \includegraphics[scale=0.52]{VOD_orbits_8Gyrs_xy_sausage.pdf}
 	     	     	     \includegraphics[scale=0.52]{VOD_orbits_8Gyrs_yz_sausage.pdf}
    \caption{The backward orbit integration for HAC (top panels) and VOD (bottom panels) for 8 Gyrs look back time. We use $M_{vir} = 0.8 \times 10^{12} M_{\odot}$, the default galpy value . log(N) shown, notice the change in colour scale between top and bottom rows. The present day loci of  HAC and VOD are marked with gray rectangles. The initial conditions of 44 stars with heliocentric distances between 15 and 18 kpc were used for the HAC backward orbit integration and of 299 stars with heliocentric distances between 4 and 75 kpc for the VOD orbit integration.}
-    \label{fig:orbitslb}
+    \label{fig:backorbits}
 \end{figure*}
-
-
 \begin{figure}
 	% To include a figure from a file named example.*
 	% Allowable file formats are eps or ps if compiling using latex
@@ -279,7 +269,6 @@ Backward orbit integration and angular momentum plots.
    \caption{EXTRA: angular momentum - I can combine these two and also add another panel with energy vs total L when I figure out the energy.}
     \label{fig:l}
 \end{figure}
-
 \section{Conclusions}
 
 Using a sample of $\sim$500 RR Lyrae with full 6-D phase space
@@ -347,18 +336,12 @@ Try to keep it short.
 %%%%%%%%%%%%%%%%%%%% REFERENCES %%%%%%%%%%%%%%%%%%
 
 % The best way to enter references is to use BibTeX:
-
-
 %citations used: 
 \bibliographystyle{mn2e}
 \bibliography{bibl}  %the same name as the tex file
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 % Don't change these lines
 \bsp	% typesetting comment
 \label{lastpage}
 \end{document}
-
 % End of mnras_template.tex
