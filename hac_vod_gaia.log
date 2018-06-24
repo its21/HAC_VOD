@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.24)  24 JUN 2018 22:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.24)  24 JUN 2018 23:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -939,19 +939,19 @@ Overfull \hbox (21.95193pt too wide) in paragraph at lines 84--84
 File: lb.pdf Graphic file (type pdf)
  <use lb.pdf>
 Package pdftex.def Info: lb.pdf used on input line 169.
-(pdftex.def)             Requested size: 89.76042pt x 76.46257pt.
+(pdftex.def)             Requested size: 100.49106pt x 85.60349pt.
 
-<xy.pdf, id=108, 166.22101pt x 166.22101pt>
+<xy.pdf, id=108, 151.767pt x 166.22101pt>
 File: xy.pdf Graphic file (type pdf)
  <use xy.pdf>
 Package pdftex.def Info: xy.pdf used on input line 170.
-(pdftex.def)             Requested size: 76.46257pt x 76.46257pt.
+(pdftex.def)             Requested size: 78.15971pt x 85.60349pt.
 
-<xz.pdf, id=109, 144.54pt x 166.22101pt>
+<xz.pdf, id=109, 108.405pt x 166.22101pt>
 File: xz.pdf Graphic file (type pdf)
  <use xz.pdf>
 Package pdftex.def Info: xz.pdf used on input line 171.
-(pdftex.def)             Requested size: 66.4892pt x 76.46257pt.
+(pdftex.def)             Requested size: 55.82835pt x 85.60349pt.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 9.0pt on input line 178.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
@@ -1336,7 +1336,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 470.
 Here is how much of TeX's memory you used:
  9855 strings out of 493014
  139591 string characters out of 6133351
- 288317 words of memory out of 5000000
+ 288316 words of memory out of 5000000
  13022 multiletter control sequences out of 15000+600000
  98295 words of font info for 223 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1374,7 +1374,7 @@ ive/2016/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/201
 texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2016/texmf-d
 ist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/
 type1/urw/times/utmri8a.pfb>
-Output written on hac_vod_gaia.pdf (6 pages, 773274 bytes).
+Output written on hac_vod_gaia.pdf (6 pages, 773174 bytes).
 PDF statistics:
  854 PDF objects out of 1000 (max. 8388607)
  722 compressed objects within 8 object streams
