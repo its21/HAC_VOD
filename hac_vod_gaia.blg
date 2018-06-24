@@ -3,46 +3,44 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: hac_vod_gaia.aux
 The style file: mn2e.bst
 Database file #1: bibl.bib
-Warning--I didn't find a database entry for ""
-You've used 41 entries,
+You've used 44 entries,
             2938 wiz_defined-function locations,
-            870 strings with 28710 characters,
-and the built_in function-call counts, 61888 in all, are:
-= -- 3376
-> -- 10533
+            887 strings with 29474 characters,
+and the built_in function-call counts, 63552 in all, are:
+= -- 3499
+> -- 10704
 < -- 3
-+ -- 3217
-- -- 3178
-* -- 5370
-:= -- 11785
++ -- 3274
+- -- 3232
+* -- 5531
+:= -- 12106
 add.period$ -- 1
-call.type$ -- 41
-change.case$ -- 1219
-chr.to.int$ -- 38
-cite$ -- 41
-duplicate$ -- 712
-empty$ -- 1092
-format.name$ -- 3255
-if$ -- 11908
+call.type$ -- 44
+change.case$ -- 1249
+chr.to.int$ -- 41
+cite$ -- 44
+duplicate$ -- 762
+empty$ -- 1164
+format.name$ -- 3315
+if$ -- 12221
 int.to.chr$ -- 4
 int.to.str$ -- 1
-missing$ -- 39
-newline$ -- 127
-num.names$ -- 166
-pop$ -- 1182
+missing$ -- 42
+newline$ -- 136
+num.names$ -- 178
+pop$ -- 1209
 preamble$ -- 1
-purify$ -- 1219
+purify$ -- 1249
 quote$ -- 0
-skip$ -- 1515
+skip$ -- 1557
 stack$ -- 0
-substring$ -- 852
-swap$ -- 65
+substring$ -- 902
+swap$ -- 68
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 366
+type$ -- 393
 warning$ -- 0
-while$ -- 169
+while$ -- 180
 width$ -- 0
-write$ -- 410
-(There was 1 warning)
+write$ -- 439
