@@ -1,4 +1,4 @@
-\begin{thebibliography}{41}
+\begin{thebibliography}{45}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Amorisco}(2015)}]{Amorisco2015}
@@ -40,6 +40,14 @@
 
 \bibitem[{{Bovy}(2015)}]{Bovy2015}
 {Bovy} J., 2015, \apjs, 216, 29
+
+\bibitem[{{Bovy} {et~al}\mbox{.}(2011){Bovy}, {Hogg}, \& {Roweis}}]{ED}
+{Bovy} J., {Hogg} D.~W., {Roweis} S.~T., 2011, Annals of Applied Statistics, 5
+
+\bibitem[{{Conroy} {et~al}\mbox{.}(2018){Conroy}, {Bonaca}, {Naidu},
+  {Eisenstein}, {Johnson}, {Dotter}, \& {Finkbeiner}}]{Conroy2018}
+{Conroy} C., {Bonaca} A., {Naidu} R.~P., {Eisenstein} D.~J., {Johnson} B.~D.,
+  {Dotter} A., {Finkbeiner} D.~P., 2018, ArXiv e-prints
 
 \bibitem[{{de Boer} {et~al}\mbox{.}(2018){de Boer}, {Belokurov}, \&
   {Koposov}}]{deBoer2018}
@@ -214,6 +222,11 @@
   Tidal Streams in the Local Group and Beyond, {Newberg} H.~J., {Carlin} J.~L.,
   eds., p. 141
 
+\bibitem[{{Johnston} {et~al}\mbox{.}(2012){Johnston}, {Sheffield}, {Majewski},
+  {Sharma}, \& {Rocha-Pinto}}]{Jo2012}
+{Johnston} K.~V., {Sheffield} A.~A., {Majewski} S.~R., {Sharma} S.,
+  {Rocha-Pinto} H.~J., 2012, \apj, 760, 95
+
 \bibitem[{{Juri{\'c}} {et~al}\mbox{.}(2008){Juri{\'c}}, {Ivezi{\'c}}, {Brooks},
   {Lupton}, {Schlegel}, {Finkbeiner}, {Padmanabhan}, {Bond}, {Sesar},
   {Rockosi}, {Knapp}, {Gunn}, {Sumi}, {Schneider}, {Barentine}, {Brewington},
@@ -293,6 +306,11 @@ Morgan J.~V., Gulick S. P.~S., Bralower T., Chenot E. {et~al.}, 2016, Science,
   Berk}}]{Sesar2007}
 {Sesar} B., {Ivezi{\'c}} {\v Z}., {Lupton} R.~H., {Juri{\'c}} M. {et~al.},
   2007, \aj, 134, 2236
+
+\bibitem[{{Sharma} {et~al}\mbox{.}(2010){Sharma}, {Johnston}, {Majewski},
+  {Mu{\~n}oz}, {Carlberg}, \& {Bullock}}]{Sharma2010}
+{Sharma} S., {Johnston} K.~V., {Majewski} S.~R., {Mu{\~n}oz} R.~R., {Carlberg}
+  J.~K., {Bullock} J., 2010, \apj, 722, 750
 
 \bibitem[{{Simion} {et~al}\mbox{.}(2014){Simion}, {Belokurov}, {Irwin}, \&
   {Koposov}}]{Simion2014}
