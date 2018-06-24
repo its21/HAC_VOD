@@ -267,33 +267,69 @@ velocities and orbits.
 \end{figure}
 %
 
-The velocity distribution in the VOD and HAC fields is shown in
-Fig. \ref{fig:vel} in spherical polar coordinates, where $v_{r}$,
-$v_{\theta}$, $v_{\phi}$ are the radial, azimuthal and polar
-components respectively. `Group 2' stars (lime) form a group at $v_{r}
-= 135$ km/s as expected, while the stars at intermediate
-$\mathrm{r_{GC}}$ (red) seem to have a velocity distribution very
-similar to HAC, shown in the top panels. To estimate the error on each
-velocity component we resample the data 1000 times from a multivariate
-Gaussian distribution with mean the measurement \{$\alpha$, $\delta$,
-$\mathrm{d_{helio}}$, $\mu_{\alpha} \mathrm{cos(\delta)}$,
-$\mu_{\delta}$, $\mathrm{v_{helio}}$\}$_{i}$ and full covariance
-matrix which takes into account the covariances between the right
-ascension $\alpha$, declination $\delta$ and proper motions, provided
-by GDR2. We take the standard deviation of the resulting \{$v_{r}$,
-$v_{\theta}$, $v_{\phi}$\} distributions as the upper limit of the
-velocity uncertainties and show them in Fig. \ref{fig:vel}.
+Figure~\ref{fig:vel} shows the spherical polar components of the
+velocities (radial $v_{r}$, azimuthal $v_{\theta}$ and polar
+$v_{\phi}$) of stars in the HAC (top row) and VOD (bottom row)
+fields. Group 2 stars (green) can be seen clustering at $v_{r} = 135$
+km/s (by design), while the stars at intermediate $\mathrm{r_{GC}}$
+(red) seem to have a velocity distribution very similar to those in
+the HAC, shown in the top row. To estimate the uncertainty in each
+velocity component we propagate the measured proper motion and
+line-of-sight velocity errors using Monte-Carlo re-sampling, where we
+take into account the covariances between the measurements of the
+Right Ascension and Declination components of proper motion as
+provided in GDR2. We use the standard deviations of the resulting
+\{$v_{r}$, $v_{\theta}$, $v_{\phi}$\} distributions as the upper limits
+of the velocity uncertainties; these are shown in Fig.~\ref{fig:vel}.
 
 %add comments on the size of the errorbars; standard deviation
 %works well I think here, distributions quite gaussian. didn't work
 %well for the anisotropy later on, there I used the percentiles
 
-We calculate the velocity anisotropy in the two fields, keeping in mind the two samples span very different distance ranges. 
-%(\textit{need to add 1 sentence about anisotropy and formula}). 
-We compute the median and standard deviation over 500 non parametric bootstrap resampling trials, where each trial was modelled with a velocity ellipsoid using the Extreme Deconvolution module implemented in  $\mathrm{astroML}$ \citep{astroML}. We find the HAC stars have radially biased orbits ($\beta = 0.91 \pm 0.03$) while the VOD stars have slightly less radial orbits ($\beta = 0.74 \pm 0.04$).\\
-We fit a model with two multivariate Gaussians to the VOD velocity ellipsoid using Extreme Deconvolution and obtain  $\beta_{1}= 0.96^{+0.02}_{-0.44}$ (marked in magenta in Fig. \ref{fig:vel}) and $\beta_{2}=0.44^{+0.45}_{-0.20}$ (blue).
+As evident from the Figure, the velocity distributions are highly
+anisotropic, with the dispersion in the radial component dominating
+the tangential ones, especially in the HAC data. To describe the shape
+of the velocity distributions, we model each stellar sample as a
+single-component multi-variate Gaussian using the Extreme
+Deconvolution module implemented in $\mathrm{astroML}$
+\citep{astroML}. The resulting parameters and the associated
+uncertainties of the velocity ellipsoids are taken to be the median
+and the standard deviation values of 500 bootstrap re-sampling trials.
+The velocity ellipsoid shape can be summarized using the anisotropy
+parameter $\beta=1-(\sigma^2_{\theta}+\sigma^2_{\phi})/2\sigma^2_r$
+\citep[see][]{Binney2008}. We find the HAC stars have radially biased
+orbits with $\beta = 0.91 \pm 0.03$ while for the whole of the VOD
+sample, $\beta = 0.74 \pm 0.04$). Note, however, that the two samples
+span very different ranges in Galactic $l,b$ and distances. According
+to \citet{Belokurov2018}, the inner stellar halo can be viewed as a
+mixture of two debris components with distinct
+properties. Accordingly, we fit a model with two multivariate
+Gaussians to the VOD velocity data using Extreme Deconvolution
+\citep[see][]{ED}. The VOD sample appears to be composed of roughly
+two thirds of stars with $\beta_{1}= 0.96^{+0.02}_{-0.44}$ (marked in
+magenta in Fig. \ref{fig:vel}) and a third with
+$\beta_{2}=0.44^{+0.45}_{-0.20}$ (blue) in good agreement with the
+results for the local halo presented in \citet{Belokurov2018}.
 
-Fig. \ref{fig:VOD_vel} shows the behaviour of the VOD azimuthal $v_{\theta}$ and radial $v_{r}$ velocity distributions in 3 distanges ranges above the Galactic plane. In each slice we have calculated the fraction of Oosterhoff type I (Oo I) RR Lyrae, using equations 1 and 2 in \citet{Be2018} to classify the RRL into two types. According to this classification, Oosterhoff type II (Oo II) RR Lyrae will incude both Oo II and Intermediate objects. In the 10$<$z/kpc$<$20 range, where the velocity anisotropy is the highest ($\beta = 0.84 \pm 0.03$) approaching the value in the HAC field, the Oo I type dominates  (77\%). In the same slice, 73\% of the stars belong to the more squashed (or `sausage' looking) velocity ellipsoid. The same behaviour but less accentuated can be noticed in the 0$<$z/kpc$<$10 slice where the anisotropy $\beta = 0.7 \pm 0.1$ is lower but the fraction of Oo I stars decreases drammatically to 57\%. Further from the plane, at  z$>$20 kpc, the velocity ellipsoid is almost isotropic with $\beta = -0.1 \pm 0.2$. Here, the $\beta$ value may still be affected by the presence of the Sagittarius stream in the field. Group 2 and red points are all located at $z<20$ kpc, with the red points following an anisotropic velocity distribution.
+Fig. \ref{fig:VOD_vel} shows the behaviour of the VOD azimuthal
+$v_{\theta}$ and radial $v_{r}$ velocity distributions in 3 distance
+ranges above the Galactic plane. In each slice we have calculated the
+fraction of Oosterhoff type I (Oo I) RR Lyrae, using equations 1 and 2
+in \citet{Be2018} to classify the RRL into two types. According to
+this classification, Oosterhoff type II (Oo II) RR Lyrae will incude
+both Oo II and Intermediate objects. In the 10$<$z/kpc$<$20 range,
+where the velocity anisotropy is the highest ($\beta = 0.84 \pm 0.03$)
+approaching the value in the HAC field, the Oo I type dominates
+(77\%). In the same slice, 73\% of the stars belong to the more
+squashed (or `sausage' looking) velocity ellipsoid. The same behaviour
+but less accentuated can be noticed in the 0$<$z/kpc$<$10 slice where
+the anisotropy $\beta = 0.7 \pm 0.1$ is lower but the fraction of Oo I
+stars decreases drammatically to 57\%. Further from the plane, at
+z$>$20 kpc, the velocity ellipsoid is almost isotropic with $\beta =
+-0.1 \pm 0.2$. Here, the $\beta$ value may still be affected by the
+presence of the Sagittarius stream in the field. Group 2 and red
+points are all located at $z<20$ kpc, with the red points following an
+anisotropic velocity distribution.
  % 
 \subsection{Orbital properties of the HAC and VOD}
 %
