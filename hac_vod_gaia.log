@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.4.22)  19 JUN 2018 14:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.4.22)  24 JUN 2018 08:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -751,70 +751,67 @@ LaTeX Font Info:    Redeclaring math symbol \Bbbk on input line 261.
 LaTeX Font Info:    Redeclaring math symbol \hslash on input line 262.
 LaTeX Font Info:    Redeclaring math symbol \backepsilon on input line 265.
 )
-LaTeX Font Info:    Try loading font information for T1+ntxtlf on input line 85
+LaTeX Font Info:    Try loading font information for T1+ntxtlf on input line 81
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/newtx/t1ntxtlf.fd
 File: t1ntxtlf.fd 2015/01/17 v1.0 font definition file for T1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.0pt on input line 85.
+(Font)              scaled to size 9.0pt on input line 81.
 
-(./hac_vod_gaia.aux
-
-LaTeX Warning: Label `fig:orbitslb' multiply defined.
-
-)
+(./hac_vod_gaia.aux)
 \openout1 = `hac_vod_gaia.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 85.
-LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 85
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 81.
+LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 81
 .
- (/usr/local/texlive/2017/texmf-dist/tex/latex/newtx/omlntxmi.fd
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 85.
-LaTeX Font Info:    Try loading font information for U+ntxexa on input line 85.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 81.
+LaTeX Font Info:    Try loading font information for U+ntxexa on input line 81.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 85.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 85.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 81.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 81.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 85.
-LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 85
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 81.
+LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 81
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 81.
 LaTeX Font Info:    Try loading font information for LMX+ntxexx on input line 8
-5.
+1.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    ... okay on input line 81.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -859,7 +856,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-Package hyperref Info: Link coloring ON on input line 85.
+Package hyperref Info: Link coloring ON on input line 81.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -869,9 +866,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count116
 )
-LaTeX Info: Redefining \ref on input line 85.
-LaTeX Info: Redefining \pageref on input line 85.
-LaTeX Info: Redefining \nameref on input line 85.
+LaTeX Info: Redefining \ref on input line 81.
+LaTeX Info: Redefining \pageref on input line 81.
+LaTeX Info: Redefining \nameref on input line 81.
 
 (./hac_vod_gaia.out) (./hac_vod_gaia.out)
 \@outlinefile=\write3
@@ -911,208 +908,201 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 17.28pt on input line 88.
+(Font)              scaled to size 17.28pt on input line 84.
 LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 88.
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 84.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 17.28pt on input line 88.
+(Font)              scaled to size 17.28pt on input line 84.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 88.
+(Font)              scaled to size 14.4pt on input line 84.
 LaTeX Font Info:    Try loading font information for OT1+ntxtlf on input line 8
-8.
+4.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2015/01/17 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 88.
+(Font)              scaled to size 14.4pt on input line 84.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.5pt on input line 88.
+(Font)              scaled to size 10.5pt on input line 84.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.9pt on input line 88.
+(Font)              scaled to size 7.9pt on input line 84.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <10.5> not available
-(Font)              size <10.95> substituted on input line 88.
+(Font)              size <10.95> substituted on input line 84.
 
-LaTeX Font Info:    Try loading font information for U+ntxmia on input line 88.
+LaTeX Font Info:    Try loading font information for U+ntxmia on input line 84.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2016/01/31 Fontinst v1.933 font definitions for U/ntxmia.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsym on input line 88.
+LaTeX Font Info:    Try loading font information for U+ntxsym on input line 84.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 88.
+LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 84.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 88.
+LaTeX Font Info:    Try loading font information for U+msa on input line 84.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 88.
+LaTeX Font Info:    Try loading font information for U+msb on input line 84.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for T1+ntxsups on input line 8
-8.
+4.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/newtx/t1ntxsups.fd
 File: t1ntxsups.fd 2015/01/17 v1.0
 )
 LaTeX Font Info:    Font shape `T1/ntxsups/m/n' will be
-(Font)              scaled to size 14.4pt on input line 88.
+(Font)              scaled to size 14.4pt on input line 84.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 88.
+(Font)              scaled to size 8.0pt on input line 84.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 8.0pt on input line 88.
+(Font)              scaled to size 8.0pt on input line 84.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 88.
+(Font)              scaled to size 8.0pt on input line 84.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.2pt on input line 88.
+(Font)              scaled to size 6.2pt on input line 84.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 5.5pt on input line 88.
+(Font)              scaled to size 5.5pt on input line 84.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <5.5> not available
-(Font)              size <5> substituted on input line 88.
+(Font)              size <5> substituted on input line 84.
 
 LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <9> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 91.
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 87.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 9.0pt on input line 91.
+(Font)              scaled to size 9.0pt on input line 87.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 91.
+(Font)              scaled to size 10.0pt on input line 87.
 LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <10> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 98.
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 94.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.0pt on input line 98.
-<lb.pdf, id=117, 231.26399pt x 166.22101pt>
+(Font)              scaled to size 10.0pt on input line 94.
+<lb.pdf, id=103, 231.26399pt x 166.22101pt>
 File: lb.pdf Graphic file (type pdf)
  <use lb.pdf>
-Package pdftex.def Info: lb.pdf used on input line 176.
+Package pdftex.def Info: lb.pdf used on input line 169.
 (pdftex.def)             Requested size: 141.07082pt x 101.39465pt.
 
-<xy.pdf, id=118, 187.902pt x 166.22101pt>
+<xy.pdf, id=104, 187.902pt x 166.22101pt>
 File: xy.pdf Graphic file (type pdf)
  <use xy.pdf>
-Package pdftex.def Info: xy.pdf used on input line 177.
+Package pdftex.def Info: xy.pdf used on input line 170.
 (pdftex.def)             Requested size: 114.62004pt x 101.39465pt.
 
-<xz.pdf, id=119, 144.54pt x 166.22101pt>
+<xz.pdf, id=105, 144.54pt x 166.22101pt>
 File: xz.pdf Graphic file (type pdf)
  <use xz.pdf>
-Package pdftex.def Info: xz.pdf used on input line 178.
+Package pdftex.def Info: xz.pdf used on input line 171.
 (pdftex.def)             Requested size: 88.16925pt x 101.39465pt.
 LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <8> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 179.
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 172.
 
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 8.0pt on input line 179.
+(Font)              scaled to size 8.0pt on input line 172.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.0pt on input line 184.
+(Font)              scaled to size 9.0pt on input line 176.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.3pt on input line 184.
-
-Underfull \vbox (badness 7740) has occurred while \output is active []
-
+(Font)              scaled to size 7.3pt on input line 176.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.2pt on input line 189.
+(Font)              scaled to size 6.2pt on input line 177.
 LaTeX Font Info:    Try loading font information for TS1+ntxtlf on input line 1
-89.
+77.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 189.
+(Font)              scaled to size 8.0pt on input line 177.
  [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-<HAC_velocities_vphi.pdf, id=189, 166.22101pt x 166.22101pt>
+<HAC_velocities_vphi.pdf, id=188, 166.22101pt x 166.22101pt>
 File: HAC_velocities_vphi.pdf Graphic file (type pdf)
 
 <use HAC_velocities_vphi.pdf>
-Package pdftex.def Info: HAC_velocities_vphi.pdf used on input line 192.
+Package pdftex.def Info: HAC_velocities_vphi.pdf used on input line 190.
 (pdftex.def)             Requested size: 90.5899pt x 90.5899pt.
 
-<HAC_velocities_vtheta.pdf, id=190, 289.08pt x 166.22101pt>
+<HAC_velocities_vtheta.pdf, id=189, 289.08pt x 166.22101pt>
 File: HAC_velocities_vtheta.pdf Graphic file (type pdf)
 
 <use HAC_velocities_vtheta.pdf>
-Package pdftex.def Info: HAC_velocities_vtheta.pdf used on input line 194.
+Package pdftex.def Info: HAC_velocities_vtheta.pdf used on input line 192.
 (pdftex.def)             Requested size: 157.54767pt x 90.5899pt.
 
-<VOD_velocities_vphi.pdf, id=191, 166.22101pt x 166.22101pt>
+<VOD_velocities_vphi.pdf, id=190, 166.22101pt x 166.22101pt>
 File: VOD_velocities_vphi.pdf Graphic file (type pdf)
 
 <use VOD_velocities_vphi.pdf>
-Package pdftex.def Info: VOD_velocities_vphi.pdf used on input line 195.
+Package pdftex.def Info: VOD_velocities_vphi.pdf used on input line 193.
 (pdftex.def)             Requested size: 90.5899pt x 90.5899pt.
 
-<VOD_velocities_vtheta.pdf, id=192, 289.08pt x 166.22101pt>
+<VOD_velocities_vtheta.pdf, id=191, 289.08pt x 166.22101pt>
 File: VOD_velocities_vtheta.pdf Graphic file (type pdf)
 
 <use VOD_velocities_vtheta.pdf>
-Package pdftex.def Info: VOD_velocities_vtheta.pdf used on input line 197.
+Package pdftex.def Info: VOD_velocities_vtheta.pdf used on input line 195.
 (pdftex.def)             Requested size: 157.54767pt x 90.5899pt.
 
-Overfull \hbox (3.4243pt too wide) in paragraph at lines 192--199
+Overfull \hbox (3.4243pt too wide) in paragraph at lines 190--197
 [][]   [] 
  []
 
 
-Overfull \hbox (3.4243pt too wide) in paragraph at lines 192--199
+Overfull \hbox (3.4243pt too wide) in paragraph at lines 190--197
 []   [] 
  []
 
-<VOD_velocities_vphi_zcuts.pdf, id=195, 455.30101pt x 166.22101pt>
+<VOD_velocities_vphi_zcuts.pdf, id=194, 455.30101pt x 166.22101pt>
 File: VOD_velocities_vphi_zcuts.pdf Graphic file (type pdf)
 
 <use VOD_velocities_vphi_zcuts.pdf>
-Package pdftex.def Info: VOD_velocities_vphi_zcuts.pdf used on input line 205.
+Package pdftex.def Info: VOD_velocities_vphi_zcuts.pdf used on input line 203.
 (pdftex.def)             Requested size: 252.6881pt x 92.25119pt.
 
-Overfull \hbox (5.35214pt too wide) in paragraph at lines 204--207
+Overfull \hbox (5.35214pt too wide) in paragraph at lines 202--205
 []  []
  []
 
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 9.0pt on input line 211.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 215.
+(Font)              scaled to size 12.0pt on input line 214.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 12.0pt on input line 215.
+(Font)              scaled to size 12.0pt on input line 214.
 [2pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.215 \subsection
-                 {Orbital properties of the HAC and VOD}pdfTeX warning (ext4): 
-destination with the same identifier (name{figure.2}) has been already used, du
-plicate ignored
+l.214 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.215 \subsection
-                 {Orbital properties of the HAC and VOD}pdfTeX warning (ext4): 
-destination with the same identifier (name{figure.3}) has been already used, du
-plicate ignored
+l.214 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.215 \subsection
-                 {Orbital properties of the HAC and VOD} <./lb.pdf> <./xy.pdf
+l.214 
+       <./lb.pdf> <./xy.pdf
 
 pdfTeX warning: pdflatex (file ./xy.pdf): PDF inclusion: multiple pdfs with pag
 e group included in a single page
@@ -1140,159 +1130,156 @@ tiple pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./VOD_velocities_vphi_zcuts.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
->] <HAC_orbits_ecc_z.pdf, id=385, 166.22101pt x 166.22101pt>
+>] <HAC_orbits_ecc_z.pdf, id=390, 166.22101pt x 166.22101pt>
 File: HAC_orbits_ecc_z.pdf Graphic file (type pdf)
 
 <use HAC_orbits_ecc_z.pdf>
-Package pdftex.def Info: HAC_orbits_ecc_z.pdf used on input line 221.
+Package pdftex.def Info: HAC_orbits_ecc_z.pdf used on input line 223.
 (pdftex.def)             Requested size: 78.45613pt x 78.45613pt.
 
-<HAC_orbits_apo_ecc.pdf, id=386, 166.22101pt x 166.22101pt>
+<HAC_orbits_apo_ecc.pdf, id=391, 166.22101pt x 166.22101pt>
 File: HAC_orbits_apo_ecc.pdf Graphic file (type pdf)
 
 <use HAC_orbits_apo_ecc.pdf>
-Package pdftex.def Info: HAC_orbits_apo_ecc.pdf used on input line 222.
+Package pdftex.def Info: HAC_orbits_apo_ecc.pdf used on input line 224.
 (pdftex.def)             Requested size: 78.45613pt x 78.45613pt.
 
-<HAC_orbits_ecc_r.pdf, id=387, 166.22101pt x 166.22101pt>
+<HAC_orbits_ecc_r.pdf, id=392, 166.22101pt x 166.22101pt>
 File: HAC_orbits_ecc_r.pdf Graphic file (type pdf)
 
 <use HAC_orbits_ecc_r.pdf>
-Package pdftex.def Info: HAC_orbits_ecc_r.pdf used on input line 223.
+Package pdftex.def Info: HAC_orbits_ecc_r.pdf used on input line 225.
 (pdftex.def)             Requested size: 78.45613pt x 78.45613pt.
 
-<VOD_orbits_ecc_z.pdf, id=388, 166.22101pt x 166.22101pt>
+<VOD_orbits_ecc_z.pdf, id=393, 166.22101pt x 166.22101pt>
 File: VOD_orbits_ecc_z.pdf Graphic file (type pdf)
 
 <use VOD_orbits_ecc_z.pdf>
-Package pdftex.def Info: VOD_orbits_ecc_z.pdf used on input line 224.
+Package pdftex.def Info: VOD_orbits_ecc_z.pdf used on input line 226.
 (pdftex.def)             Requested size: 78.45613pt x 78.45613pt.
 
-<VOD_orbits_apo_ecc.pdf, id=389, 166.22101pt x 166.22101pt>
+<VOD_orbits_apo_ecc.pdf, id=394, 166.22101pt x 166.22101pt>
 File: VOD_orbits_apo_ecc.pdf Graphic file (type pdf)
 
 <use VOD_orbits_apo_ecc.pdf>
-Package pdftex.def Info: VOD_orbits_apo_ecc.pdf used on input line 225.
+Package pdftex.def Info: VOD_orbits_apo_ecc.pdf used on input line 227.
 (pdftex.def)             Requested size: 78.45613pt x 78.45613pt.
 
-<VOD_orbits_ecc_r.pdf, id=390, 166.22101pt x 166.22101pt>
+<VOD_orbits_ecc_r.pdf, id=395, 166.22101pt x 166.22101pt>
 File: VOD_orbits_ecc_r.pdf Graphic file (type pdf)
 
 <use VOD_orbits_ecc_r.pdf>
-Package pdftex.def Info: VOD_orbits_ecc_r.pdf used on input line 226.
+Package pdftex.def Info: VOD_orbits_ecc_r.pdf used on input line 228.
 (pdftex.def)             Requested size: 78.45613pt x 78.45613pt.
 
-<eccentricities.pdf, id=391, 166.22101pt x 166.22101pt>
+<eccentricities.pdf, id=396, 166.22101pt x 166.22101pt>
 File: eccentricities.pdf Graphic file (type pdf)
 
 <use eccentricities.pdf>
-Package pdftex.def Info: eccentricities.pdf used on input line 227.
+Package pdftex.def Info: eccentricities.pdf used on input line 229.
 (pdftex.def)             Requested size: 78.45613pt x 78.45613pt.
- <pericentres.pdf, id=392, 166.22101pt x 166.22101pt>
+ <pericentres.pdf, id=397, 166.22101pt x 166.22101pt>
 File: pericentres.pdf Graphic file (type pdf)
 
 <use pericentres.pdf>
-Package pdftex.def Info: pericentres.pdf used on input line 228.
+Package pdftex.def Info: pericentres.pdf used on input line 230.
 (pdftex.def)             Requested size: 78.45613pt x 78.45613pt.
- <apocentres.pdf, id=393, 166.22101pt x 166.22101pt>
+ <apocentres.pdf, id=398, 166.22101pt x 166.22101pt>
 File: apocentres.pdf Graphic file (type pdf)
 
 <use apocentres.pdf>
-Package pdftex.def Info: apocentres.pdf used on input line 229.
+Package pdftex.def Info: apocentres.pdf used on input line 231.
 (pdftex.def)             Requested size: 78.45613pt x 78.45613pt.
 
-<VOD_velocities_vphi_gm2.pdf, id=401, 166.22101pt x 166.22101pt>
-File: VOD_velocities_vphi_gm2.pdf Graphic file (type pdf)
-
-<use VOD_velocities_vphi_gm2.pdf>
-Package pdftex.def Info: VOD_velocities_vphi_gm2.pdf used on input line 245.
-(pdftex.def)             Requested size: 90.5899pt x 90.5899pt.
-
-<VOD_velocities_vtheta_gm2.pdf, id=402, 289.08pt x 166.22101pt>
-File: VOD_velocities_vtheta_gm2.pdf Graphic file (type pdf)
-
-<use VOD_velocities_vtheta_gm2.pdf>
-Package pdftex.def Info: VOD_velocities_vtheta_gm2.pdf used on input line 246.
-(pdftex.def)             Requested size: 157.54767pt x 90.5899pt.
-
-Overfull \hbox (9.33752pt too wide) in paragraph at lines 245--247
-[][] []
- []
-
-<HAC_orbits_8Gyrs_lb_defaultmass.pdf, id=403, 296.307pt x 202.356pt>
+<HAC_orbits_8Gyrs_lb_defaultmass.pdf, id=405, 296.307pt x 202.356pt>
 File: HAC_orbits_8Gyrs_lb_defaultmass.pdf Graphic file (type pdf)
 
 <use HAC_orbits_8Gyrs_lb_defaultmass.pdf>
 Package pdftex.def Info: HAC_orbits_8Gyrs_lb_defaultmass.pdf used on input line
- 256.
+ 247.
 (pdftex.def)             Requested size: 154.08052pt x 105.22572pt.
 
-<HAC_orbits_8Gyrs_xy_defaultmass.pdf, id=404, 224.037pt x 209.58301pt>
+<HAC_orbits_8Gyrs_xy_defaultmass.pdf, id=406, 224.037pt x 209.58301pt>
 File: HAC_orbits_8Gyrs_xy_defaultmass.pdf Graphic file (type pdf)
 
 <use HAC_orbits_8Gyrs_xy_defaultmass.pdf>
 Package pdftex.def Info: HAC_orbits_8Gyrs_xy_defaultmass.pdf used on input line
- 257.
+ 248.
 (pdftex.def)             Requested size: 116.4999pt x 108.98378pt.
 
-<HAC_orbits_8Gyrs_yz_defaultmass.pdf, id=405, 252.945pt x 209.58301pt>
+<HAC_orbits_8Gyrs_yz_defaultmass.pdf, id=407, 252.945pt x 209.58301pt>
 File: HAC_orbits_8Gyrs_yz_defaultmass.pdf Graphic file (type pdf)
 
 <use HAC_orbits_8Gyrs_yz_defaultmass.pdf>
 Package pdftex.def Info: HAC_orbits_8Gyrs_yz_defaultmass.pdf used on input line
- 258.
+ 249.
 (pdftex.def)             Requested size: 131.53215pt x 108.98378pt.
 
-<VOD_orbits_8Gyrs_lb_defaultmass.pdf, id=406, 296.307pt x 202.356pt>
+<VOD_orbits_8Gyrs_lb_defaultmass.pdf, id=408, 296.307pt x 202.356pt>
 File: VOD_orbits_8Gyrs_lb_defaultmass.pdf Graphic file (type pdf)
 
 <use VOD_orbits_8Gyrs_lb_defaultmass.pdf>
 Package pdftex.def Info: VOD_orbits_8Gyrs_lb_defaultmass.pdf used on input line
- 259.
+ 250.
 (pdftex.def)             Requested size: 154.08052pt x 105.22572pt.
 
-<VOD_orbits_8Gyrs_xy_defaultmass.pdf, id=407, 224.037pt x 209.58301pt>
+<VOD_orbits_8Gyrs_xy_defaultmass.pdf, id=409, 224.037pt x 209.58301pt>
 File: VOD_orbits_8Gyrs_xy_defaultmass.pdf Graphic file (type pdf)
 
 <use VOD_orbits_8Gyrs_xy_defaultmass.pdf>
 Package pdftex.def Info: VOD_orbits_8Gyrs_xy_defaultmass.pdf used on input line
- 260.
+ 251.
 (pdftex.def)             Requested size: 116.4999pt x 108.98378pt.
 
-<VOD_orbits_8Gyrs_yz_defaultmass.pdf, id=408, 252.945pt x 209.58301pt>
+<VOD_orbits_8Gyrs_yz_defaultmass.pdf, id=410, 252.945pt x 209.58301pt>
 File: VOD_orbits_8Gyrs_yz_defaultmass.pdf Graphic file (type pdf)
 
 <use VOD_orbits_8Gyrs_yz_defaultmass.pdf>
 Package pdftex.def Info: VOD_orbits_8Gyrs_yz_defaultmass.pdf used on input line
- 261.
+ 252.
 (pdftex.def)             Requested size: 131.53215pt x 108.98378pt.
 
-<VOD_orbits_12Gyrs.pdf, id=409, 433.62pt x 180.675pt>
-File: VOD_orbits_12Gyrs.pdf Graphic file (type pdf)
+<VOD_orbits_8Gyrs_lb_sausage.pdf, id=411, 296.307pt x 202.356pt>
+File: VOD_orbits_8Gyrs_lb_sausage.pdf Graphic file (type pdf)
 
-<use VOD_orbits_12Gyrs.pdf>
-Package pdftex.def Info: VOD_orbits_12Gyrs.pdf used on input line 271.
-(pdftex.def)             Requested size: 225.48369pt x 93.95152pt.
+<use VOD_orbits_8Gyrs_lb_sausage.pdf>
+Package pdftex.def Info: VOD_orbits_8Gyrs_lb_sausage.pdf used on input line 253
+.
+(pdftex.def)             Requested size: 154.08052pt x 105.22572pt.
 
-<VOD_orbits_12Gyrs_doublemass.pdf, id=410, 433.62pt x 180.675pt>
-File: VOD_orbits_12Gyrs_doublemass.pdf Graphic file (type pdf)
+<VOD_orbits_8Gyrs_xy_sausage.pdf, id=412, 224.037pt x 209.58301pt>
+File: VOD_orbits_8Gyrs_xy_sausage.pdf Graphic file (type pdf)
 
-<use VOD_orbits_12Gyrs_doublemass.pdf>
-Package pdftex.def Info: VOD_orbits_12Gyrs_doublemass.pdf used on input line 27
-2.
-(pdftex.def)             Requested size: 225.48369pt x 93.95152pt.
+<use VOD_orbits_8Gyrs_xy_sausage.pdf>
+Package pdftex.def Info: VOD_orbits_8Gyrs_xy_sausage.pdf used on input line 254
+.
+(pdftex.def)             Requested size: 116.4999pt x 108.98378pt.
+
+<VOD_orbits_8Gyrs_yz_sausage.pdf, id=413, 252.945pt x 209.58301pt>
+File: VOD_orbits_8Gyrs_yz_sausage.pdf Graphic file (type pdf)
+
+<use VOD_orbits_8Gyrs_yz_sausage.pdf>
+Package pdftex.def Info: VOD_orbits_8Gyrs_yz_sausage.pdf used on input line 255
+.
+(pdftex.def)             Requested size: 131.53215pt x 108.98378pt.
+
+<HAC_Lz_Lp.pdf, id=414, 166.22101pt x 166.22101pt>
+File: HAC_Lz_Lp.pdf Graphic file (type pdf)
+ <use HAC_Lz_Lp.pdf>
+Package pdftex.def Info: HAC_Lz_Lp.pdf used on input line 263.
+(pdftex.def)             Requested size: 86.43541pt x 86.43541pt.
+
+<VOD_Lz_Lp.pdf, id=415, 166.22101pt x 166.22101pt>
+File: VOD_Lz_Lp.pdf Graphic file (type pdf)
+ <use VOD_Lz_Lp.pdf>
+Package pdftex.def Info: VOD_Lz_Lp.pdf used on input line 264.
+(pdftex.def)             Requested size: 86.43541pt x 86.43541pt.
  [3pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.331 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-5}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.331 
+l.322 
        <./HAC_orbits_ecc_z.pdf> <./HAC_orbits_apo_ecc.pdf
 
 pdfTeX warning: pdflatex (file ./HAC_orbits_apo_ecc.pdf): PDF inclusion: multip
@@ -1325,28 +1312,20 @@ pdfTeX warning: pdflatex (file ./pericentres.pdf): PDF inclusion: multiple pdfs
 
 pdfTeX warning: pdflatex (file ./apocentres.pdf): PDF inclusion: multiple pdfs 
 with page group included in a single page
-> <./VOD_velocities_vphi_gm2.pdf
-
-pdfTeX warning: pdflatex (file ./VOD_velocities_vphi_gm2.pdf): PDF inclusion: m
-ultiple pdfs with page group included in a single page
-> <./VOD_velocities_vtheta_gm2.pdf
-
-pdfTeX warning: pdflatex (file ./VOD_velocities_vtheta_gm2.pdf): PDF inclusion:
- multiple pdfs with page group included in a single page
 >] (./hac_vod_gaia.bbl [4pdfTeX warning (ext4): destination with the same ident
-ifier (name{figure.6}) has been already used, duplicate ignored
+ifier (name{figure.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.191 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-7}) has been already used, duplicate ignored
+l.53   {Johnston}}]{Deason2013}
+                               pdfTeX warning (ext4): destination with the same
+ identifier (name{figure.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.191 
-       <./HAC_orbits_8Gyrs_lb_defaultmass.pdf> <./HAC_orbits_8Gyrs_xy_defaultma
-ss.pdf
+l.53   {Johnston}}]{Deason2013}
+                                <./HAC_orbits_8Gyrs_lb_defaultmass.pdf> <./HAC_
+orbits_8Gyrs_xy_defaultmass.pdf
 
 pdfTeX warning: pdflatex (file ./HAC_orbits_8Gyrs_xy_defaultmass.pdf): PDF incl
 usion: multiple pdfs with page group included in a single page
@@ -1366,43 +1345,52 @@ usion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./VOD_orbits_8Gyrs_yz_defaultmass.pdf): PDF incl
 usion: multiple pdfs with page group included in a single page
-> <./VOD_orbits_12Gyrs.pdf
+> <./VOD_orbits_8Gyrs_lb_sausage.pdf
 
-pdfTeX warning: pdflatex (file ./VOD_orbits_12Gyrs.pdf): PDF inclusion: multipl
-e pdfs with page group included in a single page
-> <./VOD_orbits_12Gyrs_doublemass.pdf
+pdfTeX warning: pdflatex (file ./VOD_orbits_8Gyrs_lb_sausage.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
+> <./VOD_orbits_8Gyrs_xy_sausage.pdf
 
-pdfTeX warning: pdflatex (file ./VOD_orbits_12Gyrs_doublemass.pdf): PDF inclusi
-on: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./VOD_orbits_8Gyrs_xy_sausage.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
+> <./VOD_orbits_8Gyrs_yz_sausage.pdf
+
+pdfTeX warning: pdflatex (file ./VOD_orbits_8Gyrs_yz_sausage.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
+> <./HAC_Lz_Lp.pdf
+
+pdfTeX warning: pdflatex (file ./HAC_Lz_Lp.pdf): PDF inclusion: multiple pdfs w
+ith page group included in a single page
+> <./VOD_Lz_Lp.pdf
+
+pdfTeX warning: pdflatex (file ./VOD_Lz_Lp.pdf): PDF inclusion: multiple pdfs w
+ith page group included in a single page
 >])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 356.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 342.
  [5
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 356.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 342.
  (./hac_vod_gaia.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 356.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 356.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 342.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 342.
 Package rerunfilecheck Info: File `hac_vod_gaia.out' has not changed.
-(rerunfilecheck)             Checksum: 19DFBF8321DD1ACA55C288964F43B268;568.
+(rerunfilecheck)             Checksum: 5A270219F957D1F6BF9D6878C2462E4F;436.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 356.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 342.
  ) 
 Here is how much of TeX's memory you used:
- 9967 strings out of 492995
- 141262 string characters out of 6132704
- 283642 words of memory out of 5000000
- 13200 multiletter control sequences out of 15000+600000
- 103036 words of font info for 179 fonts, out of 8000000 for 9000
+ 9974 strings out of 492995
+ 141382 string characters out of 6132704
+ 282709 words of memory out of 5000000
+ 13207 multiletter control sequences out of 15000+600000
+ 100248 words of font info for 178 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,15n,37p,7591b,509s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,16n,37p,7591b,495s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1411,32 +1399,30 @@ live/2017/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/local/texlive/201
 7/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/texlive/2017/texm
 f-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}</usr/local/texlive/2017/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2017/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2017/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tex-g
-yre/qtmb.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tex-gyre/qt
-mr.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tex-gyre/qtmri.pf
-b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/newtx/rntxmi.pfb></usr
-/local/texlive/2017/texmf-dist/fonts/type1/public/newtx/rntxmi5.pfb></usr/local
-/texlive/2017/texmf-dist/fonts/type1/public/newtx/rntxmi7.pfb></usr/local/texli
-ve/2017/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/201
-7/texmf-dist/fonts/type1/public/newtx/rtxmi5.pfb></usr/local/texlive/2017/texmf
--dist/fonts/type1/public/newtx/rtxmi7.pfb></usr/local/texlive/2017/texmf-dist/f
-onts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
-pe1/public/newtx/txsys.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/
-times/utmri8a.pfb>
-Output written on hac_vod_gaia.pdf (5 pages, 890720 bytes).
+/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2017/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2017/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public
+/tex-gyre/qtmb.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tex-g
+yre/qtmr.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tex-gyre/qt
+mri.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/newtx/rntxmi.pfb
+></usr/local/texlive/2017/texmf-dist/fonts/type1/public/newtx/rntxmi5.pfb></usr
+/local/texlive/2017/texmf-dist/fonts/type1/public/newtx/rntxmi7.pfb></usr/local
+/texlive/2017/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texli
+ve/2017/texmf-dist/fonts/type1/public/newtx/rtxmi5.pfb></usr/local/texlive/2017
+/texmf-dist/fonts/type1/public/newtx/rtxmi7.pfb></usr/local/texlive/2017/texmf-
+dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2017/texmf-dist/fo
+nts/type1/public/newtx/txsys.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
+1/urw/times/utmri8a.pfb>
+Output written on hac_vod_gaia.pdf (5 pages, 773297 bytes).
 PDF statistics:
  774 PDF objects out of 1000 (max. 8388607)
- 654 compressed objects within 7 object streams
- 62 named destinations out of 1000 (max. 500000)
- 208 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 650 compressed objects within 7 object streams
+ 61 named destinations out of 1000 (max. 500000)
+ 197 words of extra memory for PDF output out of 10000 (max. 10000000)
 
