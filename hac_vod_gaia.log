@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.24)  26 JUN 2018 00:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.24)  26 JUN 2018 00:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1112,24 +1112,23 @@ File: VOD_orbits_ecc_r.pdf Graphic file (type pdf)
 Package pdftex.def Info: VOD_orbits_ecc_r.pdf used on input line 351.
 (pdftex.def)             Requested size: 78.62352pt x 75.20511pt.
 
-<eccentricities.pdf, id=433, 166.22101pt x 166.22101pt>
+<eccentricities.pdf, id=433, 166.22101pt x 151.767pt>
 File: eccentricities.pdf Graphic file (type pdf)
-
-<use eccentricities.pdf>
+ <use eccentricities.pdf>
 Package pdftex.def Info: eccentricities.pdf used on input line 352.
-(pdftex.def)             Requested size: 78.62352pt x 78.62352pt.
- <pericentres.pdf, id=434, 166.22101pt x 166.22101pt>
+(pdftex.def)             Requested size: 78.62352pt x 71.7867pt.
+
+<pericentres.pdf, id=434, 166.22101pt x 151.767pt>
 File: pericentres.pdf Graphic file (type pdf)
-
-<use pericentres.pdf>
+ <use pericentres.pdf>
 Package pdftex.def Info: pericentres.pdf used on input line 353.
-(pdftex.def)             Requested size: 78.62352pt x 78.62352pt.
- <apocentres.pdf, id=435, 166.22101pt x 166.22101pt>
-File: apocentres.pdf Graphic file (type pdf)
+(pdftex.def)             Requested size: 78.62352pt x 71.7867pt.
 
-<use apocentres.pdf>
+<apocentres.pdf, id=435, 166.22101pt x 151.767pt>
+File: apocentres.pdf Graphic file (type pdf)
+ <use apocentres.pdf>
 Package pdftex.def Info: apocentres.pdf used on input line 354.
-(pdftex.def)             Requested size: 78.62352pt x 78.62352pt.
+(pdftex.def)             Requested size: 78.62352pt x 71.7867pt.
 
 <HAC_orbits_8Gyrs_lb_defaultmass.pdf, id=442, 274.626pt x 187.902pt>
 File: HAC_orbits_8Gyrs_lb_defaultmass.pdf Graphic file (type pdf)
@@ -1207,19 +1206,19 @@ Package pdftex.def Info: VOD_orbits_8Gyrs_yz_sausage.pdf used on input line 379
 File: vtot_r.pdf Graphic file (type pdf)
  <use vtot_r.pdf>
 Package pdftex.def Info: vtot_r.pdf used on input line 388.
-(pdftex.def)             Requested size: 74.22191pt x 65.65784pt.
+(pdftex.def)             Requested size: 74.78386pt x 66.15495pt.
 
 <E_L.pdf, id=452, 224.037pt x 166.22101pt>
 File: E_L.pdf Graphic file (type pdf)
  <use E_L.pdf>
 Package pdftex.def Info: E_L.pdf used on input line 389.
-(pdftex.def)             Requested size: 88.49535pt x 65.65784pt.
+(pdftex.def)             Requested size: 89.16537pt x 66.15495pt.
 
 <Lz_Lp.pdf, id=453, 180.675pt x 166.22101pt>
 File: Lz_Lp.pdf Graphic file (type pdf)
  <use Lz_Lp.pdf>
 Package pdftex.def Info: Lz_Lp.pdf used on input line 390.
-(pdftex.def)             Requested size: 71.3672pt x 65.65784pt.
+(pdftex.def)             Requested size: 71.90756pt x 66.15495pt.
  [3pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
  has been already used, duplicate ignored
 
@@ -1263,15 +1262,16 @@ ifier (name{figure.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.53   {Koposov}}]{deBoer2018}
-                              pdfTeX warning (ext4): destination with the same 
-identifier (name{figure.6}) has been already used, duplicate ignored
+l.48 ...}, {Dotter}, \& {Finkbeiner}}]{Conroy2018}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{figure.6}) has been already used, duplicat
+e ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.53   {Koposov}}]{deBoer2018}
-                               <./HAC_orbits_8Gyrs_lb_defaultmass.pdf> <./HAC_o
-rbits_8Gyrs_xy_defaultmass.pdf
+l.48 ...}, {Dotter}, \& {Finkbeiner}}]{Conroy2018}
+                                                   <./HAC_orbits_8Gyrs_lb_defau
+ltmass.pdf> <./HAC_orbits_8Gyrs_xy_defaultmass.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./HAC_orbits_8Gyrs_xy_defaul
 tmass.pdf): PDF inclusion: multiple pdfs with page group included in a single p
@@ -1342,11 +1342,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 471.
 Here is how much of TeX's memory you used:
  9857 strings out of 493014
  139574 string characters out of 6133351
- 280117 words of memory out of 5000000
+ 280400 words of memory out of 5000000
  13025 multiletter control sequences out of 15000+600000
  98295 words of font info for 223 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,16n,35p,7595b,495s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,16n,35p,7595b,493s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1380,7 +1380,7 @@ ve/2016/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2016
 exmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2016/texmf-di
 st/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on hac_vod_gaia.pdf (5 pages, 817937 bytes).
+Output written on hac_vod_gaia.pdf (5 pages, 818155 bytes).
 PDF statistics:
  926 PDF objects out of 1000 (max. 8388607)
  719 compressed objects within 8 object streams
