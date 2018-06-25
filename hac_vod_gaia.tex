@@ -230,8 +230,10 @@ velocities and orbits.
 
 %
 \begin{figure}
+
 	\includegraphics[scale=0.53]{HAC_velocities_vphi.pdf}
     \includegraphics[scale=0.53]{HAC_velocities_vtheta.pdf} 
+        \vspace{-0.4cm}\\
   \includegraphics[scale=0.53]{VOD_velocities_vphi.pdf}
     \includegraphics[scale=0.53]{VOD_velocities_vtheta.pdf}  
 \vspace{-0.4cm}
@@ -343,10 +345,10 @@ all clearly part of the anisotropic component.
 	% or pdf, png, jpg if compiling using pdflatex
 	\includegraphics[scale=0.473]{HAC_orbits_ecc_z.pdf}
     \includegraphics[scale=0.473]{HAC_orbits_apo_ecc.pdf} 
-  \includegraphics[scale=0.473]{HAC_orbits_ecc_r.pdf} \\
+  \includegraphics[scale=0.473]{HAC_orbits_ecc_r.pdf} 
 	\includegraphics[scale=0.473]{VOD_orbits_ecc_z.pdf}
     \includegraphics[scale=0.473]{VOD_orbits_apo_ecc.pdf} 
-  \includegraphics[scale=0.473]{VOD_orbits_ecc_r.pdf} \\
+  \includegraphics[scale=0.473]{VOD_orbits_ecc_r.pdf} 
               \includegraphics[scale=0.473]{eccentricities.pdf} 
     \includegraphics[scale=0.473]{pericentres.pdf} 
                           \includegraphics[scale=0.473]{apocentres.pdf} 
@@ -365,26 +367,29 @@ We use the 6-D phase space measurements as initial conditions for backward orbit
 and show them in Fig. \ref{fig:backorbits}.
 
 
-\begin{figure*}
-	     \includegraphics[scale=0.52]{HAC_orbits_8Gyrs_lb_defaultmass.pdf}
-	     	     \includegraphics[scale=0.52]{HAC_orbits_8Gyrs_xy_defaultmass.pdf}
-	     	     	     \includegraphics[scale=0.52]{HAC_orbits_8Gyrs_yz_defaultmass.pdf}
-	     	     	     	     \includegraphics[scale=0.52]{VOD_orbits_8Gyrs_lb_defaultmass.pdf}
-	     	     \includegraphics[scale=0.52]{VOD_orbits_8Gyrs_xy_defaultmass.pdf}
-	     	     	     \includegraphics[scale=0.52]{VOD_orbits_8Gyrs_yz_defaultmass.pdf}
-	     	     	     	     \includegraphics[scale=0.52]{VOD_orbits_8Gyrs_lb_sausage.pdf}
-	     	     \includegraphics[scale=0.52]{VOD_orbits_8Gyrs_xy_sausage.pdf}
-	     	     	     \includegraphics[scale=0.52]{VOD_orbits_8Gyrs_yz_sausage.pdf}
+\begin{figure}
+	     \includegraphics[scale=0.302]{HAC_orbits_8Gyrs_lb_defaultmass.pdf}
+	     	     \includegraphics[scale=0.302]{HAC_orbits_8Gyrs_xy_defaultmass.pdf}
+	     	     	     \includegraphics[scale=0.302]{HAC_orbits_8Gyrs_yz_defaultmass.pdf} 	     	     	     \\
+	     	     	     	     \includegraphics[scale=0.302]{VOD_orbits_8Gyrs_lb_defaultmass.pdf}
+	     	     \includegraphics[scale=0.302]{VOD_orbits_8Gyrs_xy_defaultmass.pdf}
+	     	     	     \includegraphics[scale=0.302]{VOD_orbits_8Gyrs_yz_defaultmass.pdf}\\
+	     	     	     	     \includegraphics[scale=0.302]{VOD_orbits_8Gyrs_lb_sausage.pdf}
+	     	     \includegraphics[scale=0.302]{VOD_orbits_8Gyrs_xy_sausage.pdf}
+	     	     	     \includegraphics[scale=0.302]{VOD_orbits_8Gyrs_yz_sausage.pdf}
+	     	     	     \vspace{-0.5cm}
    \caption{The backward orbit integration for HAC (top panels) and VOD (bottom panels) for 8 Gyrs look back time. We use $M_{vir} = 0.8 \times 10^{12} M_{\odot}$, the default galpy value . log(N) shown, notice the change in colour scale between top and bottom rows. The present day loci of  HAC and VOD are marked with gray rectangles. The initial conditions of 44 stars with heliocentric distances between 15 and 18 kpc were used for the HAC backward orbit integration and of 299 stars with heliocentric distances between 4 and 75 kpc for the VOD orbit integration.}
     \label{fig:backorbits}
-\end{figure*}
+\end{figure}
 \begin{figure}
 	% To include a figure from a file named example.*
 	% Allowable file formats are eps or ps if compiling using latex
 	% or pdf, png, jpg if compiling using pdflatex
-	       	       \includegraphics[scale=0.52]{HAC_Lz_Lp.pdf}
-	       	       	       	       \includegraphics[scale=0.52]{VOD_Lz_Lp.pdf}
-   \caption{EXTRA: angular momentum - I can combine these two and also add another panel with energy vs total L when I figure out the energy.}
+	\includegraphics[scale=0.395]{vtot_r.pdf}
+		       	       \includegraphics[scale=0.395]{E_L.pdf}
+		       	       	       	       \includegraphics[scale=0.395]{Lz_Lp.pdf}
+		       	       	       	       \vspace{-0.4cm}
+   \caption{angular momentum - I can combine these two and also add another panel with energy vs total L when I figure out the energy.}
     \label{fig:l}
 \end{figure}
 \section{Conclusions}
