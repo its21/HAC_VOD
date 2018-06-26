@@ -172,7 +172,7 @@ constituent stars.
 	\includegraphics[scale=0.518]{xy.pdf}
 	\includegraphics[scale=0.518]{xz.pdf}
 	\vspace{-0.45cm}
-    \caption{Spatial distribution of the RR Lyrae used in this work with 6-D phase space information, in Galactic coordinates (left panel) and projected onto the $x-y$ (middle) and $y-z$ (right) planes. With green we mark a `high-significance' kinematical group (labeled `group 2') identified by \citet{Vivas2016} and with red a sub-sample of the VOD RRL with similar galactocentric distances to the HAC sample, 11 $<\mathrm{r_{GC}}$ (kpc)$<$ 16 kpc. The semi-circles are centred on the Sun's position and have radius of 10 and 20 kpc. The Sun (yellow star) is located at (x$_{\odot}$, y$_{\odot}$, z$_{\odot})= $ (-8,0,0) kpc and the Galactic centre at (0,0,0) kpc.  }
+    \caption{Spatial distribution of the RR Lyrae used in this work with 6-D phase space information, in Galactic coordinates (left panel) and projected onto the $x-y$ (middle) and $y-z$ (right) planes. With green we mark a `high-significance' kinematical group (labeled `group 2') identified by \citet{Vivas2016} and with red a sub-sample of the VOD RRL with similar galactocentric distances to the HAC sample, 11 $<\mathrm{r_{GC}}$ (kpc)$<$ 16. The semi-circles are centred on the Sun's position and have radius of 10 and 20 kpc. The Sun (yellow star) is located at (x$_{\odot}$, y$_{\odot}$, z$_{\odot})= $ (-8,0,0) kpc and the Galactic centre at (0,0,0) kpc.  }
     \label{fig:lb}
 \end{figure}
 %
@@ -227,7 +227,7 @@ $\mathrm{<v_{GSR}>}= 135$ km/s) contain more than 10 stars. We mark
 group 2 with green circles in Figure~\ref{fig:lb}. We also mark with
 red circles the location of a group of stars selected to have
 galactocentric distances similar to the HAC sample, i.e.
-$11\mathrm{<r_{GC}}/$kpc$<16$ to facilitate a fair comparison of their
+$11\mathrm{<r_{GC}}$(kpc)$<16$ to facilitate a fair comparison of their
 velocities and orbits.
 
 Figure~\ref{fig:vel} shows the spherical polar components of the
@@ -266,8 +266,8 @@ properties. Accordingly, we fit a model with two multivariate
 Gaussians to the VOD velocity data using Extreme Deconvolution
 \citep[see][]{ED}. The VOD sample appears to be composed of roughly
 two thirds of stars with $\beta_{1}= 0.96^{+0.02}_{-0.44}$ (marked in
-magenta in Fig. \ref{fig:vel}) and a third with
-$\beta_{2}=0.44^{+0.45}_{-0.20}$ (blue) in good agreement with the
+blue in Fig. \ref{fig:vel}) and a third with
+$\beta_{2}=0.44^{+0.45}_{-0.20}$ (magenta) in good agreement with the
 results for the local halo presented in \citet{Belokurov2018}.
 %
 \begin{figure}
@@ -278,11 +278,11 @@ results for the local halo presented in \citet{Belokurov2018}.
 \vspace{-0.4cm}
     \caption{RRL velocity distribution in spherical polar coordinates
       ($v_{r}$, $v_{\theta}$, $v_{\phi}$ are the radial, azimuthal and
-      polar components respectively) of the HAC/VOD RR Lyrae, in the top/bottom rows. The error bars are the upper limit velocity uncertainties estimated through error propagation. The orbital anisotropy, is
+      polar components respectively) of the HAC/VOD RR Lyrae, in the top/bottom panels. The error bars are the upper limit velocity uncertainties obtained through error propagation. The orbital anisotropy, is
       highly radial in the HAC field ($\beta = 0.91 \pm 0.03$) where
       the stars are most likely members of the Cloud and mildly radial
       in the VOD field ($\beta = 0.74 \pm 0.04$) where stars span a
-      much wider range of distances (see Fig. \ref{fig:lb}). }
+      much wider range of distances (see Fig. \ref{fig:lb}). A mixture of two multivariate Gaussians was fitted to the VOD velocity ellipsoid: 62\% of stars seem to belong to the $\beta_{1}= 0.96^{+0.02}_{-0.44}$ (blue) component  and 38\%  to the $\beta_{2}=0.44^{+0.45}_{-0.20}$ (magenta) component. }
     \label{fig:vel}
 \end{figure}
 %
@@ -292,9 +292,9 @@ results for the local halo presented in \citet{Belokurov2018}.
 	\hspace{-0.3cm}
 	        \includegraphics[scale=0.56]{VOD_velocities_vphi_zcuts.pdf}
 \vspace{-0.4cm}
-   \caption{Radial versus azimuthal velocity in the VOD field, in
+   \caption{Radial and azimuthal velocity components in the VOD field, in
      three distance ranges above the Galactic plane. The fraction of
-     RR Lyrae of Oosterhoff type I is reported in each panel. }
+     RR Lyrae of Oosterhoff type I is reported in each panel, along with the orbital anisotropy $\beta$. Note the sub-sample of VOD RR Lyrae with 11 $<\mathrm{r_{GC}}$ (kpc)$<$ 16 (marked in red) belong to the first two panels (z$<20$ kpc) where $\beta \rightarrow 1$. }
     \label{fig:VOD_vel}
 \end{figure}
 %
@@ -323,7 +323,7 @@ kpc. Interestingly, the HAC counterparts in the VOD (red points) are
 all clearly part of the anisotropic component.
 
 % 
-\subsection{Orbital properties of the HAC and VOD}
+\section{Orbit integration}
 %
 \begin{figure}
 	% To include a figure from a file named example.*
@@ -339,15 +339,31 @@ all clearly part of the anisotropic component.
     \includegraphics[scale=0.473]{pericentres.pdf} 
                           \includegraphics[scale=0.473]{apocentres.pdf} 
 \vspace{-0.4cm}
-  \caption{ Orbital properties of the stars in the HAC and VOD fields. `group 2' has similar orbital properties to the HAC, however it does not display a sausage velocity distribution (see middle row figure 2) - they are concentrated at $vr =  135 $km/s as calculated by Vivas et al. 2016. }
-    \label{fig:orbits}
-    
+  \caption{Properties of the RR Lyrae orbits in the HAC and VOD fields. }
+    \label{fig:orbits}   
     \end{figure}
    %
-For orbit integration we use the $\mathrm{galpy}$ package \citet{Bovy2015} in the recommended  $\mathrm{MWPotential2014}$ model for the Galactic potential which is composed of a Miyamoto-Nagai disc, a bulge with a power-law density profile that is exponentially cut-off, and a dark matter halo described by a NFW potential. The parameters are given in \citet{Bovy2015}, table 1. The resulting orbital parameters of the HAC and VOD are given in Fig \ref{fig:orbits}. To compute the errors (not shown for VOD to simply the figure) we integrated 500 orbits for each star where the orbits were initialised on parameters resampled from data, as in the previous section. The pdfs of the eccentricities, apocentres and pericentres are also shown.
-If the HAC orbits are clearly highly eccentric, we find that the majority of stars in VOD are also on quite eccentric orbits: in particular, the stars with $11<\mathrm{r_{GC}}$/kpc$<16$ (in red), follow closely the HAC orbital properties.
+   \begin{figure}
+	% To include a figure from a file named example.*
+	% Allowable file formats are eps or ps if compiling using latex
+	% or pdf, png, jpg if compiling using pdflatex
+	\includegraphics[scale=0.398]{vtot_r.pdf}
+		       	       \includegraphics[scale=0.398]{E_L.pdf}
+		       	       	       	       \includegraphics[scale=0.398]{Lz_Lp.pdf}
+		       	       	       	       \vspace{-0.4cm}
+   \caption{Total velocity versus galactocentric distance for VOD and HAC, showing in red the sub group VOD (11-16 kpc). Energy versus angular momentum and angular momentum only for stars with 11-16 kpc galactocentric distance. The energy here is the galpy energy minus the potential at infinity (will do what Sarah did too and see how it changes).}
+    \label{fig:energy}
+\end{figure}
 %
-\section{Are the VOD and the HAC related?}
+\subsection{Properties of the orbits}
+We use the 6-D measurements described in previous sub-section to initialise the  RR Lyrae orbits in the HAC and VOD fields. We integrate them with the $\mathrm{galpy}$ package \citep{Bovy2015} in the recommended Galactic potential model for the Milky Way. $\mathrm{MWPotential2014}$ is composed of a Miyamoto-Nagai disc, a bulge with a power-law density profile that is exponentially cut-off and a dark matter halo described by a NFW potential, with parameters given in table 1, \citet{Bovy2015}. The orbit characteristics, i.e. the peri- and apocenter radii, eccentricity, and the maximal height above the orbit plane, are shown in Fig \ref{fig:orbits}. To compute the errors (not shown for VOD to simply the figure) we integrated 500 orbits for each star where the orbits were initialised on parameters resampled from the observations. The pdfs of the eccentricities, apocentres and pericentres are shown in the bottom panels.
+If the HAC orbits are clearly highly eccentric, we find that the majority of stars in VOD are also on quite eccentric orbits: in particular, the stars with $11<\mathrm{r_{GC}}$ (kpc)$<16$ (in red), follow closely the HAC orbit characteristics.% (need to expand here)
+Note that the default mass value in $\mathrm{galpy}$, $\mathrm{M_{vir}} = 0.8 \times 10^{12} M_{\odot}$, is in disagreement with more recent measurements which place it at double the value (to add citations), however the orbital parameters are minimally affected. %I should actually plot fig4 to check, the mass made a small difference on Figure 5.
+
+For completeness, in Figure \ref{fig:energy} we show the distribution of the total velocity ($\mathrm{v_{tot}^{2}} = \mathrm{v_{r}}^2+\mathrm{v_{\theta}}^2+\mathrm{v_{\phi}}^2$) as a function of galactocentric radius for all RR Lyrae, and energy and angular momentum distributions only for the stars with $11\mathrm{<r_{GC}}/$kpc$<16$. %more to add if we keep this
+
+%
+\subsection{Are the HAC and VOD related?}
 In this section we discuss the possible connection between the two clouds. 
 We use the 6-D phase space measurements as initial conditions for backward orbit integration. We integrate the orbits for 8 Gyrs %here need to discuss why.
 and show them in Fig. \ref{fig:backorbits}.
@@ -367,17 +383,7 @@ and show them in Fig. \ref{fig:backorbits}.
    \caption{The backward orbit integration for HAC (top panels) and VOD (bottom panels) for 8 Gyrs look back time. We use $M_{vir} = 0.8 \times 10^{12} M_{\odot}$, the default galpy value . log(N) shown, notice the change in colour scale between top and bottom rows. The present day loci of  HAC and VOD are marked with gray rectangles. The initial conditions of 44 stars with heliocentric distances between 15 and 18 kpc were used for the HAC backward orbit integration and of 299 stars with heliocentric distances between 4 and 75 kpc for the VOD orbit integration.}
     \label{fig:backorbits}
 \end{figure}
-\begin{figure}
-	% To include a figure from a file named example.*
-	% Allowable file formats are eps or ps if compiling using latex
-	% or pdf, png, jpg if compiling using pdflatex
-	\includegraphics[scale=0.398]{vtot_r.pdf}
-		       	       \includegraphics[scale=0.398]{E_L.pdf}
-		       	       	       	       \includegraphics[scale=0.398]{Lz_Lp.pdf}
-		       	       	       	       \vspace{-0.4cm}
-   \caption{Total velocity versus galactocentric distance for VOD and HAC, showing in red the sub group VOD (11-16 kpc). Energy versus angular momentum and angular momentum only for stars with 11-16 kpc galactocentric distance. The energy here is the galpy energy minus the potential at infinity (will do what Sarah did too and see how it changes).}
-    \label{fig:l}
-\end{figure}
+
 \section{Conclusions}
 
 Using a sample of $\sim$500 RR Lyrae with full 6-D phase space
