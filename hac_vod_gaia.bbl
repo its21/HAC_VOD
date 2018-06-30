@@ -1,4 +1,4 @@
-\begin{thebibliography}{47}
+\begin{thebibliography}{48}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Amorisco}(2015)}]{Amorisco2015}
@@ -216,6 +216,11 @@
   {Lane}, {Nidever}, {Nitschelm}, {Roman-Lopes}, \& {Zamora}}]{Hayes2018}
 {Hayes} C.~R., {Majewski} S.~R., {Hasselquist} S., {Beaton} R.~L. {et~al.},
   2018, \apjl, 859, L8
+
+\bibitem[{{Helmi} {et~al}\mbox{.}(2018){Helmi}, {Babusiaux}, {Koppelman},
+  {Massari}, {Veljanoski}, \& {Brown}}]{Helmi2018}
+{Helmi} A., {Babusiaux} C., {Koppelman} H.~H., {Massari} D., {Veljanoski} J.,
+  {Brown} A.~G.~A., 2018, ArXiv e-prints
 
 \bibitem[{{Hendel} \& {Johnston}(2015)}]{Hendel2015}
 {Hendel} D., {Johnston} K.~V., 2015, \mnras, 454, 2472
