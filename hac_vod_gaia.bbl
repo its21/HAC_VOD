@@ -1,4 +1,4 @@
-\begin{thebibliography}{48}
+\begin{thebibliography}{50}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Amorisco}(2015)}]{Amorisco2015}
@@ -235,6 +235,11 @@
   Tidal Streams in the Local Group and Beyond, {Newberg} H.~J., {Carlin} J.~L.,
   eds., p. 141
 
+\bibitem[{{Johnston} {et~al}\mbox{.}(2008){Johnston}, {Bullock}, {Sharma},
+  {Font}, {Robertson}, \& {Leitner}}]{Johnston2008}
+{Johnston} K.~V., {Bullock} J.~S., {Sharma} S., {Font} A., {Robertson} B.~E.,
+  {Leitner} S.~N., 2008, \apj, 689, 936
+
 \bibitem[{{Johnston} {et~al}\mbox{.}(2012){Johnston}, {Sheffield}, {Majewski},
   {Sharma}, \& {Rocha-Pinto}}]{Jo2012}
 {Johnston} K.~V., {Sheffield} A.~A., {Majewski} S.~R., {Sharma} S.,
@@ -319,6 +324,10 @@ Morgan J.~V., Gulick S. P.~S., Bralower T., Chenot E. {et~al.}, 2016, Science,
   Berk}}]{Sesar2007}
 {Sesar} B., {Ivezi{\'c}} {\v Z}., {Lupton} R.~H., {Juri{\'c}} M. {et~al.},
   2007, \aj, 134, 2236
+
+\bibitem[{{Sesar} {et~al}\mbox{.}(2011){Sesar}, {Juri{\'c}}, \&
+  {Ivezi{\'c}}}]{Sesar2011}
+{Sesar} B., {Juri{\'c}} M., {Ivezi{\'c}} {\v Z}., 2011, \apj, 731, 4
 
 \bibitem[{{Sharma} {et~al}\mbox{.}(2010){Sharma}, {Johnston}, {Majewski},
   {Mu{\~n}oz}, {Carlberg}, \& {Bullock}}]{Sharma2010}
