@@ -89,6 +89,7 @@
 % Abstract of the paper
 \begin{abstract}
 We use a sample of $\sim$500 RR Lyrae stars with radial velocities and
+<<<<<<< HEAD
 Gaia DR2 proper motions to study orbital properties of Hercules-Aquila
 Cloud (HAC) and Virgo Over-density (VOD). We demonstrate that both
 structures are dominated by stars on highly eccentric orbits, with
@@ -99,6 +100,20 @@ motion, we conclude that these diffuse debris clouds are part of the
 same accretion event. More precisely, these inner halo sub-structures
 likely represent two complementary not-fully-mixed portions of a
 so-called ``sausage'' event. %described  by %\citet{Belokurov2018} - no citations here?
+=======
+Gaia DR2 proper motions to study orbital properties of the
+Hercules-Aquila Cloud (HAC) and Virgo Over-density (VOD). We
+demonstrate that both structures are dominated by stars on highly
+eccentric orbits, with pericentres around $\sim1$ kpc and apocentres
+between 15 and 25 kpc from the Galactic centre. Given that the stars
+in the HAC and the VOD occupy very similar regions in the space
+spanned by integrals of motion, we conclude that these diffuse debris
+clouds are part of the same accretion event. More precisely, these
+inner halo sub-structures likely represent two complementary
+not-fully-mixed portions of the so-called ``sausage'' event described
+in \citet{Belokurov2018}.
+
+>>>>>>> 82fc0ed48f39cc95327c21822a0e72718d762397
 \end{abstract}
 
 % Select between one and six entries from the list of approved keywords.
@@ -123,16 +138,17 @@ theory supported by striking but indirect evidence. A hypothesis of an
 ancient dramatic collision between the Milky Way and an unidentified
 massive dwarf galaxy was put forward by \citet{Deason2013} to explain
 a particular feature in the overall stellar halo density profile
-\citep[][]{Wa09,De11}. Most recently, through a study of a portion of
-the nearby stellar halo, \citet{Belokurov2018} demonstrated that the
-great impactor must have collided with the young Milky Way on a nearly
-radial orbit, thus swamping the inner stellar halo with metal-rich
-material with orbital anisotropy \citep[see][]{Binney2008} close to
-unity. Merger events like this tend to leave behind a battery of
-debris clouds and shells \citep[see][]{Amorisco2015,Hendel2015}, which
-- akin to the peak rings of impact craters \citep[see
-  e.g.][]{Morgan2016} - if discovered could help to reconstruct the
-collision as well as pin down the properties of the progenitor
+\citep[][]{Wa09,Sesar2011,De11}. Most recently, through a study of a
+portion of the nearby stellar halo, \citet{Belokurov2018} demonstrated
+that the great impactor must have collided with the young Milky Way on
+a nearly radial orbit, thus swamping the inner stellar halo with
+metal-rich material with orbital anisotropy \citep[see][]{Binney2008}
+close to unity. Merger events like this tend to leave behind a battery
+of debris clouds and shells \citep[see
+  e.g.][]{Johnston2008,Amorisco2015,Hendel2015}, which - akin to the
+peak rings of impact craters \citep[see e.g.][]{Morgan2016} - if
+discovered could help to reconstruct the collision as well as pin down
+the properties of the progenitor
 \citep[e.g][]{Sanderson2013,Johnston2016}.
 
 Before the Data Release 2 \citep[][]{Brown2018} of the ESA's Gaia
@@ -152,7 +168,7 @@ dwarf galaxy, probably the Sagittarius dSph
 the Pisces overdensity clearly stands out as it reaches much larger
 Galacto-centric distances. On the other hand, the VOD, HAC and Eri-Pho
 structures occupy a very similar range of distances, between 10 and 20
-kpc from the Galactic center. This lead \citet{Li2016} to suggest that
+kpc from the Galactic center. This led \citet{Li2016} to suggest that
 these three Clouds could all be part of one merger event, a galaxy
 accreted onto the Milky Way on a polar orbit \citep[see
   also][]{Juric2008}.
@@ -197,7 +213,7 @@ and K and M giants) have also been used to pin down the morphology of
 the Clouds \citep[see
   e.g.][]{Be07,Juric2008,Sharma2010,Bonaca2012,Conroy2018}. The RR
 Lyrae, however offer the clearest view of these halo sub-structures
-thanks to the associated accurate distances and minuscule Galactic
+thanks to their associated accurate distances and minuscule Galactic
 foreground contamination. Therefore, in this work, we have focused on
 the two recently published samples of RR Lyrae towards the Clouds,
 where each star has a well-measured line-of-sight velocity.
@@ -297,7 +313,7 @@ results for the local halo presented in \citet{Belokurov2018}.
 \begin{figure}
 \vspace{-0.6cm}
 	\hspace{-0.3cm}
-	        \includegraphics[scale=0.56]{VOD_velocities_vphi_zcuts.pdf}
+	        \includegraphics[scale=0.6]{VOD_velocities_vphi_zcuts.pdf}
 \vspace{-0.4cm}
    \caption{Radial and azimuthal velocity components in the VOD field, in
      three distance ranges above the Galactic plane. The fraction of
@@ -305,6 +321,7 @@ results for the local halo presented in \citet{Belokurov2018}.
     \label{fig:VOD_vel}
 \end{figure}
 %
+
 Using virial theorem, \citet{actionhalo} concluded that the radially
 anisotropic component of the stellar halo is also significantly
 flattened vertically. To test this hypothesis, we split the VOD sample
@@ -327,7 +344,11 @@ bin, the $\beta$ value may still be affected by the presence of the
 Sagittarius stream. Group 2 and the stars sharing the same
 galactocentric distance range with the HAC, are all located at $z<20$
 kpc. Interestingly, the HAC counterparts in the VOD (red points) are
-all clearly part of the anisotropic component.
+all clearly part of the anisotropic component. To summarize, it is
+clear that the velocity ellipsoid shape does change noticeably with
+vertical height. However, given the limited range of Galactic $l$ and
+$b$ in the VOD sample, it is not possible to conclude whether the
+structure is flattened or simply ends around $z\sim20$ kpc.
 
 %
 \begin{figure}
@@ -368,7 +389,7 @@ all clearly part of the anisotropic component.
 We use the 6-D measurements described above to initialise the RR Lyrae
 orbits in the HAC and VOD fields. The orbits are integrated using the
 $\mathrm{galpy}$ package \citep{Bovy2015} in the recommended Galactic
-potential model for the Milky Way, $\mathrm{MWPotential2014}$ composed
+potential model for the Milky Way, $\texttt{MWPotential2014}$ composed
 of a Miyamoto-Nagai disc, a bulge with a power-law density profile
 that is exponentially cut-off and a dark matter halo described by a
 NFW potential, with parameters given in Table 1 of
@@ -395,7 +416,7 @@ within 5 kpc from the Galactic center. This naturally implies highly
 eccentric orbits (with eccentricity close to 1) for the vast majority
 of the HAC stars. Compared to the HAC, the VOD stars explore broader
 range of apo-centres, with the distribution of the peri-centres much
-less strongly peaked. As a results, the typical eccentricity for a VOD
+less strongly peaked. As a result, the typical eccentricity for a VOD
 star is around $\sim$0.8. Note however, that a sample of VOD stars
 comprised of Group 2 (shown in green) and stars that share
 instantaneous Galacto-centric distances with objects in the HAC field
@@ -414,7 +435,8 @@ orbits. Finally, the right panel of the Figure presents the
 distribution of the components of the angular momentum $L_{\rm z}$ and
 $L_{\perp}$. As evident from this panel, while stars in both HAC and
 VOD occupy highly radial orbits, both prograde and retrograde objects
-exist in both fields, with slight prevalence of the retrograde ones.
+exist in both fields, with slight prevalence of the retrograde ones
+\citep[see also][]{actionhalo,shards,Helmi2018}.
 
 Figure~\ref{fig:backorbits} provides an alternative view of the
 orbital properties of the HAC and VOD stars. Here we have used the
@@ -516,17 +538,18 @@ of material on retrograde orbits. The high mass of the progenitor is
 evidenced not only by the metallicity distribution of its likely
 members or the numerical simulations of halo formation, but also by a
 sizeable number of Globular Clusters that could be attributed to the
-same event \citep[see][]{sausagegc}.
+same event \citep[see][]{sausagegc,Kruijssen2018}.
 
 Our interpretation of the nature of the HAC and VOD is in broad
 agreement with the earlier studies of \citet{Jo2012} and \citet{Ca12}
 whereby each group of authors have singled out a progenitor on a high
 eccentricity orbit as a culprit for the production of HAC and VOD
-respectively. However, we connect the discussed debris Clouds to an
-event with yet higher eccentricity and yet larger mass. Additionally,
-rather than being a recent accretion, the ``sausage'' event likely
-happened at the epoch of the Galactic disc formation, i.e. 8 to 11
-Gyrs ago \citep[see][]{Belokurov2018}.
+respectively. However, for the first time, we connect both of the
+discussed debris Clouds to a single event with yet higher eccentricity
+and yet larger mass. Additionally, rather than being a recent
+accretion, the ``sausage'' merger likely happened around the epoch of
+the Galactic disc formation, i.e. 8 to 11 Gyrs ago
+\citep[see][]{Belokurov2018}.
 
 \section*{Acknowledgements}
 
