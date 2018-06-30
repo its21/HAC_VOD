@@ -1,4 +1,4 @@
-\begin{thebibliography}{50}
+\begin{thebibliography}{52}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Amorisco}(2015)}]{Amorisco2015}
@@ -253,6 +253,11 @@
 {Juri{\'c}} M., {Ivezi{\'c}} {\v Z}., {Brooks} A., {Lupton} R.~H. {et~al.},
   2008, \apj, 673, 864
 
+\bibitem[{{Kruijssen} {et~al}\mbox{.}(2018){Kruijssen}, {Pfeffer},
+  {Reina-Campos}, {Crain}, \& {Bastian}}]{Kruijssen2018}
+{Kruijssen} J.~M.~D., {Pfeffer} J.~L., {Reina-Campos} M., {Crain} R.~A.,
+  {Bastian} N., 2018, \mnras
+
 \bibitem[{{Li} {et~al}\mbox{.}(2016){Li}, {Balbinot}, {Mondrik}, {Marshall},
   {Yanny}, {Bechtol}, {Drlica-Wagner}, {Oscar}, {Santiago}, {Simon}, {Vivas},
   {Walker}, {Wang}, {Abbott}, {Abdalla}, {Benoit-L{\'e}vy}, {Bernstein},
@@ -281,14 +286,19 @@ Morgan J.~V., Gulick S. P.~S., Bralower T., Chenot E. {et~al.}, 2016, Science,
   354, 878
 
 \bibitem[{{Myeong} {et~al}\mbox{.}(2018{\natexlab{a}}){Myeong}, {Evans},
-  {Belokurov}, {Sanders}, \& {Koposov}}]{actionhalo}
+  {Belokurov}, {Sanders}, \& {Koposov}}]{shards}
 {Myeong} G.~C., {Evans} N.~W., {Belokurov} V., {Sanders} J.~L., {Koposov}
-  S.~E., 2018{\natexlab{a}}, \apjl, 856, L26
+  S.~E., 2018{\natexlab{a}}, \mnras
 
 \bibitem[{{Myeong} {et~al}\mbox{.}(2018{\natexlab{b}}){Myeong}, {Evans},
+  {Belokurov}, {Sanders}, \& {Koposov}}]{actionhalo}
+{Myeong} G.~C., {Evans} N.~W., {Belokurov} V., {Sanders} J.~L., {Koposov}
+  S.~E., 2018{\natexlab{b}}, \apjl, 856, L26
+
+\bibitem[{{Myeong} {et~al}\mbox{.}(2018{\natexlab{c}}){Myeong}, {Evans},
   {Belokurov}, {Sanders}, \& {Koposov}}]{sausagegc}
 {Myeong} G.~C., {Evans} N.~W., {Belokurov} V., {Sanders} J.~L., {Koposov}
-  S.~E., 2018{\natexlab{b}}, ArXiv e-prints
+  S.~E., 2018{\natexlab{c}}, ArXiv e-prints
 
 \bibitem[{{Newberg} {et~al}\mbox{.}(2002){Newberg}, {Yanny}, {Rockosi},
   {Grebel}, {Rix}, {Brinkmann}, {Csabai}, {Hennessy}, {Hindsley}, {Ibata},
