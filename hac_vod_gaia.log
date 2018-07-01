@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.24)  1 JUL 2018 22:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.24)  2 JUL 2018 04:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -996,17 +996,106 @@ Underfull \hbox (badness 10000) in paragraph at lines 282--293
 []
  []
 
-<VOD_velocities_vphi_zcuts.pdf, id=221, 455.30101pt x 166.22101pt>
+<VOD_velocities_vphi_zcuts.pdf, id=226, 448.07399pt x 166.22101pt>
 File: VOD_velocities_vphi_zcuts.pdf Graphic file (type pdf)
 
 <use VOD_velocities_vphi_zcuts.pdf>
-Package pdftex.def Info: VOD_velocities_vphi_zcuts.pdf used on input line 301.
-(pdftex.def)             Requested size: 273.18271pt x 99.73335pt.
+Package pdftex.def Info: VOD_velocities_vphi_zcuts.pdf used on input line 327.
+(pdftex.def)             Requested size: 246.44144pt x 91.42181pt.
 
-Overfull \hbox (26.53474pt too wide) in paragraph at lines 300--305
-[]  []
+<VOD_velocities_vphi_dcuts.pdf, id=227, 448.07399pt x 166.22101pt>
+File: VOD_velocities_vphi_dcuts.pdf Graphic file (type pdf)
+
+<use VOD_velocities_vphi_dcuts.pdf>
+Package pdftex.def Info: VOD_velocities_vphi_dcuts.pdf used on input line 329.
+(pdftex.def)             Requested size: 246.44144pt x 91.42181pt.
+
+Overfull \hbox (6.44144pt too wide) in paragraph at lines 327--333
+[][] 
  []
 
+
+Overfull \hbox (6.44144pt too wide) in paragraph at lines 327--333
+[]
+ []
+
+<HAC_orbits_ecc_z.pdf, id=228, 166.22101pt x 158.99399pt>
+File: HAC_orbits_ecc_z.pdf Graphic file (type pdf)
+
+<use HAC_orbits_ecc_z.pdf>
+Package pdftex.def Info: HAC_orbits_ecc_z.pdf used on input line 342.
+(pdftex.def)             Requested size: 78.62352pt x 75.20511pt.
+
+<HAC_orbits_apo_ecc.pdf, id=229, 166.22101pt x 158.99399pt>
+File: HAC_orbits_apo_ecc.pdf Graphic file (type pdf)
+
+<use HAC_orbits_apo_ecc.pdf>
+Package pdftex.def Info: HAC_orbits_apo_ecc.pdf used on input line 343.
+(pdftex.def)             Requested size: 78.62352pt x 75.20511pt.
+
+<HAC_orbits_ecc_r.pdf, id=230, 166.22101pt x 158.99399pt>
+File: HAC_orbits_ecc_r.pdf Graphic file (type pdf)
+
+<use HAC_orbits_ecc_r.pdf>
+Package pdftex.def Info: HAC_orbits_ecc_r.pdf used on input line 344.
+(pdftex.def)             Requested size: 78.62352pt x 75.20511pt.
+
+<VOD_orbits_ecc_z.pdf, id=231, 166.22101pt x 158.99399pt>
+File: VOD_orbits_ecc_z.pdf Graphic file (type pdf)
+
+<use VOD_orbits_ecc_z.pdf>
+Package pdftex.def Info: VOD_orbits_ecc_z.pdf used on input line 345.
+(pdftex.def)             Requested size: 78.62352pt x 75.20511pt.
+
+<VOD_orbits_apo_ecc.pdf, id=232, 166.22101pt x 158.99399pt>
+File: VOD_orbits_apo_ecc.pdf Graphic file (type pdf)
+
+<use VOD_orbits_apo_ecc.pdf>
+Package pdftex.def Info: VOD_orbits_apo_ecc.pdf used on input line 346.
+(pdftex.def)             Requested size: 78.62352pt x 75.20511pt.
+
+<VOD_orbits_ecc_r.pdf, id=233, 166.22101pt x 158.99399pt>
+File: VOD_orbits_ecc_r.pdf Graphic file (type pdf)
+
+<use VOD_orbits_ecc_r.pdf>
+Package pdftex.def Info: VOD_orbits_ecc_r.pdf used on input line 347.
+(pdftex.def)             Requested size: 78.62352pt x 75.20511pt.
+
+<eccentricities.pdf, id=234, 166.22101pt x 151.767pt>
+File: eccentricities.pdf Graphic file (type pdf)
+ <use eccentricities.pdf>
+Package pdftex.def Info: eccentricities.pdf used on input line 348.
+(pdftex.def)             Requested size: 78.62352pt x 71.7867pt.
+
+<pericentres.pdf, id=235, 166.22101pt x 151.767pt>
+File: pericentres.pdf Graphic file (type pdf)
+ <use pericentres.pdf>
+Package pdftex.def Info: pericentres.pdf used on input line 349.
+(pdftex.def)             Requested size: 78.62352pt x 71.7867pt.
+
+<apocentres.pdf, id=236, 166.22101pt x 151.767pt>
+File: apocentres.pdf Graphic file (type pdf)
+ <use apocentres.pdf>
+Package pdftex.def Info: apocentres.pdf used on input line 350.
+(pdftex.def)             Requested size: 78.62352pt x 71.7867pt.
+
+<vtot_r.pdf, id=237, 187.902pt x 166.22101pt>
+File: vtot_r.pdf Graphic file (type pdf)
+ <use vtot_r.pdf>
+Package pdftex.def Info: vtot_r.pdf used on input line 357.
+(pdftex.def)             Requested size: 74.78386pt x 66.15495pt.
+
+<E_L.pdf, id=238, 224.037pt x 166.22101pt>
+File: E_L.pdf Graphic file (type pdf)
+ <use E_L.pdf>
+Package pdftex.def Info: E_L.pdf used on input line 358.
+(pdftex.def)             Requested size: 89.16537pt x 66.15495pt.
+
+<Lz_Lp.pdf, id=239, 180.675pt x 166.22101pt>
+File: Lz_Lp.pdf Graphic file (type pdf)
+ <use Lz_Lp.pdf>
+Package pdftex.def Info: Lz_Lp.pdf used on input line 359.
+(pdftex.def)             Requested size: 71.90756pt x 66.15495pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1015,8 +1104,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.337 
-       <./lb.pdf> <./xy.pdf
+l.371 \subsection
+                 {Orbital Properties} <./lb.pdf> <./xy.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./xy.pdf): PDF inclusion: mu
 ltiple pdfs with page group included in a single page
@@ -1024,112 +1113,29 @@ ltiple pdfs with page group included in a single page
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./xz.pdf): PDF inclusion: mu
 ltiple pdfs with page group included in a single page
->] <HAC_orbits_ecc_z.pdf, id=315, 166.22101pt x 158.99399pt>
-File: HAC_orbits_ecc_z.pdf Graphic file (type pdf)
+>]
+LaTeX Font Info:    Try loading font information for T1+aett on input line 376.
 
-<use HAC_orbits_ecc_z.pdf>
-Package pdftex.def Info: HAC_orbits_ecc_z.pdf used on input line 343.
-(pdftex.def)             Requested size: 78.62352pt x 75.20511pt.
-
-<HAC_orbits_apo_ecc.pdf, id=316, 166.22101pt x 158.99399pt>
-File: HAC_orbits_apo_ecc.pdf Graphic file (type pdf)
-
-<use HAC_orbits_apo_ecc.pdf>
-Package pdftex.def Info: HAC_orbits_apo_ecc.pdf used on input line 344.
-(pdftex.def)             Requested size: 78.62352pt x 75.20511pt.
-
-<HAC_orbits_ecc_r.pdf, id=317, 166.22101pt x 158.99399pt>
-File: HAC_orbits_ecc_r.pdf Graphic file (type pdf)
-
-<use HAC_orbits_ecc_r.pdf>
-Package pdftex.def Info: HAC_orbits_ecc_r.pdf used on input line 345.
-(pdftex.def)             Requested size: 78.62352pt x 75.20511pt.
-
-<VOD_orbits_ecc_z.pdf, id=318, 166.22101pt x 158.99399pt>
-File: VOD_orbits_ecc_z.pdf Graphic file (type pdf)
-
-<use VOD_orbits_ecc_z.pdf>
-Package pdftex.def Info: VOD_orbits_ecc_z.pdf used on input line 346.
-(pdftex.def)             Requested size: 78.62352pt x 75.20511pt.
-
-<VOD_orbits_apo_ecc.pdf, id=319, 166.22101pt x 158.99399pt>
-File: VOD_orbits_apo_ecc.pdf Graphic file (type pdf)
-
-<use VOD_orbits_apo_ecc.pdf>
-Package pdftex.def Info: VOD_orbits_apo_ecc.pdf used on input line 347.
-(pdftex.def)             Requested size: 78.62352pt x 75.20511pt.
-
-<VOD_orbits_ecc_r.pdf, id=320, 166.22101pt x 158.99399pt>
-File: VOD_orbits_ecc_r.pdf Graphic file (type pdf)
-
-<use VOD_orbits_ecc_r.pdf>
-Package pdftex.def Info: VOD_orbits_ecc_r.pdf used on input line 348.
-(pdftex.def)             Requested size: 78.62352pt x 75.20511pt.
-
-<eccentricities.pdf, id=321, 166.22101pt x 151.767pt>
-File: eccentricities.pdf Graphic file (type pdf)
- <use eccentricities.pdf>
-Package pdftex.def Info: eccentricities.pdf used on input line 349.
-(pdftex.def)             Requested size: 78.62352pt x 71.7867pt.
-
-<pericentres.pdf, id=322, 166.22101pt x 151.767pt>
-File: pericentres.pdf Graphic file (type pdf)
- <use pericentres.pdf>
-Package pdftex.def Info: pericentres.pdf used on input line 350.
-(pdftex.def)             Requested size: 78.62352pt x 71.7867pt.
-
-<apocentres.pdf, id=323, 166.22101pt x 151.767pt>
-File: apocentres.pdf Graphic file (type pdf)
- <use apocentres.pdf>
-Package pdftex.def Info: apocentres.pdf used on input line 351.
-(pdftex.def)             Requested size: 78.62352pt x 71.7867pt.
-
-<vtot_r.pdf, id=324, 187.902pt x 166.22101pt>
-File: vtot_r.pdf Graphic file (type pdf)
- <use vtot_r.pdf>
-Package pdftex.def Info: vtot_r.pdf used on input line 358.
-(pdftex.def)             Requested size: 74.78386pt x 66.15495pt.
-
-<E_L.pdf, id=325, 224.037pt x 166.22101pt>
-File: E_L.pdf Graphic file (type pdf)
- <use E_L.pdf>
-Package pdftex.def Info: E_L.pdf used on input line 359.
-(pdftex.def)             Requested size: 89.16537pt x 66.15495pt.
-
-<Lz_Lp.pdf, id=326, 180.675pt x 166.22101pt>
-File: Lz_Lp.pdf Graphic file (type pdf)
- <use Lz_Lp.pdf>
-Package pdftex.def Info: Lz_Lp.pdf used on input line 360.
-(pdftex.def)             Requested size: 71.90756pt x 66.15495pt.
-LaTeX Font Info:    Try loading font information for T1+aett on input line 377.
-
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/ae/t1aett.fd
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 ) [3pdfTeX warning (ext4): destination with the same identifier (name{figure.2}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.394 
+l.393 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.394 
+l.393 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.394 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-5}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.394 
+l.393 
        <./HAC_allv.pdf> <./VOD_allv.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./VOD_allv.pdf): PDF inclusi
@@ -1137,6 +1143,10 @@ on: multiple pdfs with page group included in a single page
 > <./VOD_velocities_vphi_zcuts.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./VOD_velocities_vphi_zcuts.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./VOD_velocities_vphi_dcuts.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./VOD_velocities_vphi_dcuts.
 pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./HAC_orbits_ecc_z.pdf
 
@@ -1174,11 +1184,90 @@ usion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./apocentres.pdf): PDF inclu
 sion: multiple pdfs with page group included in a single page
-> <./vtot_r.pdf
+>] <HAC_orbits_8Gyrs_lb_defaultmass.pdf, id=577, 274.626pt x 187.902pt>
+File: HAC_orbits_8Gyrs_lb_defaultmass.pdf Graphic file (type pdf)
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./vtot_r.pdf): PDF inclusion
-: multiple pdfs with page group included in a single page
-> <./E_L.pdf
+<use HAC_orbits_8Gyrs_lb_defaultmass.pdf>
+Package pdftex.def Info: HAC_orbits_8Gyrs_lb_defaultmass.pdf used on input line
+ 458.
+(pdftex.def)             Requested size: 82.93738pt x 56.74663pt.
+
+<HAC_orbits_8Gyrs_xy_defaultmass.pdf, id=578, 224.037pt x 187.902pt>
+File: HAC_orbits_8Gyrs_xy_defaultmass.pdf Graphic file (type pdf)
+
+<use HAC_orbits_8Gyrs_xy_defaultmass.pdf>
+Package pdftex.def Info: HAC_orbits_8Gyrs_xy_defaultmass.pdf used on input line
+ 459.
+(pdftex.def)             Requested size: 67.65944pt x 56.74663pt.
+
+<HAC_orbits_8Gyrs_yz_defaultmass.pdf, id=579, 281.85298pt x 187.902pt>
+File: HAC_orbits_8Gyrs_yz_defaultmass.pdf Graphic file (type pdf)
+
+<use HAC_orbits_8Gyrs_yz_defaultmass.pdf>
+Package pdftex.def Info: HAC_orbits_8Gyrs_yz_defaultmass.pdf used on input line
+ 460.
+(pdftex.def)             Requested size: 85.11993pt x 56.74663pt.
+
+<VOD_orbits_8Gyrs_lb_defaultmass.pdf, id=580, 274.626pt x 187.902pt>
+File: VOD_orbits_8Gyrs_lb_defaultmass.pdf Graphic file (type pdf)
+
+<use VOD_orbits_8Gyrs_lb_defaultmass.pdf>
+Package pdftex.def Info: VOD_orbits_8Gyrs_lb_defaultmass.pdf used on input line
+ 461.
+(pdftex.def)             Requested size: 82.93738pt x 56.74663pt.
+
+<VOD_orbits_8Gyrs_xy_defaultmass.pdf, id=581, 224.037pt x 187.902pt>
+File: VOD_orbits_8Gyrs_xy_defaultmass.pdf Graphic file (type pdf)
+
+<use VOD_orbits_8Gyrs_xy_defaultmass.pdf>
+Package pdftex.def Info: VOD_orbits_8Gyrs_xy_defaultmass.pdf used on input line
+ 462.
+(pdftex.def)             Requested size: 67.65944pt x 56.74663pt.
+
+<VOD_orbits_8Gyrs_yz_defaultmass.pdf, id=582, 281.85298pt x 187.902pt>
+File: VOD_orbits_8Gyrs_yz_defaultmass.pdf Graphic file (type pdf)
+
+<use VOD_orbits_8Gyrs_yz_defaultmass.pdf>
+Package pdftex.def Info: VOD_orbits_8Gyrs_yz_defaultmass.pdf used on input line
+ 463.
+(pdftex.def)             Requested size: 85.11993pt x 56.74663pt.
+
+<VOD_orbits_8Gyrs_lb_sausage.pdf, id=583, 274.626pt x 187.902pt>
+File: VOD_orbits_8Gyrs_lb_sausage.pdf Graphic file (type pdf)
+
+<use VOD_orbits_8Gyrs_lb_sausage.pdf>
+Package pdftex.def Info: VOD_orbits_8Gyrs_lb_sausage.pdf used on input line 463
+.
+(pdftex.def)             Requested size: 82.93738pt x 56.74663pt.
+
+<VOD_orbits_8Gyrs_xy_sausage.pdf, id=584, 224.037pt x 187.902pt>
+File: VOD_orbits_8Gyrs_xy_sausage.pdf Graphic file (type pdf)
+
+<use VOD_orbits_8Gyrs_xy_sausage.pdf>
+Package pdftex.def Info: VOD_orbits_8Gyrs_xy_sausage.pdf used on input line 464
+.
+(pdftex.def)             Requested size: 67.65944pt x 56.74663pt.
+
+<VOD_orbits_8Gyrs_yz_sausage.pdf, id=585, 281.85298pt x 187.902pt>
+File: VOD_orbits_8Gyrs_yz_sausage.pdf Graphic file (type pdf)
+
+<use VOD_orbits_8Gyrs_yz_sausage.pdf>
+Package pdftex.def Info: VOD_orbits_8Gyrs_yz_sausage.pdf used on input line 465
+.
+(pdftex.def)             Requested size: 85.11993pt x 56.74663pt.
+ [4pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.499 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.499 
+       <./vtot_r.pdf> <./E_L.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./E_L.pdf): PDF inclusion: m
 ultiple pdfs with page group included in a single page
@@ -1186,88 +1275,12 @@ ultiple pdfs with page group included in a single page
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Lz_Lp.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
->] <HAC_orbits_8Gyrs_lb_defaultmass.pdf, id=660, 274.626pt x 187.902pt>
-File: HAC_orbits_8Gyrs_lb_defaultmass.pdf Graphic file (type pdf)
+> <./HAC_orbits_8Gyrs_lb_defaultmass.pdf
 
-<use HAC_orbits_8Gyrs_lb_defaultmass.pdf>
-Package pdftex.def Info: HAC_orbits_8Gyrs_lb_defaultmass.pdf used on input line
- 459.
-(pdftex.def)             Requested size: 82.93738pt x 56.74663pt.
-
-<HAC_orbits_8Gyrs_xy_defaultmass.pdf, id=661, 224.037pt x 187.902pt>
-File: HAC_orbits_8Gyrs_xy_defaultmass.pdf Graphic file (type pdf)
-
-<use HAC_orbits_8Gyrs_xy_defaultmass.pdf>
-Package pdftex.def Info: HAC_orbits_8Gyrs_xy_defaultmass.pdf used on input line
- 460.
-(pdftex.def)             Requested size: 67.65944pt x 56.74663pt.
-
-<HAC_orbits_8Gyrs_yz_defaultmass.pdf, id=662, 281.85298pt x 187.902pt>
-File: HAC_orbits_8Gyrs_yz_defaultmass.pdf Graphic file (type pdf)
-
-<use HAC_orbits_8Gyrs_yz_defaultmass.pdf>
-Package pdftex.def Info: HAC_orbits_8Gyrs_yz_defaultmass.pdf used on input line
- 461.
-(pdftex.def)             Requested size: 85.11993pt x 56.74663pt.
-
-<VOD_orbits_8Gyrs_lb_defaultmass.pdf, id=663, 274.626pt x 187.902pt>
-File: VOD_orbits_8Gyrs_lb_defaultmass.pdf Graphic file (type pdf)
-
-<use VOD_orbits_8Gyrs_lb_defaultmass.pdf>
-Package pdftex.def Info: VOD_orbits_8Gyrs_lb_defaultmass.pdf used on input line
- 462.
-(pdftex.def)             Requested size: 82.93738pt x 56.74663pt.
-
-<VOD_orbits_8Gyrs_xy_defaultmass.pdf, id=664, 224.037pt x 187.902pt>
-File: VOD_orbits_8Gyrs_xy_defaultmass.pdf Graphic file (type pdf)
-
-<use VOD_orbits_8Gyrs_xy_defaultmass.pdf>
-Package pdftex.def Info: VOD_orbits_8Gyrs_xy_defaultmass.pdf used on input line
- 463.
-(pdftex.def)             Requested size: 67.65944pt x 56.74663pt.
-
-<VOD_orbits_8Gyrs_yz_defaultmass.pdf, id=665, 281.85298pt x 187.902pt>
-File: VOD_orbits_8Gyrs_yz_defaultmass.pdf Graphic file (type pdf)
-
-<use VOD_orbits_8Gyrs_yz_defaultmass.pdf>
-Package pdftex.def Info: VOD_orbits_8Gyrs_yz_defaultmass.pdf used on input line
- 464.
-(pdftex.def)             Requested size: 85.11993pt x 56.74663pt.
-
-<VOD_orbits_8Gyrs_lb_sausage.pdf, id=666, 274.626pt x 187.902pt>
-File: VOD_orbits_8Gyrs_lb_sausage.pdf Graphic file (type pdf)
-
-<use VOD_orbits_8Gyrs_lb_sausage.pdf>
-Package pdftex.def Info: VOD_orbits_8Gyrs_lb_sausage.pdf used on input line 464
-.
-(pdftex.def)             Requested size: 82.93738pt x 56.74663pt.
-
-<VOD_orbits_8Gyrs_xy_sausage.pdf, id=667, 224.037pt x 187.902pt>
-File: VOD_orbits_8Gyrs_xy_sausage.pdf Graphic file (type pdf)
-
-<use VOD_orbits_8Gyrs_xy_sausage.pdf>
-Package pdftex.def Info: VOD_orbits_8Gyrs_xy_sausage.pdf used on input line 465
-.
-(pdftex.def)             Requested size: 67.65944pt x 56.74663pt.
-
-<VOD_orbits_8Gyrs_yz_sausage.pdf, id=668, 281.85298pt x 187.902pt>
-File: VOD_orbits_8Gyrs_yz_sausage.pdf Graphic file (type pdf)
-
-<use VOD_orbits_8Gyrs_yz_sausage.pdf>
-Package pdftex.def Info: VOD_orbits_8Gyrs_yz_sausage.pdf used on input line 466
-.
-(pdftex.def)             Requested size: 85.11993pt x 56.74663pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4pdfTeX warning (ext4): destination with the same identifier (name{figure.6})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.500 
-       <./HAC_orbits_8Gyrs_lb_defaultmass.pdf> <./HAC_orbits_8Gyrs_xy_defaultma
-ss.pdf
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./HAC_orbits_8Gyrs_lb_defaul
+tmass.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+> <./HAC_orbits_8Gyrs_xy_defaultmass.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./HAC_orbits_8Gyrs_xy_defaul
 tmass.pdf): PDF inclusion: multiple pdfs with page group included in a single p
@@ -1304,19 +1317,19 @@ e.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./VOD_orbits_8Gyrs_yz_sausag
 e.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] (./hac_vod_gaia.bbl
-Underfull \vbox (badness 1043) has occurred while \output is active []
+>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 558.
 
-[6
+(./hac_vod_gaia.bbl [5])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 557.
+ [6
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 558.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 557.
  (./hac_vod_gaia.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 558.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 558.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 557.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 557.
 Package rerunfilecheck Info: File `hac_vod_gaia.out' has not changed.
 (rerunfilecheck)             Checksum: 384C2FC295C3EF412DDFB0B6180A0D21;366.
 
@@ -1327,16 +1340,19 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 558.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 557.
  ) 
 Here is how much of TeX's memory you used:
- 9925 strings out of 493014
- 140283 string characters out of 6133351
- 291741 words of memory out of 5000000
- 13071 multiletter control sequences out of 15000+600000
+ 9930 strings out of 493014
+ 140447 string characters out of 6133351
+ 294285 words of memory out of 5000000
+ 13075 multiletter control sequences out of 15000+600000
  110439 words of font info for 249 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,16n,35p,7595b,537s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,16n,35p,7595b,525s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1349,33 +1365,32 @@ ive/2016/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}</usr/local/texlive/2
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2016/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2016/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2016/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2016/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2016/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmti8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
-/tex-gyre/qtmr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx
-/rntxmi.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/rntxmi
-5.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/rntxmi7.pfb>
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/
-local/texlive/2016/texmf-dist/fonts/type1/public/newtx/rtxmi5.pfb></usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/newtx/rtxmi7.pfb></usr/local/texlive/
-2016/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2016/te
-xmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2016/texm
-f-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2016/texmf-dist/
-fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
-1/urw/times/utmri8a.pfb>
-Output written on hac_vod_gaia.pdf (6 pages, 839417 bytes).
+f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2016/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2016/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
+ic/tex-gyre/qtmr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/new
+tx/rntxmi.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/rntx
+mi5.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/rntxmi7.pf
+b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></us
+r/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/rtxmi5.pfb></usr/local
+/texlive/2016/texmf-dist/fonts/type1/public/newtx/rtxmi7.pfb></usr/local/texliv
+e/2016/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2016/
+texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2016/te
+xmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2016/texmf-dis
+t/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
+pe1/urw/times/utmri8a.pfb>
+Output written on hac_vod_gaia.pdf (6 pages, 821619 bytes).
 PDF statistics:
- 936 PDF objects out of 1000 (max. 8388607)
- 724 compressed objects within 8 object streams
+ 953 PDF objects out of 1000 (max. 8388607)
+ 734 compressed objects within 8 object streams
  72 named destinations out of 1000 (max. 500000)
- 184 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 189 words of extra memory for PDF output out of 10000 (max. 10000000)
 
