@@ -88,7 +88,7 @@
 
 % Abstract of the paper
 \begin{abstract}
-We use a sample of $\sim$500 RR Lyrae stars with radial velocities and
+We use a sample of $\sim$350 RR Lyrae stars with radial velocities and
 Gaia DR2 proper motions to study orbital properties of the
 Hercules-Aquila Cloud (HAC) and Virgo Over-density (VOD). We
 demonstrate that both structures are dominated by stars on highly
@@ -182,7 +182,16 @@ constituent stars.
 	\includegraphics[scale=0.518]{xy.pdf}
 	\includegraphics[scale=0.518]{xz.pdf}
 	\vspace{-0.55cm}
-    \caption{Spatial distribution of $\sim$350 RR Lyrae with 6-D phase space information in the HAC and VOD fields, in Galactic coordinates (left panel) and in the x-y (middle) and y-z (right) planes. In green we mark a significant kinematical group identified by \citet{Vivas2016} (group 2 in their table 5) and in red a sub-sample of the VOD RRL with galactocentric distances similar to the HAC sample, 11 $<\mathrm{r_{GC}}$ (kpc)$<$ 16. The semi-circles are centred on the Sun's position and have a radius of 10 and 20 kpc. The Sun (yellow star) is located at (x$_{\odot}$, y$_{\odot}$, z$_{\odot})= $ (-8,0,0) kpc and the Galactic centre (GC) at (0,0,0) kpc.  }
+    \caption{Spatial distribution of $\sim$350 RR Lyrae with 6-D phase
+      space information in the HAC and VOD fields, in Galactic
+      coordinates (left panel) and in the x-y (middle) and x-z (right)
+      planes. In green we mark a significant kinematical group
+      identified by \citet{Vivas2016} (group 2 in their table 5) and
+      in red a sub-sample of the VOD RRL with galactocentric distances
+      similar to the HAC sample, 11 $<\mathrm{r_{GC}}$ (kpc)$<$
+      16. The semi-circles are centred on the Sun's position and have
+      a radius of 10 and 20 kpc. The Sun (yellow star) is located at
+      (x$_{\odot}$, y$_{\odot}$, z$_{\odot})= $ (-8,0,0) kpc.}
     \label{fig:lb}
 \end{figure}
 %
@@ -265,8 +274,23 @@ of the velocity uncertainties; these are shown in Fig.~\ref{fig:vel}.
    % \includegraphics[scale=0.55]{VOD_velocities_vtheta.pdf}  
    \vspace{-0.45cm}
     \caption{Velocity distribution in spherical polar coordinates
-      ($\mathrm{v_{r}}$, $\mathrm{v_{\theta}}$, $\mathrm{v_{\phi}}$ are the radial, azimuthal and
-      polar components respectively, in km/s) of the HAC (top panels) and VOD (bottom panels) RR Lyrae.  The label for the y-axis is reported in the upper-left corner of each panel. The uncertainties on the individual velocities (gray bars) were obtained propagating the errors on the measurements using Monte-Carlo methods. Both fields have radially biased orbits with anisotropy parameters $\beta= 0.91 \pm 0.03$ (HAC) and $\beta= 0.74 \pm 0.04$ (VOD). A mixture of two multivariate Gaussians was fitted to the VOD velocity ellipsoid and we found that $\sim$62\% of the stars belong to the $\beta_{1}= 0.96^{+0.02}_{-0.44}$ (blue) component  and $\sim$38\%  to the $\beta_{2}=0.44^{+0.45}_{-0.20}$ (magenta) component. The Vivas Gr. 2 and VOD (11-16) sub-samples are also shown in lime and red, as in Fig.\ref{fig:lb}. Vivas Gr. 2 clusters at $v_{r} = 135$ km/s, as expected, while the VOD(11-16) group largely belongs to the high-anisotropy component (in blue).}
+      ($\mathrm{v_{r}}$, $\mathrm{v_{\theta}}$, $\mathrm{v_{\phi}}$
+      are the radial, azimuthal and polar components respectively, in
+      km/s) of the HAC (top panels) and VOD (bottom panels) RR Lyrae.
+      The label for the y-axis is reported in the upper-left corner of
+      each panel. The uncertainties on the individual velocities (gray
+      bars) were obtained propagating the errors on the measurements
+      using Monte-Carlo methods. Both fields have radially biased
+      orbits with anisotropy parameters $\beta= 0.91 \pm 0.03$ (HAC)
+      and $\beta= 0.74 \pm 0.04$ (VOD). A mixture of two multivariate
+      Gaussians was fitted to the VOD data, according to whcih
+      $\sim$62\% of the stars belong to the $\beta_{1}=
+      0.96^{+0.02}_{-0.44}$ (blue) component and $\sim$38\% to the
+      $\beta_{2}=0.44^{+0.45}_{-0.20}$ (magenta) component. The Vivas
+      Gr. 2 and VOD (11-16) sub-samples are also shown in lime and
+      red, as in Fig.\ref{fig:lb}. Vivas Gr. 2 clusters at $v_{r} =
+      135$ km/s, as expected, while the VOD(11-16) group largely
+      belongs to the high-anisotropy component (in blue).}
     \label{fig:vel}
 \end{figure}
 %
@@ -290,11 +314,14 @@ to \citet{Belokurov2018}, the inner stellar halo can be viewed as a
 mixture of two debris components with distinct
 properties. Accordingly, we fit a model with two multivariate
 Gaussians to the VOD velocity data using Extreme Deconvolution
-\citep[see][]{ED}. The VOD sample appears to be composed of roughly
-two thirds of stars with $\beta_{1}= 0.96^{+0.02}_{-0.44}$ (marked in
-blue in Fig. \ref{fig:vel}) and a third with
-$\beta_{2}=0.44^{+0.45}_{-0.20}$ (magenta) in good agreement with the
-results for the local halo presented in \citet{Belokurov2018}.
+\citep[see][]{ED}. With log-likelihood of $\log L = -5119$, the
+two-component model is clearly preferred compared to the
+single-component one with $\log L = -5384$. The VOD sample appears to
+be composed of roughly two thirds of stars with $\beta_{1}=
+0.96^{+0.02}_{-0.44}$ (marked in blue in Fig. \ref{fig:vel}) and a
+third with $\beta_{2}=0.44^{+0.45}_{-0.20}$ (magenta) in good
+agreement with the results for the local halo presented in
+\citet{Belokurov2018}.
 %
 
 Using the virial theorem, \citet{actionhalo} concluded that the
@@ -468,7 +495,7 @@ Overdensity are both parts of one ancient massive head-on collision.
 %
 \section{Conclusions}
 %
-Using a sample of $\sim$500 RR Lyrae with full 6-D phase space
+Using a sample of $\sim$350 RR Lyrae with full 6-D phase space
 information, we have studied the orbital properties of the
 Hercules-Aquila and Virgo Clouds. Both Clouds appear dominated by
 stars on highly eccentric orbits. Assuming that the kinematics of each
@@ -538,7 +565,8 @@ The authors wish to thank Alis Deason for insightful comments that
 helped to improve the quality of the manuscript.  The research leading
 to these results has received funding from the European Research
 Council under the European Union's Seventh Framework Programme
-(FP/2007-2013) / ERC Grant Agreement n. 308024.
+(FP/2007-2013) / ERC Grant Agreement n. 308024. ITS and SEK thank the
+Center for Computational Astrophysics for hospitality.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
