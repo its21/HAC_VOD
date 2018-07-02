@@ -88,7 +88,7 @@
 
 % Abstract of the paper
 \begin{abstract}
-We use a sample of $\sim$500 RR Lyrae stars with radial velocities and
+We use a sample of $\sim$350 RR Lyrae stars with radial velocities and
 Gaia DR2 proper motions to study orbital properties of the
 Hercules-Aquila Cloud (HAC) and Virgo Over-density (VOD). We
 demonstrate that both structures are dominated by stars on highly
@@ -182,7 +182,16 @@ constituent stars.
 	\includegraphics[scale=0.518]{xy.pdf}
 	\includegraphics[scale=0.518]{xz.pdf}
 	\vspace{-0.55cm}
-    \caption{Spatial distribution of $\sim$350 RR Lyrae with 6-D phase space information in the HAC and VOD fields, in Galactic coordinates (left panel) and in the x-y (middle) and y-z (right) planes. In green we mark a significant kinematical group identified by \citet{Vivas2016} (group 2 in their table 5) and in red a sub-sample of the VOD RRL with galactocentric distances similar to the HAC sample, 11 $<\mathrm{r_{GC}}$ (kpc)$<$ 16. The semi-circles are centred on the Sun's position and have a radius of 10 and 20 kpc. The Sun (yellow star) is located at (x$_{\odot}$, y$_{\odot}$, z$_{\odot})= $ (-8,0,0) kpc and the Galactic centre (GC) at (0,0,0) kpc.  }
+    \caption{Spatial distribution of $\sim$350 RR Lyrae with 6-D phase
+      space information in the HAC and VOD fields, in Galactic
+      coordinates (left panel) and in the x-y (middle) and x-z (right)
+      planes. In green we mark a significant kinematical group
+      identified by \citet{Vivas2016} (group 2 in their table 5) and
+      in red a sub-sample of the VOD RRL with galactocentric distances
+      similar to the HAC sample, 11 $<\mathrm{r_{GC}}$ (kpc)$<$
+      16. The semi-circles are centred on the Sun's position and have
+      a radius of 10 and 20 kpc. The Sun (yellow star) is located at
+      (x$_{\odot}$, y$_{\odot}$, z$_{\odot})= $ (-8,0,0) kpc.}
     \label{fig:lb}
 \end{figure}
 %
@@ -265,8 +274,23 @@ of the velocity uncertainties; these are shown in Fig.~\ref{fig:vel}.
    % \includegraphics[scale=0.55]{VOD_velocities_vtheta.pdf}  
    \vspace{-0.45cm}
     \caption{Velocity distribution in spherical polar coordinates
-      ($\mathrm{v_{r}}$, $\mathrm{v_{\theta}}$, $\mathrm{v_{\phi}}$ are the radial, azimuthal and
-      polar components respectively, in km/s) of the HAC (top panels) and VOD (bottom panels) RR Lyrae.  The label for the y-axis is reported in the upper-left corner of each panel. The uncertainties on the individual velocities (gray bars) were obtained propagating the errors on the measurements using Monte-Carlo methods. Both fields have radially biased orbits with anisotropy parameters $\beta= 0.91 \pm 0.03$ (HAC) and $\beta= 0.74 \pm 0.04$ (VOD). A mixture of two multivariate Gaussians was fitted to the VOD velocity ellipsoid and we found that $\sim$62\% of the stars belong to the $\beta_{1}= 0.96^{+0.02}_{-0.44}$ (blue) component  and $\sim$38\%  to the $\beta_{2}=0.44^{+0.45}_{-0.20}$ (magenta) component. The Vivas Gr. 2 and VOD (11-16) sub-samples are also shown in lime and red, as in Fig.\ref{fig:lb}. Vivas Gr. 2 clusters at $v_{r} = 135$ km/s, as expected, while the VOD(11-16) group largely belongs to the high-anisotropy component (in blue).}
+      ($\mathrm{v_{r}}$, $\mathrm{v_{\theta}}$, $\mathrm{v_{\phi}}$
+      are the radial, azimuthal and polar components respectively, in
+      km/s) of the HAC (top panels) and VOD (bottom panels) RR Lyrae.
+      The label for the y-axis is reported in the upper-left corner of
+      each panel. The uncertainties on the individual velocities (gray
+      bars) were obtained propagating the errors on the measurements
+      using Monte-Carlo methods. Both fields have radially biased
+      orbits with anisotropy parameters $\beta= 0.91 \pm 0.03$ (HAC)
+      and $\beta= 0.74 \pm 0.04$ (VOD). A mixture of two multivariate
+      Gaussians was fitted to the VOD data, according to whcih
+      $\sim$62\% of the stars belong to the $\beta_{1}=
+      0.96^{+0.02}_{-0.44}$ (blue) component and $\sim$38\% to the
+      $\beta_{2}=0.44^{+0.45}_{-0.20}$ (magenta) component. The Vivas
+      Gr. 2 and VOD (11-16) sub-samples are also shown in lime and
+      red, as in Fig.\ref{fig:lb}. Vivas Gr. 2 clusters at $v_{r} =
+      135$ km/s, as expected, while the VOD(11-16) group largely
+      belongs to the high-anisotropy component (in blue).}
     \label{fig:vel}
 \end{figure}
 %
@@ -290,11 +314,14 @@ to \citet{Belokurov2018}, the inner stellar halo can be viewed as a
 mixture of two debris components with distinct
 properties. Accordingly, we fit a model with two multivariate
 Gaussians to the VOD velocity data using Extreme Deconvolution
-\citep[see][]{ED}. The VOD sample appears to be composed of roughly
-two thirds of stars with $\beta_{1}= 0.96^{+0.02}_{-0.44}$ (marked in
-blue in Fig. \ref{fig:vel}) and a third with
-$\beta_{2}=0.44^{+0.45}_{-0.20}$ (magenta) in good agreement with the
-results for the local halo presented in \citet{Belokurov2018}.
+\citep[see][]{ED}. With log-likelihood of $\log L = -5119$, the
+two-component model is clearly preferred compared to the
+single-component one with $\log L = -5384$. The VOD sample appears to
+be composed of roughly two thirds of stars with $\beta_{1}=
+0.96^{+0.02}_{-0.44}$ (marked in blue in Fig. \ref{fig:vel}) and a
+third with $\beta_{2}=0.44^{+0.45}_{-0.20}$ (magenta) in good
+agreement with the results for the local halo presented in
+\citet{Belokurov2018}.
 %
 
 Using the virial theorem, \citet{actionhalo} concluded that the
@@ -331,8 +358,16 @@ simply ends around $z\sim20$ kpc.
 \begin{figure}
 	        \includegraphics[scale=0.55]{VOD_velocities_vphi_zcuts.pdf}
 \vspace{-0.45cm}
-   \caption{Velocity distribution of the VOD RR Lyrae, in three distance ranges above the Galactic plane, increasing from left to right (see also the bottom left panel of Fig. 
-   \ref{fig:vel}). The fraction of Oosterhoff type I RR Lyrae within each distance range is reported on the bottom left of each panel and the orbital anisotropy $\beta$ on the top right. Note that in the middle panel, where $10<$z (kpc)$<20$, the anisotropy parameter is $\beta=0.84\pm0.03$, close to the value reported for HAC (top panels of  Fig.  \ref{fig:vel}); in the same field the large majority  of RRL is of Oosterhoff type I.}
+   \caption{Velocity distribution of the VOD RR Lyrae, in three
+     distance ranges above the Galactic plane, increasing from left to
+     right (see also the bottom left panel of Fig.
+     \ref{fig:vel}). The fraction of Oosterhoff type I RR Lyrae within
+     each distance range is reported on the bottom left of each panel
+     and the orbital anisotropy $\beta$ in the top right. Note that in
+     the middle panel, where $10<$z (kpc)$<20$, the anisotropy
+     parameter is $\beta=0.84\pm0.03$, close to the value reported for
+     HAC (top panels of Fig.  \ref{fig:vel}); in the same field the
+     large majority of RRL is of Oosterhoff type I.}
     \label{fig:VOD_vel}
 \end{figure}
 %
@@ -344,7 +379,7 @@ $\mathrm{galpy}$ package \citep{Bovy2015} in the recommended Galactic
 potential model for the Milky Way, $\texttt{MWPotential2014}$, with
 parameters given in Table 1 of \citet{Bovy2015}. The orbital
 properties, i.e. the peri- and apo-centric radii, eccentricities, and
-the maximal heights above the orbit plane, are shown in
+the maximal heights above the Galactic plane, are shown in
 Figure~\ref{fig:orbits}. To compute the errors (not shown for VOD to
 simplify the figure) we integrate 500 orbits for each star where the
 initial conditions are re-sampled from the observations according to
@@ -403,7 +438,15 @@ of the retrograde ones \citep[see
     \includegraphics[scale=0.473]{pericentres.pdf} 
                           \includegraphics[scale=0.473]{apocentres.pdf} 
 \vspace{-0.45cm}
-  \caption{Properties of the RR Lyrae orbits in the HAC and VOD fields. In the top and middle rows we show the maximal height above the orbit plane, apocentre and Galactocentric radius as a function of eccentricity, for the HAC (top) and VOD (middle) stars. In the bottom row we show the probability distributions of the eccentricities, pericentres and apocentres for both fields, including the VOD(11-16) subsample (in red). The majority of HAC and VOD(11-16) stars are on highly eccentric orbits with small pericentres (0-5 kpc from the GC) and apocentres at 15-20 kpc.}
+  \caption{Properties of the RR Lyrae orbits in the HAC and VOD
+    fields. In the top and middle rows we show the maximal height
+    above the Galactic plane, apocentre and Galactocentric radius as a
+    function of eccentricity, for the HAC (top) and VOD (middle)
+    stars. In the bottom row we show the probability distributions of
+    the eccentricities, pericentres and apocentres for both fields,
+    including the VOD(11-16) subsample (in red). The majority of HAC
+    and VOD(11-16) stars are on highly eccentric orbits with small
+    pericentres (0-3 kpc from the GC) and apocentres at 15-20 kpc.}
     \label{fig:orbits}   
     \end{figure}
    %
@@ -414,7 +457,16 @@ of the retrograde ones \citep[see
 	    \includegraphics[scale=0.4035]{VOD_Lz_Lp.pdf}
         \includegraphics[scale=0.4035]{E_L.pdf}
 		       	       	       	       \vspace{-0.45cm}
-   \caption{Distribution of the angular momentum components, $\mathrm{L_{\perp}}$ and $\mathrm{L_{z}}$,  for the HAC (left panel) and VOD (middle) RR Lyrae. Notice the clear prevalence of retrograde orbits for the HAC and VOD(11-16) stars. In the right panel, we show the total angular momentum as a function of energy for the HAC (black circles), VOD (gray dots) and the two VOD sub-samples, Vivas Gr. 2 and VOD(11-16) marked in lime and red as in the previous figures. A large number of HAC and VOD(11-16) RR Lyrae are concentrated at high energy E$\sim$-100000 km$^{2}$/s$^{2}$ but low angular momentum L$\sim$0-500 km/s kpc.}
+   \caption{Distribution of the angular momentum components,
+     $\mathrm{L_{\perp}}$ and $\mathrm{L_{z}}$, for the HAC (left
+     panel) and VOD (middle) RR Lyrae. Notice the prevalence of
+     retrograde orbits for the HAC and VOD(11-16) stars. In the right
+     panel, we show the total angular momentum as a function of energy
+     for the HAC (black circles), VOD (gray dots) and the two VOD
+     sub-samples, Vivas Gr. 2 and VOD(11-16) marked in lime and red as
+     in the previous figures. A large number of HAC and VOD(11-16) RR
+     Lyrae are concentrated at high energy E$\sim$-100000
+     km$^{2}$/s$^{2}$ but low angular momentum L$\sim$0-500 km/s kpc.}
     \label{fig:energy}
 \end{figure}
 %
@@ -468,7 +520,7 @@ Overdensity are both parts of one ancient massive head-on collision.
 %
 \section{Conclusions}
 %
-Using a sample of $\sim$500 RR Lyrae with full 6-D phase space
+Using a sample of $\sim$350 RR Lyrae with full 6-D phase space
 information, we have studied the orbital properties of the
 Hercules-Aquila and Virgo Clouds. Both Clouds appear dominated by
 stars on highly eccentric orbits. Assuming that the kinematics of each
@@ -538,7 +590,8 @@ The authors wish to thank Alis Deason for insightful comments that
 helped to improve the quality of the manuscript.  The research leading
 to these results has received funding from the European Research
 Council under the European Union's Seventh Framework Programme
-(FP/2007-2013) / ERC Grant Agreement n. 308024.
+(FP/2007-2013) / ERC Grant Agreement n. 308024. ITS and SEK thank the
+Center for Computational Astrophysics for hospitality.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
