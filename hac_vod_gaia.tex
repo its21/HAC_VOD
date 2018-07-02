@@ -206,8 +206,9 @@ where each star has a well-measured line-of-sight velocity.
 %
 \begin{itemize}
 \item \citet{Simion2018} provide a table of 46 RRL with radial
-  velocity measurements (45 observed with MDM and 1 from SDSS) with
-  heliocentric distances between 15 and 18 kpc;
+  velocity measurements (45 observed at the Michigan-Dartmouth-MIT
+  Observatory and 1 from SDSS) with heliocentric distances between 15
+  and 18 kpc;
 \item \cite{Vivas2016} compiled a catalog of 412 RRL in the region of
   the sky covered by the VOD with distances between 4 and 75 kpc from
   the Sun with radial velocity measurements of stars from La
@@ -307,19 +308,19 @@ calculated the fraction of Oosterhoff type I (Oo I) RR Lyrae, using
 equations 1 and 2 in \citet{Be2018} to explore the changes in the RRL
 mixture. In the 10$<$z/kpc$<$20 range, where the velocity anisotropy
 is the highest ($\beta = 0.84 \pm 0.03$) approaching the value in the
-HAC field, the Oo I type dominates with (77 $\pm$ 13)\%. In the same
+HAC field, the Oo I type dominates with 77 $\pm$ 13\%. In the same
 slice, 73\% of the stars belong to the more squashed (or `sausage'
 looking) velocity ellipsoid. The same behaviour but less accentuated
 can be noticed in the 0$<$z/kpc$<$10 slice where the anisotropy $\beta
-= 0.7 \pm 0.1$ is lower but the fraction of Oo I stars is somewhat
-lower at (57 $\pm$ 21)\%. Further from the plane, at z$>$20 kpc, the
-velocity ellipsoid changes dramatically to almost isotropic with
-$\beta = -0.1 \pm 0.2$ and Oo I type stars fraction of (64 $\pm$
-13)\%. Please note that in this particular z bin, the $\beta$ value
-may still be affected by the presence of the Sagittarius stream. Group
-2 and the stars sharing the same galactocentric distance range with
-the HAC, are all located at $z<20$ kpc. Interestingly, the HAC
-counterparts in the VOD (red points) are all clearly part of the
+= 0.7 \pm 0.1$ is only moderately lower and the fraction of Oo I stars
+is broadly consistent with the above at 57 $\pm$ 21\%. Further from
+the plane, at z$>$20 kpc, the velocity ellipsoid changes dramatically
+to almost isotropic with $\beta = -0.1 \pm 0.2$ and Oo I type fraction
+is 64 $\pm$ 13\%. Please note that in this particular z bin, the
+$\beta$ value may still be affected by the presence of the Sagittarius
+stream. Group 2 and the stars sharing the same galactocentric distance
+range with the HAC, are all located at $z<20$ kpc. Interestingly, the
+HAC counterparts in the VOD (red points) are all clearly part of the
 anisotropic component. To summarize, it is clear that the velocity
 ellipsoid shape does change noticeably with vertical height. However,
 given the limited range of Galactic $l$ and $b$ in the VOD sample, it
@@ -336,45 +337,44 @@ simply ends around $z\sim20$ kpc.
 \end{figure}
 %
 \subsection{Orbital Properties}
- %
+
 We use the 6-D measurements described above to initialise the RR Lyrae
 orbits in the HAC and VOD fields. The orbits are integrated using the
 $\mathrm{galpy}$ package \citep{Bovy2015} in the recommended Galactic
-potential model for the Milky Way, $\texttt{MWPotential2014}$ composed
-of a Miyamoto-Nagai disc, a bulge with a power-law density profile
-that is exponentially cut-off and a dark matter halo described by a
-NFW potential, with parameters given in Table 1 of
-\citet{Bovy2015}. The orbital properties, i.e. the peri- and
-apo-centric radii, eccentricity, and the maximal height above the disc
-plane, are shown in Figure~\ref{fig:orbits}. To compute the errors
-(not shown for VOD to simplify the figure) we integrate 500 orbits for
-each star where the initial conditions are re-sampled from the
-observations according to the associated uncertainties. The
-probability distributions of the eccentricities, apo-centres and
-peri-centres are shown in the bottom row of the Figure. Note that the
-default Milky Way mass in $\mathrm{galpy}$, $\mathrm{M_{vir}} = 0.8
-\times 10^{12} M_{\odot}$, is somewhat lower than suggested by recent
-measurements.  We have checked however that the distributions of the
-orbital parameters displayed in Figure~\ref{fig:orbits} are minimally
-affected if we increase the Galaxy's mass.
+potential model for the Milky Way, $\texttt{MWPotential2014}$, with
+parameters given in Table 1 of \citet{Bovy2015}. The orbital
+properties, i.e. the peri- and apo-centric radii, eccentricities, and
+the maximal heights above the disc plane, are shown in
+Figure~\ref{fig:orbits}. To compute the errors (not shown for VOD to
+simplify the figure) we integrate 500 orbits for each star where the
+initial conditions are re-sampled from the observations according to
+the associated uncertainties. The probability distributions of the
+eccentricities, apo-centres and peri-centres are shown in the bottom
+row of the Figure. Note that the default Milky Way mass in
+$\mathrm{galpy}$, $\mathrm{M_{vir}} = 0.8 \times 10^{12} M_{\odot}$,
+is somewhat lower than suggested by recent measurements.  We have
+checked however that the distributions of the orbital parameters
+displayed in Figure~\ref{fig:orbits} are minimally affected if we
+increase the Galaxy's mass.
 
 The stars in the HAC field typically travel as high as $\sim$15 kpc
 above the Galactic plane. The apo-centres bunch up around 15-20 kpc
-from the Galactic center, with a tail to higher values. The
-distribution of the peri-centric distances of the HAC stars peaks
-sharply around $\sim$1 kpc with most stars having their per-centers
-within 5 kpc from the Galactic center. This naturally implies highly
-eccentric orbits (with eccentricity close to 1) for the vast majority
-of the HAC stars. Compared to the HAC, the VOD stars explore broader
-range of apo-centres, with the distribution of the peri-centres much
-less strongly peaked. As a result, the typical eccentricity for a VOD
-star is around $\sim$0.8. Note however, that a sample of VOD stars
-comprised of Group 2 (shown in green) and stars that share
-instantaneous Galacto-centric distances with objects in the HAC field
-appears to have orbiral properties much closer to that of HAC. In
-particular, once the stars with similar distances are selected, the
-apo-centre and peri-center distance distributions in the two fields
-look very similar.
+from the Galactic center - similar to the behaviour of local Main
+Sequence and BHB stars analysed in \citet{Deason2018pileup}, with a
+tail to higher values. The distribution of the peri-centric distances
+of the HAC stars peaks sharply around $\sim$1 kpc with most stars
+having their per-centers within 5 kpc from the Galactic center. This
+naturally implies highly eccentric orbits (with eccentricity close to
+1) for the vast majority of the HAC stars. Compared to the HAC, the
+VOD stars explore broader range of apo-centres, with the distribution
+of the peri-centres much less strongly peaked. As a result, the
+typical eccentricity for a VOD star is around $\sim$0.8. Note however,
+that a sample of VOD stars comprised of Group 2 (shown in green) and
+stars that share instantaneous Galacto-centric distances with objects
+in the HAC field appears to have orbiral properties much closer to
+that of HAC. In particular, once the stars with similar distances are
+selected, the apo-centre and peri-center distance distributions in the
+two fields look very similar.
 
 The similarity of orbital properties of the HAC and VOD stars is
 emphasized in Figure~\ref{fig:energy}. Here, we first show the
@@ -423,13 +423,13 @@ Figure~\ref{fig:backorbits} provides an alternative view of the
 orbital properties of the HAC and VOD stars. Here we have used the
 stellar 6-D phase-space measurements as initial conditions and
 integrated the orbits back in time for 8 Gyrs. The Figure shows the
-density of the test particle positions along each orbits for all
-orbits across the entire temporal range of the integration. The HAC
-stars occupy a slightly flattened (in the vertical direction)
-cross-like (in the y-z plane and its projection on the sky - $l,b$
-plane) structure with a density peak at the Galactic centre. Note that
-some of the appearance of the debris distribution could be due to the
-limited initial conditions of the stars with available radial velocity
+density of the test particle positions along each orbit for all orbits
+across the entire temporal range of the integration. The HAC stars
+occupy a slightly flattened (in the vertical direction) cross-like (in
+the y-z plane and its projection on the sky - $l,b$ plane) structure
+with a density peak at the Galactic centre. Note that some of the
+appearance of the debris distribution could be due to the limited
+initial conditions of the stars with available radial velocity
 measurements. The VOD stars typically move through very similar
 regions of the Galaxy (especially the distance-matched sub-sample)
 shown in the bottom row. While, overall, the match between the stellar
