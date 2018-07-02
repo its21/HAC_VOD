@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.4.22)  2 JUL 2018 13:40
+=======
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.24)  3 JUL 2018 00:24
 =======
 This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.4.22)  2 JUL 2018 13:03
 >>>>>>> fd6c247a8ce9d82b51829e5d230237918537f416
+>>>>>>> 48172ed3ad5c5e8e4dd0ac216229307d8e3b2257
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1277,26 +1281,28 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.521 \section
-              {Conclusions} <./VOD_velocities_vphi_zcuts.pdf>] [4pdfTeX warning
- (ext4): destination with the same identifier (name{figure.4}) has been already
- used, duplicate ignored
+l.529 \section
+              {Conclusions} <./VOD_velocities_vphi_zcuts.pdf>]
+Underfull \vbox (badness 1158) has occurred while \output is active []
+
+ [4pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.575 
+l.583 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.575 
+l.583 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.575 
+l.583 
        <./HAC_orbits_ecc_z.pdf> <./HAC_orbits_apo_ecc.pdf
 
 pdfTeX warning: pdflatex (file ./HAC_orbits_apo_ecc.pdf): PDF inclusion: multip
@@ -1378,12 +1384,12 @@ n: multiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ./VOD_orbits_8Gyrs_yz_sausage.pdf): PDF inclusio
 n: multiple pdfs with page group included in a single page
 >] (./hac_vod_gaia.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 609.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 617.
  [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 609.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 617.
  (./hac_vod_gaia.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 609.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 609.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 617.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 617.
 Package rerunfilecheck Info: File `hac_vod_gaia.out' has not changed.
 (rerunfilecheck)             Checksum: 384C2FC295C3EF412DDFB0B6180A0D21;366.
 
@@ -1391,12 +1397,12 @@ Package rerunfilecheck Info: File `hac_vod_gaia.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 609.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 617.
  ) 
 Here is how much of TeX's memory you used:
  10063 strings out of 492995
  142388 string characters out of 6132704
- 290357 words of memory out of 5000000
+ 290307 words of memory out of 5000000
  13269 multiletter control sequences out of 15000+600000
  116223 words of font info for 207 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1462,8 +1468,12 @@ live/2017/texmf-dist/fonts/type1/public/newtx/rtxmi5.pfb></usr/local/texlive/20
 f-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2017/texmf-dist/
 fonts/type1/public/newtx/txsys.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
+<<<<<<< HEAD
+Output written on hac_vod_gaia.pdf (5 pages, 745123 bytes).
+=======
 Output written on hac_vod_gaia.pdf (5 pages, 745160 bytes).
 >>>>>>> fd6c247a8ce9d82b51829e5d230237918537f416
+>>>>>>> 48172ed3ad5c5e8e4dd0ac216229307d8e3b2257
 PDF statistics:
  847 PDF objects out of 1000 (max. 8388607)
  712 compressed objects within 8 object streams
