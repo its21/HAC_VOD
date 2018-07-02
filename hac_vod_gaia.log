@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.24)  2 JUL 2018 13:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.24)  2 JUL 2018 14:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1121,13 +1121,13 @@ Package pdftex.def Info: HAC_orbits_8Gyrs_xy_defaultmass.pdf used on input line
  462.
 (pdftex.def)             Requested size: 67.65944pt x 56.74663pt.
 
-<HAC_orbits_8Gyrs_yz_defaultmass.pdf, id=347, 281.85298pt x 187.902pt>
+<HAC_orbits_8Gyrs_yz_defaultmass.pdf, id=347, 281.85298pt x 188.6247pt>
 File: HAC_orbits_8Gyrs_yz_defaultmass.pdf Graphic file (type pdf)
 
 <use HAC_orbits_8Gyrs_yz_defaultmass.pdf>
 Package pdftex.def Info: HAC_orbits_8Gyrs_yz_defaultmass.pdf used on input line
  463.
-(pdftex.def)             Requested size: 85.11993pt x 56.74663pt.
+(pdftex.def)             Requested size: 85.11993pt x 56.96487pt.
 
 <VOD_orbits_8Gyrs_lb_defaultmass.pdf, id=348, 274.626pt x 187.902pt>
 File: VOD_orbits_8Gyrs_lb_defaultmass.pdf Graphic file (type pdf)
@@ -1145,13 +1145,13 @@ Package pdftex.def Info: VOD_orbits_8Gyrs_xy_defaultmass.pdf used on input line
  465.
 (pdftex.def)             Requested size: 67.65944pt x 56.74663pt.
 
-<VOD_orbits_8Gyrs_yz_defaultmass.pdf, id=350, 281.85298pt x 187.902pt>
+<VOD_orbits_8Gyrs_yz_defaultmass.pdf, id=350, 281.85298pt x 188.6247pt>
 File: VOD_orbits_8Gyrs_yz_defaultmass.pdf Graphic file (type pdf)
 
 <use VOD_orbits_8Gyrs_yz_defaultmass.pdf>
 Package pdftex.def Info: VOD_orbits_8Gyrs_yz_defaultmass.pdf used on input line
  466.
-(pdftex.def)             Requested size: 85.11993pt x 56.74663pt.
+(pdftex.def)             Requested size: 85.11993pt x 56.96487pt.
 
 <VOD_orbits_8Gyrs_lb_sausage.pdf, id=351, 274.626pt x 187.902pt>
 File: VOD_orbits_8Gyrs_lb_sausage.pdf Graphic file (type pdf)
@@ -1169,13 +1169,13 @@ Package pdftex.def Info: VOD_orbits_8Gyrs_xy_sausage.pdf used on input line 467
 .
 (pdftex.def)             Requested size: 67.65944pt x 56.74663pt.
 
-<VOD_orbits_8Gyrs_yz_sausage.pdf, id=353, 281.85298pt x 187.902pt>
+<VOD_orbits_8Gyrs_yz_sausage.pdf, id=353, 281.85298pt x 188.6247pt>
 File: VOD_orbits_8Gyrs_yz_sausage.pdf Graphic file (type pdf)
 
 <use VOD_orbits_8Gyrs_yz_sausage.pdf>
 Package pdftex.def Info: VOD_orbits_8Gyrs_yz_sausage.pdf used on input line 468
 .
-(pdftex.def)             Requested size: 85.11993pt x 56.74663pt.
+(pdftex.def)             Requested size: 85.11993pt x 56.96487pt.
  [3pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
  has been already used, duplicate ignored
 
@@ -1328,7 +1328,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 562.
 Here is how much of TeX's memory you used:
  9925 strings out of 493014
  140318 string characters out of 6133351
- 291296 words of memory out of 5000000
+ 291299 words of memory out of 5000000
  13071 multiletter control sequences out of 15000+600000
  110439 words of font info for 249 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1367,10 +1367,10 @@ texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2016/te
 xmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2016/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on hac_vod_gaia.pdf (6 pages, 784774 bytes).
+Output written on hac_vod_gaia.pdf (6 pages, 778421 bytes).
 PDF statistics:
- 880 PDF objects out of 1000 (max. 8388607)
- 741 compressed objects within 8 object streams
+ 856 PDF objects out of 1000 (max. 8388607)
+ 717 compressed objects within 8 object streams
  72 named destinations out of 1000 (max. 500000)
  184 words of extra memory for PDF output out of 10000 (max. 10000000)
 
