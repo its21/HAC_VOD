@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.4.22)  2 JUL 2018 14:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.4.22)  2 JUL 2018 14:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1389,7 +1389,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 617.
 Here is how much of TeX's memory you used:
  10063 strings out of 492995
  142388 string characters out of 6132704
- 290283 words of memory out of 5000000
+ 290287 words of memory out of 5000000
  13269 multiletter control sequences out of 15000+600000
  116223 words of font info for 207 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1421,7 +1421,7 @@ live/2017/texmf-dist/fonts/type1/public/newtx/rtxmi5.pfb></usr/local/texlive/20
 f-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2017/texmf-dist/
 fonts/type1/public/newtx/txsys.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on hac_vod_gaia.pdf (5 pages, 745174 bytes).
+Output written on hac_vod_gaia.pdf (5 pages, 745192 bytes).
 PDF statistics:
  847 PDF objects out of 1000 (max. 8388607)
  712 compressed objects within 8 object streams
