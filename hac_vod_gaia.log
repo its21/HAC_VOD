@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.24)  3 JUL 2018 22:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.24)  3 JUL 2018 23:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1109,23 +1109,24 @@ File: apocentres.pdf Graphic file (type pdf)
 <use apocentres.pdf>
 Package pdftex.def Info: apocentres.pdf used on input line 438.
 (pdftex.def)             Requested size: 78.62352pt x 75.20511pt.
- <HAC_Lz_Lp.pdf, id=456, 180.675pt x 166.22101pt>
-File: HAC_Lz_Lp.pdf Graphic file (type pdf)
+ <HAC_Lz_Lp_new.pdf, id=456, 180.675pt x 166.22101pt>
+File: HAC_Lz_Lp_new.pdf Graphic file (type pdf)
 
-<use HAC_Lz_Lp.pdf>
-Package pdftex.def Info: HAC_Lz_Lp.pdf used on input line 455.
-(pdftex.def)             Requested size: 72.90279pt x 67.07057pt.
- <VOD_Lz_Lp.pdf, id=457, 180.675pt x 166.22101pt>
-File: VOD_Lz_Lp.pdf Graphic file (type pdf)
+<use HAC_Lz_Lp_new.pdf>
+Package pdftex.def Info: HAC_Lz_Lp_new.pdf used on input line 455.
+(pdftex.def)             Requested size: 72.90555pt x 67.0731pt.
+ <VOD_Lz_Lp_new.pdf, id=457, 180.675pt x 166.22101pt>
+File: VOD_Lz_Lp_new.pdf Graphic file (type pdf)
 
-<use VOD_Lz_Lp.pdf>
-Package pdftex.def Info: VOD_Lz_Lp.pdf used on input line 456.
-(pdftex.def)             Requested size: 72.90279pt x 67.07057pt.
- <E_L.pdf, id=458, 224.037pt x 166.22101pt>
-File: E_L.pdf Graphic file (type pdf)
- <use E_L.pdf>
-Package pdftex.def Info: E_L.pdf used on input line 457.
-(pdftex.def)             Requested size: 90.39946pt x 67.07057pt.
+<use VOD_Lz_Lp_new.pdf>
+Package pdftex.def Info: VOD_Lz_Lp_new.pdf used on input line 456.
+(pdftex.def)             Requested size: 72.90555pt x 67.0731pt.
+ <E_L_new.pdf, id=458, 224.037pt x 166.22101pt>
+File: E_L_new.pdf Graphic file (type pdf)
+
+<use E_L_new.pdf>
+Package pdftex.def Info: E_L_new.pdf used on input line 457.
+(pdftex.def)             Requested size: 90.40288pt x 67.0731pt.
 
 <HAC_orbits_8Gyrs_lb_defaultmass.pdf, id=466, 274.626pt x 190.0701pt>
 File: HAC_orbits_8Gyrs_lb_defaultmass.pdf Graphic file (type pdf)
@@ -1242,18 +1243,18 @@ usion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./apocentres.pdf): PDF inclu
 sion: multiple pdfs with page group included in a single page
-> <./HAC_Lz_Lp.pdf
+> <./HAC_Lz_Lp_new.pdf
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./HAC_Lz_Lp.pdf): PDF inclus
-ion: multiple pdfs with page group included in a single page
-> <./VOD_Lz_Lp.pdf
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./HAC_Lz_Lp_new.pdf): PDF in
+clusion: multiple pdfs with page group included in a single page
+> <./VOD_Lz_Lp_new.pdf
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./VOD_Lz_Lp.pdf): PDF inclus
-ion: multiple pdfs with page group included in a single page
-> <./E_L.pdf
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./VOD_Lz_Lp_new.pdf): PDF in
+clusion: multiple pdfs with page group included in a single page
+> <./E_L_new.pdf
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./E_L.pdf): PDF inclusion: m
-ultiple pdfs with page group included in a single page
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./E_L_new.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
 >] (./hac_vod_gaia.bbl [5pdfTeX warning (ext4): destination with the same ident
 ifier (name{figure.6}) has been already used, duplicate ignored
 
@@ -1319,7 +1320,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 621.
  ) 
 Here is how much of TeX's memory you used:
  9929 strings out of 493014
- 140375 string characters out of 6133351
+ 140435 string characters out of 6133351
  283125 words of memory out of 5000000
  13074 multiletter control sequences out of 15000+600000
  110439 words of font info for 249 fonts, out of 8000000 for 9000
@@ -1359,7 +1360,7 @@ exmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2016/tex
 mf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2016/texmf-dist
 /fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
 e1/urw/times/utmri8a.pfb>
-Output written on hac_vod_gaia.pdf (6 pages, 781129 bytes).
+Output written on hac_vod_gaia.pdf (6 pages, 781133 bytes).
 PDF statistics:
  895 PDF objects out of 1000 (max. 8388607)
  751 compressed objects within 8 object streams
