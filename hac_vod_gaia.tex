@@ -67,11 +67,11 @@
 % The list of authors, and the short list which is used in the headers.
 % If you need two or more lines of authors, add an extra line using \newauthor
 
-\author[Iulia T. Simion et al]{Iulia T. Simion$^{1}\thanks{E-mail:isimion@shao.ac.cn}$, Vasily Belokurov$^{2,3}$ and  Sergey E. Koposov$^{2,4}$\\
+\author[Iulia T. Simion et al]{Iulia T. Simion$^{1}\thanks{E-mail:isimion@shao.ac.cn}$, Vasily Belokurov$^{2,3}$ and  Sergey E. Koposov$^{4,2}$\\
   $^{1}$Key Laboratory for Research in Galaxies and Cosmology, Shanghai Astronomical Observatory, 80 Nandan Road, Shanghai 200030, China\\
   $^{2}$Institute of Astronomy, Madingley Rd, Cambridge, CB3 0HA\\
   $^{3}$Center for Computational Astrophysics, Flatiron Institute, 162 5th Avenue, New York, NY 10010, USA\\
-  $^4$Department of Physics, McWilliams Center for Cosmology, Carnegie Mellon University, 5000 Forbes Avenue, Pittsburgh, PA 15213, USA
+  $^4$McWilliams Center for Cosmology, Department of Physics, Carnegie Mellon University, 5000 Forbes Avenue, Pittsburgh, PA, 15213, USA
 }
 
 % These dates will be filled out by the publisher
@@ -188,7 +188,7 @@ constituent stars.
       planes. In green we mark a significant kinematical group
       identified by \citet{Vivas2016} (group 2 in their table 5) and
       in red a sub-sample of the VOD RRL with galactocentric distances
-      similar to the HAC sample, 11 $<\mathrm{r_{GC}}$ (kpc)$<$
+      similar to the HAC sample, 11 $<\mathrm{r_{GC}}$/kpc$<$
       16. The semi-circles are centred on the Sun's position and have
       a radius of 10 and 20 kpc. The Sun (yellow star) is located at
       (x$_{\odot}$, y$_{\odot}$, z$_{\odot})= $ (-8,0,0) kpc.}
@@ -239,10 +239,10 @@ the north Galactic pole. While \citealt{Vivas2016} identify 6
 significant kinematical groups in the VOD region (their table 5), only
 groups 1 (Sagittarius stream) and 2 (likely members of the VOD, with
 $\mathrm{<v_{GSR}>}= 135$ km/s) contain more than 10 stars. We mark
-group 2 with green circles in Figure~\ref{fig:lb}. We also mark with
+group 2 stars with green circles in Figure~\ref{fig:lb}. We also mark with
 red circles the location of a group of stars selected to have
 galactocentric distances similar to the HAC sample, i.e.
-$11\mathrm{<r_{GC}}$(kpc)$<16$ to facilitate a fair comparison of their
+$11\mathrm{<r_{GC}}/$kpc$<16$ to facilitate a fair comparison of their
 velocities and orbits.
 %
 
@@ -256,7 +256,7 @@ the HAC, shown in the top row. To estimate the uncertainty in each
 velocity component we propagate the measured proper motion and
 line-of-sight velocity errors using Monte-Carlo re-sampling, where we
 take into account the covariances between the measurements of the
-Right Ascension and Declination components of proper motion as
+right ascension and declination components of proper motion as
 provided in GDR2. We use the standard deviations of the resulting
 \{$v_{r}$, $v_{\theta}$, $v_{\phi}$\} distributions as an estimate
 of the velocity uncertainties; these are shown in Fig.~\ref{fig:vel}.
@@ -277,14 +277,14 @@ of the velocity uncertainties; these are shown in Fig.~\ref{fig:vel}.
       each panel. The uncertainties on the individual velocities (gray
       bars) were obtained propagating the errors on the measurements
       using Monte-Carlo methods. Both fields have radially biased
-      orbits with anisotropy parameters $\beta= 0.91 \pm 0.03$ (HAC)
+      orbits with average anisotropy parameters $\beta= 0.91 \pm 0.03$ (HAC)
       and $\beta= 0.74 \pm 0.04$ (VOD). A mixture of two multivariate
-      Gaussians was fitted to the VOD data, according to whcih
+      Gaussians was fitted to the VOD data, according to which
       $\sim$62\% of the stars belong to the $\beta_{1}=
       0.96^{+0.02}_{-0.44}$ (blue) component and $\sim$38\% to the
       $\beta_{2}=0.44^{+0.45}_{-0.20}$ (magenta) component. The Vivas
-      Gr. 2 and VOD (11-16) sub-samples are also shown in lime and
-      red, as in Fig.\ref{fig:lb}. Vivas Gr. 2 clusters at $v_{r} =
+      Group~2 and VOD (11$<$z/kpc$<$16) sub-samples are also shown in lime and
+      red, as in Fig.\ref{fig:lb}. Vivas Group~2 clusters lie at $v_{r} =
       135$ km/s, as expected, while the VOD(11-16) group largely
       belongs to the high-anisotropy component (in blue).}
     \label{fig:vel}
@@ -296,8 +296,8 @@ anisotropic, with the dispersion in the radial component dominating
 the tangential ones, especially in the HAC data. To describe the shape
 of the velocity distributions, we model each stellar sample as a
 single-component multi-variate Gaussian using the Extreme
-Deconvolution module implemented in $\mathrm{astroML}$
-\citep{astroML}. The resulting parameters and the associated
+Deconvolution \citep{ED} method as implemented in $\mathrm{astroML}$
+\citep{astroML} package. The resulting parameters and the associated
 uncertainties of the velocity ellipsoids are taken to be the median
 and the standard deviation values of 500 bootstrap re-sampling trials.
 The velocity ellipsoid shape can be summarized using the anisotropy
@@ -309,13 +309,14 @@ span very different ranges in Galactic $l,b$ and distances. According
 to \citet{Belokurov2018}, the inner stellar halo can be viewed as a
 mixture of two debris components with distinct
 properties. Accordingly, we fit a model with two multivariate
-Gaussians to the VOD velocity data using Extreme Deconvolution
-\citep[see][]{ED}. With log-likelihood of $\log L = -5119$, the
+Gaussians to the VOD velocity data using Extreme Deconvolution. 
+With log-likelihood of $\log L = -5119$, the
 two-component model is clearly preferred compared to the
 single-component one with $\log L = -5384$. The VOD sample appears to
-be composed of roughly two thirds of stars with $\beta_{1}=
+be composed of roughly two thirds of stars with highly anisothropic
+velocity distribution $\beta_{1}=
 0.96^{+0.02}_{-0.44}$ (marked in blue in Fig. \ref{fig:vel}) and a
-third with $\beta_{2}=0.44^{+0.45}_{-0.20}$ (magenta) in good
+third with more isothropic velocities $\beta_{2}=0.44^{+0.45}_{-0.20}$ (magenta) in good
 agreement with the results for the local halo presented in
 \citet{Belokurov2018}.
 %
@@ -329,7 +330,7 @@ and radial $v_{r}$ velocity distributions in
 Figure~\ref{fig:VOD_vel}. Additionally, for each z slice we have
 calculated the fraction of Oosterhoff type I (Oo I) RR Lyrae, using
 equations 1 and 2 in \citet{Be2018} to explore the changes in the RRL
-mixture. In the 10$<$z/kpc$<$20 range, where the velocity anisotropy
+populations. In the 10$<$z/kpc$<$20 range, where the velocity anisotropy
 is the highest ($\beta = 0.84 \pm 0.03$) approaching the value in the
 HAC field, the Oo I type dominates with 77 $\pm$ 13\%. In the same
 slice, 73\% of the stars belong to the more squashed (or `sausage'
