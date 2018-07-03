@@ -332,16 +332,16 @@ calculated the fraction of Oosterhoff type I (Oo I) RR Lyrae, using
 equations 1 and 2 in \citet{Be2018} to explore the changes in the RRL
 populations. In the 10$<$z/kpc$<$20 range, where the velocity anisotropy
 is the highest ($\beta = 0.84 \pm 0.03$) approaching the value in the
-HAC field, the Oo I type dominates with 77 $\pm$ 13\%. In the same
-slice, 73\% of the stars belong to the more squashed (or `sausage'
-looking) velocity ellipsoid. The same behaviour but less accentuated
-can be noticed in the 0$<$z/kpc$<$10 slice where the anisotropy $\beta
-= 0.7 \pm 0.1$ is only moderately lower and the fraction of Oo I stars
-is broadly consistent with the above at 57 $\pm$ 21\%. Further from
+HAC field, the Oo I type dominates with the 77 $\pm$ 13\% fraction. In the same
+slice, 73\% of the stars belong to the more anisothropic (or `sausage'
+looking) velocity ellipsoid. The slice closer to the galactic plane 
+0$<$z/kpc$<$10 shows similar properties with anisotropy $\beta
+= 0.7 \pm 0.1$ that is only moderately lower and the fraction of Oo I stars
+that is broadly consistent with the above at 57 $\pm$ 21\%. Further from
 the plane, at z$>$20 kpc, the velocity ellipsoid changes dramatically
 to almost isotropic with $\beta = -0.1 \pm 0.2$ and Oo I type fraction
-is 64 $\pm$ 13\%. Please note that in this particular z bin, the
-$\beta$ value may still be affected by the presence of the Sagittarius
+is 64 $\pm$ 13\%. We note however that in this particular z bin, the
+$\beta$ value may be affected by the presence of the Sagittarius
 stream. Group 2 and the stars sharing the same galactocentric distance
 range with the HAC, are all located at $z<20$ kpc. Interestingly, the
 HAC counterparts in the VOD (red points) are all clearly part of the
@@ -356,12 +356,12 @@ simply ends around $z\sim20$ kpc.
 	        \includegraphics[scale=0.55]{VOD_velocities_vphi_zcuts.pdf}
 \vspace{-0.45cm}
    \caption{Velocity distribution of the VOD RR Lyrae, in three
-     distance ranges above the Galactic plane, increasing from left to
-     right (see also the bottom left panel of Fig.
+     height ranges above the Galactic plane, increasing from left to
+     right ({\it cf.} the bottom left panel of Fig.
      \ref{fig:vel}). The fraction of Oosterhoff type I RR Lyrae within
      each distance range is reported on the bottom left of each panel
      and the orbital anisotropy $\beta$ in the top right. Note that in
-     the middle panel, where $10<$z (kpc)$<20$, the anisotropy
+     the middle panel, where $10<$z/kpc$<20$, the anisotropy
      parameter is $\beta=0.84\pm0.03$, close to the value reported for
      HAC (top panels of Fig.  \ref{fig:vel}); in the same field the
      large majority of RRL is of Oosterhoff type I.}
@@ -374,18 +374,20 @@ We use the 6-D measurements described above to initialise the RR Lyrae
 orbits in the HAC and VOD fields. The orbits are integrated using the
 $\mathrm{galpy}$ package \citep{Bovy2015} in the recommended Galactic
 potential model for the Milky Way, $\texttt{MWPotential2014}$, with
-parameters given in Table 1 of \citet{Bovy2015}. The orbital
+parameters given in Table 1 of \citet{Bovy2015}. The distribution of 
+orbital
 properties, i.e. the peri- and apo-centric radii, eccentricities, and
 the maximal heights above the Galactic plane, are shown in
-Figure~\ref{fig:orbits}. To compute the errors (not shown for VOD to
-simplify the figure) we integrate 500 orbits for each star where the
-initial conditions are re-sampled from the observations according to
-the associated uncertainties. The probability distributions of the
+Figure~\ref{fig:orbits}. The uncertainties on orbital properties
+(not shown for VOD to avoid cluttering the figure) are computed by 
+integrating 500 orbits for each star with 
+initial conditions sampled from observables according to
+the associated uncertainties. The 1-D distributions of the
 eccentricities, apo-centres and peri-centres are shown in the bottom
-row of the Figure. Note that the default Milky Way mass in
+row of the Figure.  We remark that although the default Milky Way mass in
 $\mathrm{galpy}$, $\mathrm{M_{vir}} = 0.8 \times 10^{12} M_{\odot}$,
-is somewhat lower than suggested by recent measurements.  We have
-checked however that the distributions of the orbital parameters
+is somewhat lower than suggested by recent measurements, we have
+checked that the distributions of the orbital parameters
 displayed in Figure~\ref{fig:orbits} are minimally affected if we
 increase the Galaxy's mass.
 
@@ -395,18 +397,18 @@ from the Galactic center - similar to the behaviour of local Main
 Sequence and BHB stars analysed in \citet{Deason2018pileup}, with a
 tail to higher values. The distribution of the peri-centric distances
 of the HAC stars peaks sharply around $\sim$1 kpc with most stars
-having their per-centers within 5 kpc from the Galactic center. This
+having their peri-centers within 5 kpc from the Galactic center. This
 naturally implies highly eccentric orbits (with eccentricity close to
 1) for the vast majority of the HAC stars. Compared to the HAC, the
 VOD stars explore broader range of apo-centres, with the distribution
 of the peri-centres much less strongly peaked. As a result, the
 typical eccentricity for a VOD star is around $\sim$0.8. Note however,
 that a sample of VOD stars comprised of Group 2 (shown in green) and
-stars that share instantaneous Galacto-centric distances with objects
+stars that share current Galacto-centric distances with objects
 in the HAC field appears to have orbiral properties much closer to
 that of HAC. In particular, once the stars with similar distances are
 selected, the apo-centre and peri-center distance distributions in the
-two fields look very similar.
+two fields look remarkably similar.
 
 The similarity of orbital properties of the HAC and VOD stars is
 emphasized in Figure~\ref{fig:energy}. Here, we first show the
