@@ -1,46 +1,8 @@
-% mnras_template.tex 
-%
-% LaTeX template for creating an MNRAS paper
-%
-% v3.0 released 14 May 2015
-% (version numbers match those of mnras.cls)
-%
-% Copyright (C) Royal Astronomical Society 2015
-% Authors:
-% Keith T. Smith (Royal Astronomical Society)
-
-% Change log
-%
-% v3.0 May 2015
-%    Renamed to match the new package name
-%    Version number matches mnras.cls
-%    A few minor tweaks to wording
-% v1.0 September 2013
-%    Beta testing only - never publicly released
-%    First version: a simple (ish) template for creating an MNRAS paper
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Basic setup. Most papers should leave these options alone.
-\documentclass[fleqn,usenatbib]{mnras}
-
-% MNRAS is set in Times font. If you don't have this installed (most LaTeX
-% installations will be fine) or prefer the old Computer Modern fonts, comment
-% out the following line
-%\usepackage{newtxtext,newtxmath}
-% Depending on your LaTeX fonts installation, you might get better results with one of these:
-%\usepackage{mathptmx}
-%\usepackage{txfonts}
+\documentclass[a4paper,useAMS,usenatbib]{mnras}
+\pdfoutput=1
 \usepackage{newtxtext,newtxmath}
-
-% Use vector fonts, so it zooms properly in on-screen viewing software
-% Don't change these lines unless you know what you are doing
 \usepackage[T1]{fontenc}
 \usepackage{ae,aecompl}
-
-
-%%%%% AUTHORS - PLACE YOUR OWN PACKAGES HERE %%%%%
-
-% Only include extra packages if you really need them. Common packages are:
 \usepackage{graphicx}	% Including figure files
 \usepackage{amsmath}	% Advanced maths commands
 \usepackage{amssymb}	% Extra maths symbols
@@ -93,12 +55,10 @@ Gaia DR2 proper motions to study orbital properties of the
 Hercules-Aquila Cloud (HAC) and Virgo Over-density (VOD). We
 demonstrate that both structures are dominated by stars on highly
 eccentric orbits, with peri-centres around $\sim1$ kpc and apo-centres
-between 15 and 25 kpc from the Galactic centre. Given that the stars
+at 15 - 25 kpc from the Galactic centre. Given that the stars
 in the HAC and the VOD occupy very similar regions in the space
 spanned by integrals of motion, we conclude that these diffuse debris
-clouds are part of the same accretion event. More precisely, these
-inner halo sub-structures likely represent two complementary
-not-fully-mixed portions of an ancient massive merger, also known as
+clouds are part of the same accretion event. More precisely, they likely represent two complementary not-fully-mixed portions of an ancient massive merger, also known as
 the ``sausage'' event.
 \end{abstract}
 
@@ -168,7 +128,7 @@ astrometry \citep[e.g.][]{deBoer2018,Deason2018}. In this Letter, we
 look for clues to the formation of the Hercules-Aquila and Virgo
 Clouds using proper motions provided as part of the Gaia DR2. At our
 disposal are highly pure samples of members of each Cloud, namely the
-RR Lyrae stars that i) are co-spatial with HAC and VOD in 3-D and ii)
+RR Lyrae (RRL) stars that i) are co-spatial with HAC and VOD in 3-D and ii)
 that have their line-of-sight velocities measured. By complementing
 the publicly available 4-D data with the GDR2 proper motions, we build
 a large tracer set with complete 6-D phase space information and study
@@ -182,7 +142,7 @@ constituent stars.
 	\includegraphics[scale=0.518]{xy.pdf}
 	\includegraphics[scale=0.518]{xz.pdf}
 	\vspace{-0.55cm}
-    \caption{Spatial distribution of $\sim$350 RR Lyrae with 6-D phase
+    \caption{Spatial distribution of $\sim$350 RRL with 6-D phase
       space information in the HAC and VOD fields, in Galactic
       coordinates (left panel) and in the x-y (middle) and x-z (right)
       planes. In green we mark a significant kinematical group
@@ -199,18 +159,17 @@ constituent stars.
 %
 The Hercules-Aquila and Virgo Clouds are diffuse stellar
 over-densities in the inner stellar halo, located on the opposite
-sides of the Galaxy (see Figure~\ref{fig:lb}). At high latitudes,
-these are detected as peaks in RR Lyrae number counts - curiously - at
+sides of the Galaxy (see Fig.~\ref{fig:lb}). At high latitudes,
+these are detected as peaks in RRL number counts - curiously - at
 similar heliocentric distances, i.e. $\sim$17 kpc (HAC:
 \citealt{Wa09,Simion2014}) and $\sim$19 kpc (VOD: \citealt{Vivas2006,
   Duffau2014, Vivas2016}). Note that other tracers (e.g. BHBs, MSTO
 and K and M giants) have also been used to pin down the morphology of
 the Clouds \citep[see
-  e.g.][]{Be07,Juric2008,Sharma2010,Bonaca2012,Conroy2018}. The RR
-Lyrae, however offer the clearest view of these halo sub-structures
+  e.g.][]{Be07,Juric2008,Sharma2010,Bonaca2012,Conroy2018}. The RRL, however offer the clearest view of these halo sub-structures
 thanks to their associated accurate distances and minuscule Galactic
 foreground contamination. Therefore, in this work, we have focused on
-the two recently published samples of RR Lyrae towards the Clouds,
+the two recently published samples of RRL towards the Clouds,
 where each star has a well-measured line-of-sight
 velocity. \citet{Simion2018} provide a table of 46 RRL with radial
 velocity measurements (45 observed at the Michigan-Dartmouth-MIT
@@ -229,7 +188,7 @@ sample, we remove 112 stars likely belonging to the Sgr stream as
 identified by \citep[][, their Group 1]{Vivas2016}. The spatial
 distribution of the remaining stars (44 from \citealt{Simion2018} and
 299 from \citealt{Vivas2016}) with full 6-D phase space measurements
-is given in Figure~\ref{fig:lb}, in Galactic coordinates in the left
+is given in Fig.~\ref{fig:lb}, in Galactic coordinates in the left
 panel and in the x-y (x-z) Galactic plane in the middle (right)
 panel. We adopt a left-handed Galactic Cartesian coordinates with the
 Sun located at (x$_{\odot}$,y$_{\odot}$, z$_{\odot}$) = (-8,0,0) kpc,
@@ -239,14 +198,14 @@ the north Galactic pole. While \citealt{Vivas2016} identify 6
 significant kinematical groups in the VOD region (their table 5), only
 Group 1 (Sagittarius stream) and 2 (likely members of the VOD, with
 $\mathrm{<v_{GSR}>}= 135$ km/s) contain more than 10 stars. We mark
-Group 2 stars with green circles in Figure~\ref{fig:lb}. We also mark with
+Group 2 stars with green circles in Fig.~\ref{fig:lb}. We also mark with
 red circles the location of a group of stars selected to have
 galactocentric distances similar to the HAC sample, i.e.
 $11\mathrm{<r_{GC}}/$kpc$<16$ to facilitate a fair comparison of their
 velocities and orbits.
 %
 
-Figure~\ref{fig:vel} shows the Galacto-centric spherical polar
+Fig.~\ref{fig:vel} shows the Galacto-centric spherical polar
 components of the velocities (radial $v_{r}$, azimuthal $v_{\theta}$
 and polar $v_{\phi}$) of stars in the HAC (top row) and VOD (bottom
 row) fields. To compute $v_{r}$, $v_{\theta}$ and $v_{\phi}$ we have
@@ -274,22 +233,17 @@ uncertainties; these are shown in Fig.~\ref{fig:vel}.
    \vspace{-0.45cm}
     \caption{Velocity distribution in spherical polar coordinates
       ($\mathrm{v_{r}}$, $\mathrm{v_{\theta}}$, $\mathrm{v_{\phi}}$
-      are the radial, azimuthal and polar components respectively, in
-      km/s) of the HAC (top panels) and VOD (bottom panels) RR Lyrae.
+      are the radial, azimuthal and polar components, in
+      km/s) of the HAC (top panels) and VOD (bottom) RRL.
       The label for the y-axis is reported in the upper-left corner of
-      each panel. The uncertainties on the individual velocities (gray
-      bars) were obtained propagating the errors on the measurements
-      using Monte-Carlo methods. Both fields have radially biased
-      orbits with average anisotropy parameters $\beta= 0.91 \pm 0.03$ (HAC)
-      and $\beta= 0.74 \pm 0.04$ (VOD). A mixture of two multivariate
+      each panel. The uncertainties on the individual velocities are also shown. Both fields have radially biased
+      orbits with average anisotropy parameters $\beta= 0.91$ (HAC)
+      and $\beta= 0.74$ (VOD). A mixture of two multivariate
       Gaussians was fitted to the VOD data, according to which
       $\sim$62\% of the stars belong to the $\beta_{1}=
-      0.96^{+0.02}_{-0.44}$ (blue) component and $\sim$38\% to the
-      $\beta_{2}=0.44^{+0.45}_{-0.20}$ (magenta) component. The Vivas
-      Group~2 and VOD (11$<$z/kpc$<$16) sub-samples are also shown in lime and
-      red, as in Fig.\ref{fig:lb}. Vivas Group~2 clusters lie at $v_{r} =
-      135$ km/s, as expected, while the VOD(11-16) group largely
-      belongs to the high-anisotropy component (in blue).}
+      0.96$ (blue) component and $\sim$38\% to the
+      $\beta_{2}=0.44$ (magenta) component. The Vivas
+      Gr. ~2 and VOD(11-16) sub-samples are also shown (see Fig.\ref{fig:lb}). }%Vivas Group~2 clusters lie at $v_{r} =135$ km/s, as expected, while the VOD(11-16) group largely belongs to the high-anisotropy component (in blue).}
     \label{fig:vel}
 \end{figure}
 %
@@ -330,8 +284,8 @@ significantly flattened vertically. To test this hypothesis, we split
 the VOD sample into 3 groups according to their distance from the
 Galactic plane and show the behaviour of the azimuthal $v_{\theta}$
 and radial $v_{r}$ velocity distributions in
-Figure~\ref{fig:VOD_vel}. Additionally, for each z slice we have
-calculated the fraction of Oosterhoff type I (Oo I) RR Lyrae, using
+Fig.~\ref{fig:VOD_vel}. Additionally, for each z slice we have
+calculated the fraction of Oosterhoff type I (Oo I) RRL, using
 equations 1 and 2 in \citet{Be2018} to explore the changes in the RRL
 populations. In the 10$<$z/kpc$<$20 range, where the velocity anisotropy
 is the highest ($\beta = 0.84 \pm 0.03$) approaching the value in the
@@ -358,22 +312,22 @@ simply ends around $z\sim20$ kpc.
 \begin{figure}
 	        \includegraphics[scale=0.55]{VOD_velocities_vphi_zcuts.pdf}
 \vspace{-0.45cm}
-   \caption{Velocity distribution of the VOD RR Lyrae, in three
+   \caption{Velocity distribution of the VOD RRL, in three
      height ranges above the Galactic plane, increasing from left to
      right ({\it cf.} the bottom left panel of Fig.
-     \ref{fig:vel}). The fraction of Oosterhoff type I RR Lyrae within
+     \ref{fig:vel}). The fraction of Oo I RRL within
      each distance range is reported on the bottom left of each panel
      and the orbital anisotropy $\beta$ in the top right. Note that in
      the middle panel, where $10<$z/kpc$<20$, the anisotropy
      parameter is $\beta=0.84\pm0.03$, close to the value reported for
-     HAC (top panels of Fig.  \ref{fig:vel}); in the same field the
-     large majority of RRL is of Oosterhoff type I.}
+     HAC (top panels of Fig.  \ref{fig:vel}); in the same field, the
+     large majority of RRL is of Oo I type.}
     \label{fig:VOD_vel}
 \end{figure}
 %
 \subsection{Orbital Properties}
 
-We use the 6-D measurements described above to initialise the RR Lyrae
+We use the 6-D measurements described above to initialise the RRL
 orbits in the HAC and VOD fields. The orbits are integrated using the
 $\mathrm{galpy}$ package \citep{Bovy2015} in the recommended Galactic
 potential model for the Milky Way, $\texttt{MWPotential2014}$, with
@@ -381,7 +335,7 @@ parameters given in Table 1 of \citet{Bovy2015}. The distribution of
 orbital
 properties, i.e. the peri- and apo-centric radii, eccentricities, and
 the maximal heights above the Galactic plane, are shown in
-Figure~\ref{fig:orbits}. The uncertainties on orbital properties
+Fig.~\ref{fig:orbits}. The uncertainties on orbital properties
 (not shown for VOD to avoid cluttering the figure) are computed by 
 integrating 500 orbits for each star with 
 initial conditions sampled from observables according to
@@ -391,7 +345,7 @@ row of the Figure.  We remark that although the default Milky Way mass in
 $\mathrm{galpy}$, $\mathrm{M_{vir}} = 0.8 \times 10^{12} M_{\odot}$,
 is somewhat lower than suggested by recent measurements, we have
 checked that the distributions of the orbital parameters
-displayed in Figure~\ref{fig:orbits} are minimally affected if we
+displayed in Fig.~\ref{fig:orbits} are minimally affected if we
 increase the Galaxy's mass.
 
 The stars in the HAC field typically travel as high as $\sim$15 kpc
@@ -414,7 +368,7 @@ selected, the apo-centre and peri-center distance distributions in the
 two fields look remarkably similar.
 
 The similarity of orbital properties of the HAC and VOD stars is
-emphasized in Figure~\ref{fig:energy}. Here, we first show the
+emphasized in Fig.~\ref{fig:energy}. Here, we first show the
 distribution of the components of the angular momentum $L_{\rm z}$ and
 $L_{\perp}$ for HAC (VOD) stars in the left (middle) panels. The stars in the 
 VOD subset with distances matching HAC stars $11\mathrm{<r_{GC}}/$kpc$<16$ are shown in red. The
@@ -440,12 +394,12 @@ of the retrograde ones \citep[see
     \includegraphics[scale=0.473]{pericentres.pdf} 
                           \includegraphics[scale=0.473]{apocentres.pdf} 
 \vspace{-0.45cm}
-  \caption{Properties of the RR Lyrae orbits in the HAC and VOD
+  \caption{Properties of the RRL orbits in the HAC and VOD
     fields. In the top and middle rows we show the maximal height
     above the Galactic plane, apo-centre and Galactocentric radius as a
     function of eccentricity, for the HAC (top) and VOD (middle)
     stars. In the bottom row we show the probability distributions of
-    the eccentricities, peri-centres and apo-centres for both fields,
+    the eccentricities, peri- and apo-centres for both fields,
     including the VOD(11-16) subsample (in red). The majority of HAC
     and VOD(11-16) stars are on highly eccentric orbits with small
     peri-centres (0-3 kpc from the GC) and apo-centres at 15-20 kpc.}
@@ -461,14 +415,10 @@ of the retrograde ones \citep[see
 		       	       	       	       \vspace{-0.46cm}
    \caption{Distribution of the angular momentum components,
      $\mathrm{L_{\perp}}$ and $\mathrm{L_{z}}$, for the HAC (left
-     panel) and VOD (middle) RR Lyrae. Notice the prevalence of
+     panel) and VOD (middle) RRL. Notice the prevalence of
      retrograde orbits for the HAC and VOD(11-16) stars. In the right
      panel, we show the total angular momentum as a function of energy
-     for the HAC (black circles), VOD (gray dots) and the two VOD
-     sub-samples, Vivas GroupGr 2 and VOD(11-16) marked in lime and red as
-     in the previous figures. A large number of HAC and VOD(11-16) RR
-     Lyrae are concentrated at high energy E$\sim$-100000
-     km$^{2}$/s$^{2}$ but low angular momentum L$\sim$0-500 km/s kpc.}
+     for the HAC (black circles), VOD (gray dots), Vivas Gr. 2  (lime) and VOD(11-16) (red).} %A large number of HAC and VOD(11-16) RRL are concentrated at high energy E$\sim$-100000 km$^{2}$/s$^{2}$ but low angular momentum L$\sim$0-500 km/s kpc.}
     \label{fig:energy}
 \end{figure}
 %
@@ -515,29 +465,28 @@ Overdensity are both parts of one ancient massive head-on collision.
              \includegraphics[scale=0.302]{VOD_orbits_8Gyrs_xy_sausage.pdf}
              \includegraphics[scale=0.302]{VOD_orbits_8Gyrs_yz_sausage.pdf}
 \vspace{-0.45cm}
-   \caption{Density maps of the RR Lyrae positions along their
-     individual orbits over the past 8 Gyrs, in Galactic coordinates
-     on the sky (left panels) and in the x-y (middle) and y-z (right) Galactic
+   \caption{Density maps of the RRL positions along their
+     individual orbits over the past 8 Gyrs, in Galactic coordinates (left panels) and in the x-y (middle) and y-z (right) Galactic
      planes.  The top and middle rows show the integrated orbits for
      all the HAC and VOD stars while on the bottom row we show only
      the orbits for the VOD stars in the `sausage' component (marked
      in blue in Fig. \ref{fig:vel}). Note that the observed orbital
      morphology of the stellar debris agrees well with the simulated
-     merger event shown in Figure 7 of \citet{Simion2018}.}
+     merger event shown in fig. 7 of \citet{Simion2018}.}
     \label{fig:backorbits}
 \end{figure}
 %
 %
 \section{Conclusions}
 %
-Using a sample of $\sim$350 RR Lyrae with full 6-D phase space
+Using a sample of $\sim$350 RRL with full 6-D phase space
 information, we have studied the orbital properties of the
 Hercules-Aquila and Virgo Clouds. Both Clouds appear dominated by
 stars on highly eccentric orbits. Assuming that the kinematics of each
 structure is well described by a single Gaussian, the orbital
 anisotropy of the HAC is $\beta=0.91$ and for the VOD,
 $\beta=0.74$. Note, however that the original criteria applied to the
-CRTS RR Lyrae dataset to select targets for spectroscopic follow-up
+CRTS RRL dataset to select targets for spectroscopic follow-up
 differ drastically between the HAC and the VOD datasets. The HAC
 sample covers a very limited region in the of $l,b, D$ space, while
 the VOD dataset spans a wide range of longitudes, latitudes and
