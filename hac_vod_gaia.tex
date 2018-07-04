@@ -155,7 +155,7 @@ constituent stars.
     \label{fig:lb}
 \end{figure}
 %
-\subsection{4-D RR Lyrae data}
+\subsection{RR Lyrae data. Velocity distributions}
 %
 The Hercules-Aquila and Virgo Clouds are diffuse stellar
 over-densities in the inner stellar halo, located on the opposite
@@ -179,9 +179,6 @@ region of the sky covered by the VOD with distances between 4 and 75
 kpc from the Sun with radial velocity measurements of stars from La
 Silla-QUEST, QUEST, CRTS and LINEAR.
 
-%
-\subsection{From 4-D to 6-D. Velocity distributions}
-%
 By cross-matching to the GDR2 data with an aperture of 2$''$, we have
 found Gaia counterparts to 44 HAC stars and 411 VOD. From the VOD
 sample, we remove 112 stars likely belonging to the Sgr stream as
@@ -219,9 +216,9 @@ propagate the measured proper motion and line-of-sight velocity errors
 using Monte-Carlo re-sampling, where we take into account the
 covariances between the measurements of the right ascension and
 declination components of proper motion as provided in GDR2. We use
-the standard deviations of the resulting \{$v_{r}$, $v_{\theta}$,
-$v_{\phi}$\} distributions as an estimate of the velocity
-uncertainties; these are shown in Fig.~\ref{fig:vel}.
+the standard deviations of the \{$v_{r}$, $v_{\theta}$, $v_{\phi}$\}
+distributions as an estimate of the velocity uncertainties (see
+Fig.~\ref{fig:vel}).
 %
 % For the Sun's motion, $\texttt{astropy}$ assumes a local standard of rest velocity of 220 km s and Solar peculiar motion of (U, V, W) = (11.1, 12.2, 7.3) km/s.
 %
@@ -348,6 +345,34 @@ checked that the distributions of the orbital parameters
 displayed in Fig.~\ref{fig:orbits} are minimally affected if we
 increase the Galaxy's mass.
 
+%
+\begin{figure}
+	% To include a figure from a file named example.*
+	% Allowable file formats are eps or ps if compiling using latex
+	% or pdf, png, jpg if compiling using pdflatex
+	\includegraphics[scale=0.473]{HAC_orbits_ecc_z.pdf}
+    \includegraphics[scale=0.473]{HAC_orbits_apo_ecc.pdf} 
+  \includegraphics[scale=0.473]{HAC_orbits_ecc_r.pdf} 
+	\includegraphics[scale=0.473]{VOD_orbits_ecc_z.pdf}
+    \includegraphics[scale=0.473]{VOD_orbits_apo_ecc.pdf} 
+  \includegraphics[scale=0.473]{VOD_orbits_ecc_r.pdf} 
+              \includegraphics[scale=0.473]{eccentricities.pdf} 
+    \includegraphics[scale=0.473]{pericentres.pdf} 
+                          \includegraphics[scale=0.473]{apocentres.pdf} 
+\vspace{-0.45cm}
+  \caption{Properties of the RRL orbits in the HAC and VOD
+    fields. In the top and middle rows we show the maximal height
+    above the Galactic plane, apo-centre and Galactocentric radius as a
+    function of eccentricity, for the HAC (top) and VOD (middle)
+    stars. In the bottom row we show the probability distributions of
+    the eccentricities, peri- and apo-centres for both fields,
+    including the VOD(11-16) subsample (in red). The majority of HAC
+    and VOD(11-16) stars are on highly eccentric orbits with small
+    peri-centres (0-3 kpc from the GC) and apo-centres at 15-20 kpc.}
+    \label{fig:orbits}   
+    \end{figure}
+%
+
 The stars in the HAC field typically travel as high as $\sim$15 kpc
 above the Galactic plane. The apo-centres bunch up around 15-20 kpc
 from the Galactic center - similar to the behaviour of local Main
@@ -379,33 +404,7 @@ Figure, while stars in both HAC and VOD occupy highly radial orbits,
 both prograde and retrograde objects exist, with a slight prevalence
 of the retrograde ones \citep[see
   also][]{actionhalo,shards,Helmi2018}.
-%
-\begin{figure}
-	% To include a figure from a file named example.*
-	% Allowable file formats are eps or ps if compiling using latex
-	% or pdf, png, jpg if compiling using pdflatex
-	\includegraphics[scale=0.473]{HAC_orbits_ecc_z.pdf}
-    \includegraphics[scale=0.473]{HAC_orbits_apo_ecc.pdf} 
-  \includegraphics[scale=0.473]{HAC_orbits_ecc_r.pdf} 
-	\includegraphics[scale=0.473]{VOD_orbits_ecc_z.pdf}
-    \includegraphics[scale=0.473]{VOD_orbits_apo_ecc.pdf} 
-  \includegraphics[scale=0.473]{VOD_orbits_ecc_r.pdf} 
-              \includegraphics[scale=0.473]{eccentricities.pdf} 
-    \includegraphics[scale=0.473]{pericentres.pdf} 
-                          \includegraphics[scale=0.473]{apocentres.pdf} 
-\vspace{-0.45cm}
-  \caption{Properties of the RRL orbits in the HAC and VOD
-    fields. In the top and middle rows we show the maximal height
-    above the Galactic plane, apo-centre and Galactocentric radius as a
-    function of eccentricity, for the HAC (top) and VOD (middle)
-    stars. In the bottom row we show the probability distributions of
-    the eccentricities, peri- and apo-centres for both fields,
-    including the VOD(11-16) subsample (in red). The majority of HAC
-    and VOD(11-16) stars are on highly eccentric orbits with small
-    peri-centres (0-3 kpc from the GC) and apo-centres at 15-20 kpc.}
-    \label{fig:orbits}   
-    \end{figure}
-   %
+
 %
    \begin{figure}
 	%\includegraphics[scale=0.398]{vtot_r.pdf}
@@ -449,10 +448,10 @@ looks staggeringly similar to the debris distribution of the simulated
 accretion event presented in Figure 7 of \citet{Simion2018}. This
 particular merger happened some 11 Gyr ago according to the suite of
 numerical stellar halo formation models of \citet{Bu05}. Giving the
-conspicuous similarity in the appearance of the orbital density
-distributions of the HAC and the VOD stars and the simulated merger
-example, we conclude that the Hercules-Aquila Cloud and the Virgo
-Overdensity are both parts of one ancient massive head-on collision.
+conspicuous similarity in the appearance of the orbital distributions
+of the observed Clouds' stars and the simulated merger example, we
+conclude that the HAC and the VOD are both parts of one ancient
+massive head-on collision.
 %
 %
 \begin{figure}
@@ -479,32 +478,30 @@ Overdensity are both parts of one ancient massive head-on collision.
 %
 \section{Conclusions}
 %
-Using a sample of $\sim$350 RRL with full 6-D phase space
-information, we have studied the orbital properties of the
-Hercules-Aquila and Virgo Clouds. Both Clouds appear dominated by
-stars on highly eccentric orbits. Assuming that the kinematics of each
-structure is well described by a single Gaussian, the orbital
-anisotropy of the HAC is $\beta=0.91$ and for the VOD,
-$\beta=0.74$. Note, however that the original criteria applied to the
-CRTS RRL dataset to select targets for spectroscopic follow-up
-differ drastically between the HAC and the VOD datasets. The HAC
-sample covers a very limited region in the of $l,b, D$ space, while
-the VOD dataset spans a wide range of longitudes, latitudes and
-heliocentric distances. It is therefore likely that the VOD dataset
-contains a mixture of several halo sub-structures \citep[see][for a
-  detailed discussion]{Vivas2016}. For the entirety of the analysis
-described here, we made sure to cull the probable Sgr stream
-members. Additionally, we explore how the VOD's make-up changes with
-Galactic height and demonstrate that for $|z|<20$ kpc, the VOD orbital
-anisotropy is $\beta\sim 0.8$, while above this threshold, it quickly
-changes to $\beta\sim0$. We conclude therefore, that an assumption of
-a single Gaussian for the entire VOD sample is likely not
-appropriate. Modeling the kinematics of the VOD stars with a mixture
-of 2 multivariate Gaussians, we show that the VOD can be separated into 
-two components: one with two thirds of the stars and $\beta=0.96$, and the 
- other one with $\beta=0.44$, in good agreement 
-with the local measurement presented
-in \citet{Belokurov2018}.
+Using a sample of $\sim$350 RRL with full 6-D phase space information,
+we have studied the orbital properties of the Hercules-Aquila and
+Virgo Clouds. Both Clouds appear dominated by stars on highly
+eccentric orbits. Assuming that the kinematics of each structure is
+well described by a single Gaussian, the orbital anisotropy of the HAC
+is $\beta=0.91$ and for the VOD, $\beta=0.74$. Note, however that the
+original criteria applied to the CRTS RRL dataset to select targets
+for spectroscopic follow-up differ drastically between the HAC and the
+VOD datasets. The HAC sample covers a very limited region in the of
+$l,b, D$ space, while the VOD dataset spans a wide range of
+longitudes, latitudes and heliocentric distances. It is therefore
+likely that the VOD dataset contains a mixture of several halo
+sub-structures \citep[see][for a detailed discussion]{Vivas2016}. For
+the entirety of the analysis described here, we made sure to cull the
+probable Sgr stream members. Additionally, we explore how the VOD's
+make-up changes with Galactic height and demonstrate that for $|z|<20$
+kpc, the VOD orbital anisotropy is $\beta\sim 0.8$, while above this
+threshold, it quickly changes to $\beta\sim0$. We conclude therefore,
+that an assumption of a single Gaussian for the entire VOD sample is
+likely not appropriate. Modeling the kinematics of the VOD stars with
+a mixture of 2 multivariate Gaussians, we show that the VOD can be
+separated into two components: one with two thirds of the stars and
+$\beta=0.96$, and one with $\beta=0.44$, in good agreement with
+the local measurement presented in \citet{Belokurov2018}.
 
 As revealed by Gaia, the two structures are composed of stars on
 nearly radial orbits, with peaks in the eccentricity distribution at
@@ -559,13 +556,13 @@ Galaxy.
 
 \section*{Acknowledgements}
 
-We wish to thank Alis Deason, Kathryn Johnston and Wyn Evans for
-insightful comments that helped to improve the quality of the
-manuscript.  The research leading to these results has received
-funding from the European Research Council under the European Union's
-Seventh Framework Programme (FP/2007-2013), ERC Grant Agreement
-n. 308024 and PIFI Grant n. 2018PM0050. ITS and SEK thank the Center for Computational Astrophysics
-for hospitality.
+We thank Alis Deason, Kathryn Johnston and Wyn Evans for insightful
+comments that helped to improve the quality of the paper.  The
+research leading to these results has received funding from the
+European Research Council under the European Union's Seventh Framework
+Programme (FP/2007-2013), ERC Grant Agreement n. 308024 and PIFI Grant
+n. 2018PM0050. ITS and SEK thank the Center for Computational
+Astrophysics for hospitality.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -578,7 +575,7 @@ for hospitality.
 \bibliography{bibl}  %the same name as the tex file
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Don't change these lines
-\bsp	% typesetting comment
+%\bsp	% typesetting comment
 \label{lastpage}
 \end{document}
 % End of mnras_template.tex
